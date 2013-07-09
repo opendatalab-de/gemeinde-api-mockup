@@ -1,0 +1,179 @@
+GENESIS-Tabelle: Temporär
+Sozialversicherungspflichtig Beschäftigte am Arbeits- und;;;;;;;
+Wohnort sowie Ein- und Auspendler über Gemeindegrenzen nach;;;;;;;
+Geschlecht - Stichtag 30.06. - Gemeinden;;;;;;;
+Sozialversicherungspflichtig Beschäftigte;;;;;;;
+30.06.2011;;;;;;;
+;;;Sozialversicherungspfl. Beschäftigte (Arbeitsort);Einpendler(innen) über Gemeindegrenze (Arbeitsort);Sozialversicherungspfl. Beschäftigte (Wohnort);Auspendler(innen) über Gemeindegrenzen (Wohnort);Pendlersaldo (über Gemeindegrenze)
+;;;Anzahl;Anzahl;Anzahl;Anzahl;Anzahl
+08121;      Heilbronn, Kreisfreie Stadt;männlich;31534;20923;24150;13539;7384
+08121;      Heilbronn, Kreisfreie Stadt;weiblich;30661;18485;18824;6648;11837
+08121;      Heilbronn, Kreisfreie Stadt;Insgesamt;62195;39408;42974;20187;19221
+08125;      Heilbronn, Landkreis;männlich;69753;56640;71738;58625;-1985
+08125;      Heilbronn, Landkreis;weiblich;42430;28383;54612;40565;-12182
+08125;      Heilbronn, Landkreis;Insgesamt;112183;85023;126350;99190;-14167
+08125001;        Abstatt;männlich;3378;3198;1009;829;2369
+08125001;        Abstatt;weiblich;885;758;803;676;82
+08125001;        Abstatt;Insgesamt;4263;3956;1812;1505;2451
+08125005;        Bad Friedrichshall;männlich;2899;2352;4287;3740;-1388
+08125005;        Bad Friedrichshall;weiblich;2324;1555;3173;2404;-849
+08125005;        Bad Friedrichshall;Insgesamt;5223;3907;7460;6144;-2237
+08125006;        Bad Rappenau, Stadt;männlich;2116;1333;4504;3721;-2388
+08125006;        Bad Rappenau, Stadt;weiblich;2641;1438;3557;2354;-916
+08125006;        Bad Rappenau, Stadt;Insgesamt;4757;2771;8061;6075;-3304
+08125007;        Bad Wimpfen;männlich;961;757;1380;1176;-419
+08125007;        Bad Wimpfen;weiblich;753;489;1070;806;-317
+08125007;        Bad Wimpfen;Insgesamt;1714;1246;2450;1982;-736
+08125008;        Beilstein, Württ;männlich;405;303;1176;1074;-771
+08125008;        Beilstein, Württ;weiblich;471;286;952;767;-481
+08125008;        Beilstein, Württ;Insgesamt;876;589;2128;1841;-1252
+08125013;        Brackenheim;männlich;1943;1343;3316;2716;-1373
+08125013;        Brackenheim;weiblich;1944;1067;2522;1645;-578
+08125013;        Brackenheim;Insgesamt;3887;2410;5838;4361;-1951
+08125017;        Cleebronn;männlich;407;316;606;515;-199
+08125017;        Cleebronn;weiblich;269;182;443;356;-174
+08125017;        Cleebronn;Insgesamt;676;498;1049;871;-373
+08125021;        Eberstadt;männlich;209;169;689;649;-480
+08125021;        Eberstadt;weiblich;236;156;549;469;-313
+08125021;        Eberstadt;Insgesamt;445;325;1238;1118;-793
+08125024;        Ellhofen;männlich;847;781;754;688;93
+08125024;        Ellhofen;weiblich;326;259;592;525;-266
+08125024;        Ellhofen;Insgesamt;1173;1040;1346;1213;-173
+08125026;        Eppingen, Stadt;männlich;2976;1587;4643;3254;-1667
+08125026;        Eppingen, Stadt;weiblich;2183;900;3446;2163;-1263
+08125026;        Eppingen, Stadt;Insgesamt;5159;2487;8089;5417;-2930
+08125027;        Erlenbach;männlich;539;433;1187;1081;-648
+08125027;        Erlenbach;weiblich;352;226;952;826;-600
+08125027;        Erlenbach;Insgesamt;891;659;2139;1907;-1248
+08125030;        Flein;männlich;429;369;1177;1117;-748
+08125030;        Flein;weiblich;542;405;1113;976;-571
+08125030;        Flein;Insgesamt;971;774;2290;2093;-1319
+08125034;        Gemmingen;männlich;785;608;1083;906;-298
+08125034;        Gemmingen;weiblich;291;175;781;665;-490
+08125034;        Gemmingen;Insgesamt;1076;783;1864;1571;-788
+08125038;        Güglingen;männlich;2363;1794;1366;797;997
+08125038;        Güglingen;weiblich;922;592;940;610;-18
+08125038;        Güglingen;Insgesamt;3285;2386;2306;1407;979
+08125039;        Gundelsheim, Württ;männlich;493;365;1617;1489;-1124
+08125039;        Gundelsheim, Württ;weiblich;593;330;1119;856;-526
+08125039;        Gundelsheim, Württ;Insgesamt;1086;695;2736;2345;-1650
+08125046;        Ilsfeld;männlich;1973;1640;1868;1535;105
+08125046;        Ilsfeld;weiblich;1369;936;1504;1071;-135
+08125046;        Ilsfeld;Insgesamt;3342;2576;3372;2606;-30
+08125047;        Ittlingen;männlich;283;215;495;427;-212
+08125047;        Ittlingen;weiblich;202;137;377;312;-175
+08125047;        Ittlingen;Insgesamt;485;352;872;739;-387
+08125048;        Jagsthausen;männlich;279;210;311;242;-32
+08125048;        Jagsthausen;weiblich;253;187;250;184;3
+08125048;        Jagsthausen;Insgesamt;532;397;561;426;-29
+08125049;        Kirchardt;männlich;888;621;1203;936;-315
+08125049;        Kirchardt;weiblich;435;262;853;680;-418
+08125049;        Kirchardt;Insgesamt;1323;883;2056;1616;-733
+08125056;        Lauffen am Neckar;männlich;1900;1461;2291;1852;-391
+08125056;        Lauffen am Neckar;weiblich;1243;771;1739;1267;-496
+08125056;        Lauffen am Neckar;Insgesamt;3143;2232;4030;3119;-887
+08125057;        Lehrensteinsfeld;männlich;173;149;448;424;-275
+08125057;        Lehrensteinsfeld;weiblich;67;37;341;311;-274
+08125057;        Lehrensteinsfeld;Insgesamt;240;186;789;735;-549
+08125058;        Leingarten;männlich;1980;1581;2414;2015;-434
+08125058;        Leingarten;weiblich;1212;784;1968;1540;-756
+08125058;        Leingarten;Insgesamt;3192;2365;4382;3555;-1190
+08125059;        Löwenstein;männlich;407;303;648;544;-241
+08125059;        Löwenstein;weiblich;1020;844;554;378;466
+08125059;        Löwenstein;Insgesamt;1427;1147;1202;922;225
+08125061;        Massenbachhausen;männlich;436;368;819;751;-383
+08125061;        Massenbachhausen;weiblich;428;342;596;510;-168
+08125061;        Massenbachhausen;Insgesamt;864;710;1415;1261;-551
+08125063;        Möckmühl;männlich;1446;1104;1677;1335;-231
+08125063;        Möckmühl;weiblich;1204;733;1173;702;31
+08125063;        Möckmühl;Insgesamt;2650;1837;2850;2037;-200
+08125065;        Neckarsulm, Stadt;männlich;22983;20159;6049;3225;16934
+08125065;        Neckarsulm, Stadt;weiblich;8782;7090;4276;2584;4506
+08125065;        Neckarsulm, Stadt;Insgesamt;31765;27249;10325;5809;21440
+08125066;        Neckarwestheim;männlich;1223;1089;799;665;424
+08125066;        Neckarwestheim;weiblich;401;272;593;464;-192
+08125066;        Neckarwestheim;Insgesamt;1624;1361;1392;1129;232
+08125068;        Neudenau;männlich;292;172;1178;1058;-886
+08125068;        Neudenau;weiblich;377;195;825;643;-448
+08125068;        Neudenau;Insgesamt;669;367;2003;1701;-1334
+08125069;        Neuenstadt am Kocher;männlich;2518;2128;2292;1902;226
+08125069;        Neuenstadt am Kocher;weiblich;1335;908;1626;1199;-291
+08125069;        Neuenstadt am Kocher;Insgesamt;3853;3036;3918;3101;-65
+08125074;        Nordheim, Württ;männlich;719;505;1678;1464;-959
+08125074;        Nordheim, Württ;weiblich;520;298;1327;1105;-807
+08125074;        Nordheim, Württ;Insgesamt;1239;803;3005;2569;-1766
+08125078;        Oedheim;männlich;223;168;1438;1383;-1215
+08125078;        Oedheim;weiblich;313;187;1023;897;-710
+08125078;        Oedheim;Insgesamt;536;355;2461;2280;-1925
+08125079;        Offenau;männlich;566;490;612;536;-46
+08125079;        Offenau;weiblich;308;233;435;360;-127
+08125079;        Offenau;Insgesamt;874;723;1047;896;-173
+08125081;        Pfaffenhofen;männlich;348;280;531;463;-183
+08125081;        Pfaffenhofen;weiblich;162;99;383;320;-221
+08125081;        Pfaffenhofen;Insgesamt;510;379;914;783;-404
+08125084;        Roigheim;männlich;266;207;307;248;-41
+08125084;        Roigheim;weiblich;95;52;204;161;-109
+08125084;        Roigheim;Insgesamt;361;259;511;409;-150
+08125086;        Schwaigern;männlich;2258;1707;2394;1843;-136
+08125086;        Schwaigern;weiblich;1505;886;1848;1229;-343
+08125086;        Schwaigern;Insgesamt;3763;2593;4242;3072;-479
+08125087;        Siegelsbach;männlich;306;271;350;315;-44
+08125087;        Siegelsbach;weiblich;340;294;293;247;47
+08125087;        Siegelsbach;Insgesamt;646;565;643;562;3
+08125094;        Talheim, Neckar;männlich;807;733;989;915;-182
+08125094;        Talheim, Neckar;weiblich;463;365;818;720;-355
+08125094;        Talheim, Neckar;Insgesamt;1270;1098;1807;1635;-537
+08125096;        Untereisesheim;männlich;194;162;947;915;-753
+08125096;        Untereisesheim;weiblich;253;185;703;635;-450
+08125096;        Untereisesheim;Insgesamt;447;347;1650;1550;-1203
+08125098;        Untergruppenbach;männlich;1065;967;1685;1587;-620
+08125098;        Untergruppenbach;weiblich;635;441;1408;1214;-773
+08125098;        Untergruppenbach;Insgesamt;1700;1408;3093;2801;-1393
+08125102;        Weinsberg;männlich;2084;1744;2303;1963;-219
+08125102;        Weinsberg;weiblich;2031;1552;1878;1399;153
+08125102;        Weinsberg;Insgesamt;4115;3296;4181;3362;-66
+08125103;        Widdern;männlich;73;45;404;376;-331
+08125103;        Widdern;weiblich;105;57;273;225;-168
+08125103;        Widdern;Insgesamt;178;102;677;601;-499
+08125107;        Wüstenrot;männlich;486;301;1320;1135;-834
+08125107;        Wüstenrot;weiblich;562;255;1095;788;-533
+08125107;        Wüstenrot;Insgesamt;1048;556;2415;1923;-1367
+08125108;        Zaberfeld;männlich;233;167;840;774;-607
+08125108;        Zaberfeld;weiblich;215;106;701;592;-486
+08125108;        Zaberfeld;Insgesamt;448;273;1541;1366;-1093
+08125110;        Obersulm;männlich;1525;1065;2846;2386;-1321
+08125110;        Obersulm;weiblich;1429;807;2247;1625;-818
+08125110;        Obersulm;Insgesamt;2954;1872;5093;4011;-2139
+08125111;        Hardthausen am Kocher;männlich;700;610;958;868;-258
+08125111;        Hardthausen am Kocher;weiblich;203;111;638;546;-435
+08125111;        Hardthausen am Kocher;Insgesamt;903;721;1596;1414;-693
+08125113;        Langenbrettach;männlich;369;310;850;791;-481
+08125113;        Langenbrettach;weiblich;231;139;651;559;-420
+08125113;        Langenbrettach;Insgesamt;600;449;1501;1350;-901
+_____
+zu 'gesamte Tabelle':
+Deutschland: Der Nachweis von Bundesergebnissen ist aus
+"sachlogischen Gründen nicht möglich; gemeinde/kreisbezogene"
+Pendlerströme sind auf Bundesebene nicht aggregierbar und
+deshalb nicht darstellbar.
+Baden-Württemberg: Berichtsjahr 2008-2010 Gebietsstand
+"01.01.2009; ab Berichtsjahr 2011 Gebietsstand 01.01.2011"
+Rheinland-Pfalz: ab 2011 Gebietsstand des Folgejahres.
+Sachsen: Gebietsstand 01.01. des Folgejahres
+
+zu 'darunter Einpendler(innen) über Gemeindegrenzen':
+Sachsen: Einpendler(innen) über die jeweilige Gebietsgrenze
+
+zu 'darunter Auspendler(innen) über Gemeindegrenzen':
+Sachsen: Auspendler(innen) über die jeweilige Gebietsgrenze
+
+zu 'Pendlersaldo'
+Deutschland: Der Nachweis von Bundesergebnissen ist aus
+"sachlogischen Gründen nicht möglich; gemeinde/kreisbezogene"
+Pendlerströme sind auf Bundesebene nicht aggregierbar und
+deshalb nicht darstellbar.
+_____
+(C)opyright Statistische Ämter des Bundes und der Länder, 2013
+Vervielfältigung und Verbreitung, auch auszugsweise,
+mit Quellenangabe gestattet.
+Stand: 09.07.2013 / 15:06:14
