@@ -11,13 +11,13 @@ public class ConfigurableParser extends AbstractCsvParser {
 	@Override
 	protected KeyValue parseItem(String[] strings) {
 		try {
-			if (strings.length == 15) {
-				String areaKey = strings[0];
+			if (strings.length == configuration.getProperties().length + configuration.getDataStart()) {
+				String areaKey = strings[configuration.getAreaKey()];
 				KeyValue keyValue = new KeyValue(areaKey);
 				for (int x = 0; x < configuration.getProperties().length; x++) {
 					String property = configuration.getProperties()[x];
-					String value = strings[2 + x];
-					Long convertedValue = Long.valueOf(value);
+					String value = strings[configuration.getDataStart() + x];
+					Long convertedValue = convertSafe(value);
 					keyValue.setValue(property, convertedValue);
 				}
 				return keyValue;
@@ -28,5 +28,16 @@ public class ConfigurableParser extends AbstractCsvParser {
 		catch (Exception e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	private Long convertSafe(String value) {
+		if (value.contains("-") || value.contains("."))
+			return null;
+		else if (value.contains(",")) {
+			value = value.replace(',', '.');
+			return Double.valueOf(value).longValue();
+		}
+		else
+			return Long.valueOf(value);
 	}
 }
