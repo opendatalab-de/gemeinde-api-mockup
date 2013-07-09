@@ -1,0 +1,102 @@
+GENESIS-Tabelle: Temporär
+Wohngebäude- und Wohnungsbestand - Stichtag 31.12. -;;;;;;;;;;;;;;;
+regionale Tiefe: Gemeinden, Samt-/Verbandsgemeinden;;;;;;;;;;;;;;;
+Fortschreib. d. Wohngebäude- u. Wohnungsbestandes;;;;;;;;;;;;;;;
+;;;Wohngebäude;Wohngebäude;Wohngebäude;Wohnfläche in Wohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Wohnungen in Wohn- und Nichtwohngebäuden;Räume in Wohnungen mit 7 oder mehr Räumen
+;;;Gebäude nach Anzahl der Wohnungen;Gebäude nach Anzahl der Wohnungen;Gebäude nach Anzahl der Wohnungen;;Größe der Wohnung;Größe der Wohnung;Größe der Wohnung;Größe der Wohnung;Größe der Wohnung;Größe der Wohnung;Größe der Wohnung;Größe der Wohnung;
+;;;Insgesamt;1 Wohnung;2 Wohnungen;;Insgesamt;Wohnungen mit 1 Raum;Wohnungen mit 2 Räumen;Wohnungen mit 3 Räumen;Wohnungen mit 4 Räumen;Wohnungen mit 5 Räumen;Wohnungen mit 6 Räumen;Wohnungen mit 7 Räumen oder mehr;
+;;;Anzahl;Anzahl;Anzahl;1000 qm;Anzahl;Anzahl;Anzahl;Anzahl;Anzahl;Anzahl;Anzahl;Anzahl;Anzahl
+31.12.2011;08121;      Heilbronn, Kreisfreie Stadt;21479;10528;4784;4781,2;58275;1245;2466;11635;20841;12027;5446;4615;35328
+31.12.2011;08125;      Heilbronn, Landkreis;86957;57896;20340;14509,2;148067;2242;6082;21541;35905;34133;23804;24360;187873
+31.12.2011;08125001;        Abstatt;1230;855;254;199,6;2001;31;96;297;388;499;365;325;2480
+31.12.2011;08125005;        Bad Friedrichshall;3989;2535;868;717,8;8138;269;399;1346;2229;1887;1083;925;7100
+31.12.2011;08125006;        Bad Rappenau, Stadt;5231;3276;1280;950,9;9918;193;581;1819;2417;1983;1427;1498;11630
+31.12.2011;08125007;        Bad Wimpfen;1771;1114;400;315,0;3452;136;191;705;829;686;457;448;3461
+31.12.2011;08125008;        Beilstein, Württ;1753;1119;468;298,8;2973;86;177;481;587;571;489;582;4440
+31.12.2011;08125013;        Brackenheim;4236;3028;862;663,2;6684;75;258;858;1542;1614;1192;1145;8762
+31.12.2011;08125017;        Cleebronn;826;611;161;121,3;1223;15;34;156;283;289;207;239;1845
+31.12.2011;08125021;        Eberstadt;920;624;220;146,0;1440;3;71;168;303;361;248;286;2212
+31.12.2011;08125024;        Ellhofen;982;700;192;152,2;1547;26;74;204;344;370;287;242;1852
+31.12.2011;08125026;        Eppingen, Stadt;5458;3600;1400;927,4;9006;136;395;1221;2131;1906;1496;1721;13354
+31.12.2011;08125027;        Erlenbach;1347;774;403;230,6;2426;28;105;372;650;489;399;383;2924
+31.12.2011;08125030;        Flein;1819;1230;375;334,0;3328;41;186;503;737;863;479;519;3983
+31.12.2011;08125034;        Gemmingen;1313;817;383;220,9;2154;15;112;245;510;466;391;415;3212
+31.12.2011;08125038;        Güglingen;1546;1055;321;265,0;2699;53;112;383;634;684;395;438;3439
+31.12.2011;08125039;        Gundelsheim, Württ;2084;1393;543;328,8;3257;19;114;427;743;736;593;625;4856
+31.12.2011;08125046;        Ilsfeld;2395;1582;602;390,6;3854;37;127;611;889;885;628;677;5251
+31.12.2011;08125047;        Ittlingen;666;426;196;105,2;1010;7;33;139;211;255;169;196;1542
+31.12.2011;08125048;        Jagsthausen;510;365;125;75,5;710;10;25;80;166;127;138;164;1290
+31.12.2011;08125049;        Kirchardt;1454;960;382;237,1;2189;11;78;264;453;514;410;459;3597
+31.12.2011;08125056;        Lauffen am Neckar;2671;1632;608;479,9;5292;56;180;876;1632;1198;678;672;5137
+31.12.2011;08125057;        Lehrensteinsfeld;724;577;122;106,5;939;5;28;83;133;251;230;209;1598
+31.12.2011;08125058;        Leingarten;2888;1980;584;483,9;5064;47;198;792;1317;1263;749;698;5314
+31.12.2011;08125059;        Löwenstein;920;618;239;142,5;1399;49;63;177;264;319;277;250;1960
+31.12.2011;08125061;        Massenbachhausen;1001;690;231;155,8;1501;10;45;176;329;409;318;214;1646
+31.12.2011;08125063;        Möckmühl;1886;1226;434;334,7;3318;26;85;418;761;840;575;613;4789
+31.12.2011;08125065;        Neckarsulm, Stadt;5542;3255;1323;1022,3;11756;226;508;1963;3678;2646;1429;1306;9996
+31.12.2011;08125066;        Neckarwestheim;971;662;222;153,7;1569;35;65;247;355;332;282;253;1943
+31.12.2011;08125068;        Neudenau;1540;1040;415;236,3;2249;9;55;279;468;532;415;491;3804
+31.12.2011;08125069;        Neuenstadt am Kocher;2501;1659;614;430,0;4179;23;133;563;1035;960;738;727;5664
+31.12.2011;08125074;        Nordheim, Württ;2062;1345;511;329,7;3335;33;114;409;815;847;571;546;4137
+31.12.2011;08125078;        Oedheim;1681;1146;420;273,7;2607;11;60;297;625;618;483;513;3927
+31.12.2011;08125079;        Offenau;709;447;193;122,3;1227;7;35;132;326;331;207;189;1464
+31.12.2011;08125081;        Pfaffenhofen;760;571;160;102,3;1028;8;19;122;228;257;205;189;1425
+31.12.2011;08125084;        Roigheim;450;300;119;63,7;646;4;20;96;151;161;102;112;869
+31.12.2011;08125086;        Schwaigern;3016;1961;769;496,1;4926;39;168;652;1087;1208;858;914;7073
+31.12.2011;08125087;        Siegelsbach;459;305;118;73,3;719;1;30;78;163;176;125;146;1124
+31.12.2011;08125094;        Talheim, Neckar;1481;1027;346;245,0;2344;31;112;295;452;563;460;431;3368
+31.12.2011;08125096;        Untereisesheim;995;712;184;172,7;1769;16;74;235;419;419;321;285;2135
+31.12.2011;08125098;        Untergruppenbach;2316;1661;440;377,7;3684;34;136;483;868;832;662;669;5110
+31.12.2011;08125102;        Weinsberg;2762;1717;660;505,6;5502;125;246;974;1451;1201;802;703;5448
+31.12.2011;08125103;        Widdern;612;482;106;83,9;808;3;27;102;150;213;147;166;1295
+31.12.2011;08125107;        Wüstenrot;2070;1565;412;292,8;2936;61;140;393;604;706;455;577;4466
+31.12.2011;08125108;        Zaberfeld;1386;1079;259;186,0;1807;13;59;211;402;430;335;357;2733
+31.12.2011;08125110;        Obersulm;3854;2645;928;608,1;6210;162;236;844;1428;1457;964;1119;8559
+31.12.2011;08125111;        Hardthausen am Kocher;1123;780;268;179,3;1679;7;41;190;395;390;293;363;2825
+31.12.2011;08125113;        Langenbrettach;1047;750;220;171,6;1565;10;37;175;323;389;270;361;2834
+_____
+zu 'Tabelle insgesamt'
+"Baden-Würrtemberg: 2011; Abweichungen zu anderen"
+Veröffentlichungen ergeben ggf. durch nachträgliche
+Korrekturen.
+Baden-Württemberg: Berichtsjahr 2008-2010 Gebietsstand
+"01.01.2009; ab Berichtsjahr 2011 Gebietsstand 01.01.2011"
+Rheinland-Pfalz: ab 2011 Gebietsstand des Folgejahres.
+
+zu 'Wohngebäude':
+Deutschland (2000, 2003, 2005): Eventuelle geringfügige
+Differenzen zwischen dem Ergebnis für Deutschland und der
+Summe der Länder beruhen auf nachträglichen
+Ergebniskorrekturen einzelner Länder nach Aufbereitung und
+"Veröffentlichung des Bundesergebnisses;"
+Berlin (1995 bis 2000): bezogen auf den Gebietsstand
+"01.01.2001;"
+Thüringen (1995 bis 1997): Ergebnisse der kreisfreien Stadt
+Eisenach im Wartburgkreis enthalten.
+
+zu 'Wohnungen in Wohn- und Nichtwohngebäuden':
+Deutschland (2000, 2003, 2005): Eventuelle geringfügige
+Differenzen zwischen dem Ergebnis für Deutschland und der
+Summe der Länder beruhen auf nachträglichen
+Ergebniskorrekturen einzelner Länder nach Aufbereitung und
+"Veröffentlichung des Bundesergebnisses;"
+Berlin (1995 bis 2000): bezogen auf den Gebietsstand
+"01.01.2001;"
+Thüringen (1995 bis 1997): Ergebnisse der kreisfreien Stadt
+Eisenach im Wartburgkreis enthalten.
+
+zu 'Räume in Wohnungen mit 7 oder mehr Räumen':
+Deutschland (2003, 2005): Eventuelle geringfügige
+Differenzen zwischen dem Ergebnis für Deutschland und der
+Summe der Länder beruhen auf nachträglichen
+Ergebniskorrekturen einzelner Länder nach Aufbereitung und
+"Veröffentlichung des Bundesergebnisses;"
+Berlin (1995 bis 2000): bezogen auf den Gebietsstand
+"01.01.2001;"
+Thüringen (1995 bis 1997): Ergebnisse der kreisfreien Stadt
+Eisenach im Wartburgkreis enthalten.
+_____
+(C)opyright Statistische Ämter des Bundes und der Länder, 2013
+Vervielfältigung und Verbreitung, auch auszugsweise,
+mit Quellenangabe gestattet.
+Stand: 09.07.2013 / 15:04:31
