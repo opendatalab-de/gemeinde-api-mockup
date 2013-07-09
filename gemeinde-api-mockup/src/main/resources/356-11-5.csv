@@ -1,0 +1,87 @@
+GENESIS-Tabelle: Temporär
+Realsteuervergleich - Jahressumme -;;;;;;;;;;;;;;
+regionale Tiefe: Gemeinden, Samt-/Verbandsgemeinden;;;;;;;;;;;;;;
+Realsteuervergleich;;;;;;;;;;;;;;
+2011;;;;;;;;;;;;;;
+;;Grundsteuer A - Istaufkommen;Grundsteuer B - Istaufkommen;Gewerbesteuer - Istaufkommen;Grundsteuer A - Grundbetrag;Grundsteuer B - Grundbetrag;Gewerbesteuer - Grundbetrag;Grundsteuer A - Hebesatz;Grundsteuer B - Hebesatz;Gewerbesteuer - Hebesatz;Gemeindeanteil an der Einkommensteuer;Gemeindeanteil an der Umsatzsteuer;Gewerbesteuerumlage;Gewerbesteuereinnahmen (Aufkommen abzgl. Umlage)
+;;Tsd. EUR;Tsd. EUR;Tsd. EUR;Tsd. EUR;Tsd. EUR;Tsd. EUR;Prozent;Prozent;Prozent;Tsd. EUR;Tsd. EUR;Tsd. EUR;Tsd. EUR
+08121;      Heilbronn, Kreisfreie Stadt;247;22959;93352;75;5600;24566;330;410;380;40664;9414;17196;76155
+08125;      Heilbronn, Landkreis;2341;43864;209213;635;12446;64853;369;352;323;131106;12625;45391;163822
+08125001;        Abstatt;13;857;4399;4;245;1294;290;350;340;2152;258;906;3494
+08125005;        Bad Friedrichshall;52;2659;9354;15;682;2673;350;390;350;6650;513;1871;7484
+08125006;        Bad Rappenau, Stadt;160;2927;4487;43;714;1282;375;410;350;7719;401;897;3590
+08125007;        Bad Wimpfen;41;1108;1662;11;308;449;360;360;370;2871;156;315;1348
+08125008;        Beilstein, Württ;35;862;1227;10;230;341;350;375;360;2879;138;239;989
+08125013;        Brackenheim;188;2045;4642;48;524;1326;390;390;350;6018;469;928;3713
+08125017;        Cleebronn;36;359;1324;10;112;378;370;320;350;1127;82;265;1059
+08125021;        Eberstadt;30;362;378;8;101;100;380;360;380;1248;52;70;309
+08125024;        Ellhofen;10;482;987;3;142;286;380;340;345;1456;143;200;787
+08125026;        Eppingen, Stadt;163;2362;4966;49;705;1399;335;335;355;7230;455;979;3987
+08125027;        Erlenbach;31;594;1102;8;175;324;370;340;340;2275;66;227;875
+08125030;        Flein;41;863;1840;12;278;526;340;310;350;3352;126;368;1472
+08125034;        Gemmingen;43;503;724;11;144;196;390;350;370;1874;128;137;587
+08125038;        Güglingen;36;853;14712;11;275;4824;340;310;305;2228;1017;3377;11336
+08125039;        Gundelsheim, Württ;59;905;1045;15;232;268;390;390;390;2814;144;188;857
+08125046;        Ilsfeld;60;1109;5406;20;389;1638;300;285;330;3644;291;1147;4259
+08125047;        Ittlingen;28;244;199;7;72;50;390;340;395;860;52;35;164
+08125048;        Jagsthausen;24;202;374;7;54;110;330;370;340;442;37;77;297
+08125049;        Kirchardt;44;639;1168;12;178;324;360;360;360;1772;177;227;941
+08125056;        Lauffen am Neckar;119;1489;5034;32;451;1418;375;330;355;4649;402;993;4041
+08125057;        Lehrensteinsfeld;19;283;178;5;72;49;395;395;365;933;25;34;144
+08125058;        Leingarten;65;1656;4298;17;425;1162;390;390;370;4950;381;813;3485
+08125059;        Löwenstein;46;362;747;12;95;189;395;380;395;1287;78;132;614
+08125061;        Massenbachhausen;16;441;691;5;113;197;330;390;350;1373;77;138;552
+08125063;        Möckmühl;65;1028;2531;18;294;723;350;350;350;2537;243;506;2025
+08125065;        Neckarsulm, Stadt;37;4349;102380;12;1553;34127;300;280;300;10466;3378;23889;78492
+08125066;        Neckarwestheim;22;396;5365;8;165;1578;280;240;340;1681;880;1105;4261
+08125068;        Neudenau;49;557;946;12;136;263;400;410;360;2005;73;184;762
+08125069;        Neuenstadt am Kocher;79;1419;3731;22;394;1051;360;360;355;4016;235;736;2995
+08125074;        Nordheim, Württ;55;900;2429;14;243;675;390;370;360;3196;140;472;1957
+08125078;        Oedheim;43;627;662;13;179;192;330;350;345;2855;64;134;528
+08125079;        Offenau;12;428;1383;3;110;374;390;390;370;1148;100;262;1121
+08125081;        Pfaffenhofen;19;293;458;5;75;131;380;390;350;791;52;92;366
+08125084;        Roigheim;18;164;291;5;41;81;350;400;360;454;31;57;234
+08125086;        Schwaigern;163;1637;4502;36;381;1098;450;430;410;4197;357;769;3733
+08125087;        Siegelsbach;20;149;194;5;37;55;400;400;350;637;53;39;155
+08125094;        Talheim, Neckar;29;630;1483;9;210;424;340;300;350;2449;153;291;1192
+08125096;        Untereisesheim;9;451;1086;2;129;306;370;350;355;1835;62;214;872
+08125098;        Untergruppenbach;33;1007;863;9;288;247;350;350;350;3665;122;173;690
+08125102;        Weinsberg;75;1933;2449;17;439;636;440;440;385;4896;393;445;2003
+08125103;        Widdern;34;202;282;9;48;76;380;420;370;524;20;53;229
+08125107;        Wüstenrot;27;741;1160;7;200;305;370;370;380;2094;97;214;946
+08125108;        Zaberfeld;32;444;427;8;127;126;400;350;340;1500;76;88;339
+08125110;        Obersulm;65;1518;3921;17;447;1105;375;340;355;5272;282;773;3148
+08125111;        Hardthausen am Kocher;49;431;460;14;123;128;350;350;360;1635;81;89;370
+08125113;        Langenbrettach;46;394;1265;13;112;351;350;350;360;1449;61;246;1019
+_____
+zu 'gesamte Tabelle'
+Baden-Württemberg: Berichtsjahr 2008-2010 Gebietsstand
+"01.01.2009; ab Berichtsjahr 2011 Gebietsstand 01.01.2011"
+Rheinland-Pfalz: ab 2011 Gebietsstand des Folgejahres.
+
+zu 'Istaufkommen Grundsteuer A':
+Berlin: Schätzung
+
+zu 'Hebesatz in %':
+Brandenburg: Brandenburg an der Havel, Cottbus, Potsdam und
+einige Gemeinden: Im Rahmen der Gemeindegebietsreform 2003
+führten Eingliederungen und Zusammenschlüsse innerhalb von
+Gemeinden und kreisfreien Städten zu unterschiedlichen
+Hebesätzen.
+
+zu 'Gemeindeanteil an der Einkommensteuer':
+Sachsen-Anhalt: einschl. Einmalzahlungen als
+Ausgleichsleistung für das Vorziehen der 3. Stufe der
+Steuerreform
+
+zu 'Gewerbesteuerumlage':
+Berlin: Es ist nur der Bundesanteil ausgewiesen.
+
+zu 'Gewerbesteuereinnahmen (Aufkommen abzüglich Umlage)':
+Berlin: Es ist das Gewerbesteueraufkommen abzüglich des
+Bundesanteils an der Gewerbesteuerumlage ausgewiesen.
+_____
+(C)opyright Statistische Ämter des Bundes und der Länder, 2013
+Vervielfältigung und Verbreitung, auch auszugsweise,
+mit Quellenangabe gestattet.
+Stand: 09.07.2013 / 14:46:54
