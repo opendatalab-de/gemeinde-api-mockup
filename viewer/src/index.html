@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- build:css css/hdv.css -->
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/leaflet.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<!-- endbuild -->
+<title>Heilbronn API</title>
+<meta name="description" content="Beispielhafte Visualisierung öffentlicher Daten von Heilbronn" />
+</head>
+<body>
+	<div class="container">
+		<h1 class="hidden-phone">Beispielhafte API und Visualisierung für öffentliche Daten</h1>
+		
+		<!--[if lte IE 8]>
+			<div class="alert alert-error">
+				<i class="icon-info-sign"></i>
+				Zur Anzeige der Visualisierung benötigen Sie mindestens den Internet Explorer 9. Bitte aktualisieren Sie Ihren Browser oder verwenden Sie einen alternativen Browser wie Firefox oder Chrome.
+			</div>
+		<![endif]-->
+		<noscript>
+			<div class="alert alert-error">
+				<i class="icon-info-sign"></i>
+				Zur Anzeige der Visualisierung ist JavaScript erforderlich.
+			</div>
+		</noscript>
+
+		<div id="map-container">
+			<div id="map"></div>
+	
+			<div id="nav" class="hide">
+				<form class="nav-container settings form-inline" method="GET" action="index.html">
+					<div class="visible-phone pull-right">
+						<button type="button" class="btn close-nav">
+							<i class="icon-remove"></i>
+						</button>
+					</div>
+					
+					<h2 class="visible-phone">Optionen</h2>
+
+					<label class="title">Produktgruppe</label>
+					<button type="button" class="close close-nav hidden-phone pull-right" data-dismiss="modal">&times;</button>
+					<select name="product">
+						<option value="none" selected="selected">Bitte wählen ...</option>
+					</select>
+					
+					<label class="title">Konto</label>
+					<select name="account">
+						<option value="none" selected="selected">Bitte wählen ...</option>
+					</select>
+					
+					<label class="title">im Verhältnis zur?</label>
+					<p>
+						<label class="radio">
+							<input type="radio" name="relation" value="population" data-label="pro Einwohnerzahl"> Einwohnerzahl
+						</label>
+						<label class="radio">
+							<input type="radio" name="relation" value="size" data-label="pro Fläche"> Fläche
+						</label>
+						<label class="radio">
+							<input type="radio" name="relation" value="none" data-label=""> absolut
+						</label>
+					</p>
+	
+					<label class="title">Gebietsgröße</label>
+					<p>
+						<label class="radio"><input type="radio" name="areaType" value="gemeinden"> Gemeinden</label>
+						<label class="radio"><input type="radio" name="areaType" value="landkreise"> Landkreise</label>
+					</p>
+	
+					<label class="title">Abrechnungsjahr</label> <select name="year">
+						<option value="2009" selected="selected">2009</option>
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+					</select>
+				</form>
+			</div>
+		</div>
+
+		<div id="info" class="modal hide">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>Finanzdatenvergleich NRW</h3>
+			</div>
+			<div class="modal-body">
+				<p>Beim Finanzdatenvergleich NRW handelt es sich um ein Projekt der Piratenpartei NRW ...</p>
+			</div>
+		</div>
+
+		<div id="imprint" class="modal hide">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>Impressum</h3>
+			</div>
+			<div class="modal-body">
+				<address>
+					<strong>Piratenfraktion im Landtag NRW</strong><br />
+					Fraktionsvorstand<br />
+					Platz des Landtags 1<br />
+					40221 Düsseldorf<br /><br />
+					E-Mail: 20Piraten@piratenfraktion-nrw.de<br />
+					Tel.: 0211 884-4608<br />
+					Fax: 0211 884-3705
+				</address>
+			</div>
+		</div>
+
+		<div id="datasources" class="modal hide">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>Datenquellen</h3>
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li>
+						Map powered by Leaflet - Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,
+						<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>
+					</li>
+					<li>
+						Gemeindeflächen Geodaten:
+						<a href="http://www.mik.nrw.de/themen-aufgaben/buergerbeteiligung-wahlen/wahlen/auf-allen-ebenen/landtagswahl/wahl-2012/wahlkreiskarten.html">Ministerium für Inneres und Kommunales des Landes Nordrhein-Westfalen</a>
+					</li>
+					<li>
+						Landkreisflächen Geodaten:
+						<a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=1&gdz_unt_zeile=17&gdz_user_id=0">Bundesamt für Kartographie und Geodäsie</a>
+					</li>
+					<li>
+						Einwohnerzahlen:
+						<a href="https://www.destatis.de/DE/ZahlenFakten/LaenderRegionen/Regionales/Gemeindeverzeichnis/Administrativ/AdministrativeUebersicht.html">Gemeindeverzeichnis-Informationssystem (GV-ISys)</a> des Statistischen Bundesamts
+					</li>
+					<li>
+						Fläche in km² je Gemeinde:
+						<a href="https://www.destatis.de/DE/ZahlenFakten/LaenderRegionen/Regionales/Gemeindeverzeichnis/Gemeindeverzeichnis.html">Gemeindeverzeichnis-Informationssystem (GV-ISys)</a> des Statistischen Bundesamts
+					</li>
+					<li>
+						Finanzrechnungsstatisik:
+						<a href="https://www.landesdatenbank.nrw.de/">Landesdatenbank NRW</a> (Tabellencodes: 71147-05i und 71147-15i)
+					</li>
+					<li>
+						Bilanz:
+						IT.NRW - bezogen von <a href="http://www.piratenfraktion-nrw.de/2012/12/transparenzerfolg-finanzdaten-der-kommunen-veroffentlicht/">piratenfraktion-nrw.de</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="socialshareprivacy"></div>
+	</div>
+	<div class="ajax-loader"></div>
+
+	<script id="popup-template" type="text/x-handlebars-template">
+		<p class="popup-label"><strong>{{areaLabel}}</strong></p>
+		
+		<p>
+			{{valueLabel}}:
+			<strong class="popup-value">
+				{{#if isNumericValue}}
+					{{{currency value}}}
+				{{else}}
+					?
+				{{/if}}
+			</strong>
+		</p>
+
+		<p class="raw-values-title">Rohdaten:</p>
+		<table class="table-raw-values">
+			<tbody>
+				<tr title="Einwohnerzahl">
+					<th><i class="icon-user"></i></th>
+					<td>{{number area.population}}</td>
+				</tr>
+				<tr title="Fläche">
+					<th><i class="icon-globe"></i></th>
+					<td>{{number area.size}} km²</td>
+				</tr>
+				<tr title="Rohbetrag des ausgewählten Kontos in der Quelldatei">
+					<th><i class="icon-briefcase"></i></th>
+					<td>{{{financeValue accountValue}}}</td>
+				</tr>
+				<tr title="Amtlicher Gemeindeschlüssel / Produktgruppe / Kontonummer">
+					<th><i class="icon-tag"></i></th>
+					<td>{{area.key}} - PG: {{settings.product}} K: {{settings.account}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>
+			<a href="bilanz.html?{{keyForBalance}}" target="_blank" class="btn btn-balance btn-popup" title="Bilanz">
+				<i class="icon-share"></i>
+				Bilanz öffnen
+			</a>
+		</p>
+	</script>
+
+	<!-- build:js js/app.js -->
+	<script src="lib/underscore.js"></script>
+	<script src="lib/leaflet.js"></script>
+	<script src="lib/jquery.js"></script>
+	<script src="lib/bootstrap.js"></script>
+	<script src="lib/handlebars.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/defaults.js"></script>
+	<script src="js/settings.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/handlebars-helper.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/layerStyle.js"></script>
+	<script src="js/balance.js"></script>
+	<script src="js/products.js"></script>
+	<script src="js/areas.js"></script>
+	<!-- endbuild -->
+
+	<script src="socialshareprivacy/jquery.socialshareprivacy.min.js"></script>
+	<script src="socialshareprivacy/jquery.socialshareprivacy.min.de.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			hdv.init();
+			$('#socialshareprivacy').socialSharePrivacy();
+		});
+	</script>
+</body>
+</html>
