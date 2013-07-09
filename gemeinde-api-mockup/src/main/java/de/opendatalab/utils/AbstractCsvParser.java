@@ -2,30 +2,40 @@ package de.opendatalab.utils;
 
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-public abstract class AbstractCsvParser<T> {
+public abstract class AbstractCsvParser {
 
 	protected Collection<String[]> lines;
+	protected ParserConfiguration configuration;
 
-	protected AbstractCsvParser(Collection<String[]> lines) {
+	protected AbstractCsvParser(Collection<String[]> lines, ParserConfiguration configuration) {
 		this.lines = lines;
+		this.configuration = configuration;
 	}
 
-	public List<T> parse() {
-		return parseWithIterator(lines.iterator());
+	public Map<String, Map<String, Object>> parse() {
+		Iterator<String[]> iterator = lines.iterator();
+		skipLines(iterator);
+		return parseWithIterator(iterator);
 	}
 
-	protected List<T> parseWithIterator(Iterator<String[]> iterator) {
-		List<T> result = new LinkedList<>();
+	protected void skipLines(Iterator<String[]> it) {
+		for (int x = 0; x < configuration.getSkipLines(); x++) {
+			it.next();
+		}
+	}
+
+	protected Map<String, Map<String, Object>> parseWithIterator(Iterator<String[]> iterator) {
+		Map<String, Map<String, Object>> result = new LinkedHashMap<>();
 		while (iterator.hasNext()) {
-			List<T> item = parseItem(iterator.next());
-			if (item != null)
-				result.addAll(item);
+			KeyValue keyValue = parseItem(iterator.next());
+			if (keyValue != null)
+				result.put(keyValue.getKey(), keyValue.getValue());
 		}
 		return result;
 	}
 
-	protected abstract List<T> parseItem(String[] strings);
+	protected abstract KeyValue parseItem(String[] strings);
 }

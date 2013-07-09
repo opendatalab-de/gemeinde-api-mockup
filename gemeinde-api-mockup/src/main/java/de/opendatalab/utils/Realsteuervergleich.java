@@ -12,9 +12,13 @@ public class Realsteuervergleich {
 	public static void main(String[] args) {
 		try {
 			Map<String, Object> json = Utils.readGenericJson(new FileInputStream(args[0]), "utf8");
-			RealsteuerParser parser = new RealsteuerParser(Utils.readCsvFile(args[1]));
-			List<Realsteuer> list = parser.parse();
-			Map<String, Realsteuer> rsMap = toMap(list);
+			ParserConfiguration configuration = new ParserConfiguration(7, new String[] { "grundsteuerAIstaufkommen",
+					"grundsteuerBIstaufkommen", "gewerbesteuerIstaufkommen", "grundsteuerAGrundbetrag",
+					"grundsteuerBGrundbetrag", "gewerbesteuerGrundbetrag", "grundsteuerAHebesatz",
+					"grundsteuerBHebesatz", "gewerbesteuerHebesatz", "gemeindeanteilAnDerEinkommensteuer",
+					"gemeindeanteilAnDerUmsatzsteuer", "gewerbesteuerumlage", "gewerbesteuereinnahmen" });
+			ConfigurableParser parser = new ConfigurableParser(Utils.readCsvFile(args[1]), configuration);
+			Map<String, Map<String, Object>> rsMap = parser.parse();
 			Map<String, Object> result = filterGeoJsonByKey(json, "realsteuer", rsMap);
 			System.out.println("Objects: " + ((List<Object>)result.get("features")).size());
 			Utils.writeData(result, args[2]);
@@ -24,16 +28,8 @@ public class Realsteuervergleich {
 		}
 	}
 
-	private static Map<String, Realsteuer> toMap(List<Realsteuer> list) {
-		Map<String, Realsteuer> result = new HashMap<String, Realsteuer>();
-		for (Realsteuer realsteuer : list) {
-			System.out.println(realsteuer.getKs());
-			result.put(realsteuer.getKs(), realsteuer);
-		}
-		return result;
-	}
-
-	public static Map<String, Object> filterGeoJsonByKey(Map<String, Object> geoJson, String label, Map<String, ?> rsMap) {
+	public static Map<String, Object> filterGeoJsonByKey(Map<String, Object> geoJson, String label,
+			Map<String, Map<String, Object>> rsMap) {
 		Map<String, Object> result = Utils.asMap("type", geoJson.get("type"));
 		List<Map<String, Object>> filteredFeatures = new ArrayList<>();
 		result.put("features", filteredFeatures);
@@ -43,10 +39,10 @@ public class Realsteuervergleich {
 			Map<String, Object> feature = it.next();
 			Map<String, Object> properties = (Map<String, Object>)feature.get("properties");
 			String ags = (String)properties.get("AGS");
-			Object data = rsMap.get(ags);
+			Map<String, Object> data = rsMap.get(ags);
 			if (data != null) {
 				Map<String, Object> newProperties = new HashMap<>(properties);
-				newProperties.put("realsteuer", data);
+				newProperties.putAll(data);
 				Map<String, Object> newFeature = Utils.asMap("type", feature.get("type"), "geometry",
 						feature.get("geometry"), "properties", newProperties);
 				filteredFeatures.add(newFeature);

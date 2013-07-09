@@ -1,8 +1,7 @@
 package de.opendatalab.utils;
 
-public class Realsteuer {
+public class Realsteuer extends AgsData {
 
-	private String ks;
 	private long grundsteuerAIstaufkommen;
 	private long grundsteuerBIstaufkommen;
 	private long gewerbesteuerIstaufkommen;
@@ -17,12 +16,8 @@ public class Realsteuer {
 	private long gewerbesteuerumlage;
 	private long gewerbesteuereinnahmen;
 
-	public String getKs() {
-		return ks;
-	}
-
-	public void setKs(String ks) {
-		this.ks = ks;
+	public Realsteuer(String ks) {
+		super(ks);
 	}
 
 	public long getGrundsteuerAIstaufkommen() {

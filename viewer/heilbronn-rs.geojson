@@ -1,28 +1,25 @@
 {
   "features" : [ {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 723,
+      "gemeindeanteilAnDerEinkommensteuer" : 2537,
+      "grundsteuerAIstaufkommen" : 65,
+      "gewerbesteuerIstaufkommen" : 2531,
       "Name" : "Möckmühl",
-      "RS" : "081255007063",
+      "gewerbesteuereinnahmen" : 2025,
       "Status" : "Stadt",
+      "RS" : "081255007063",
+      "grundsteuerAGrundbetrag" : 18,
+      "gemeindeanteilAnDerUmsatzsteuer" : 243,
       "AGS" : "08125063",
-      "realsteuer" : {
-        "ks" : "08125063",
-        "grundsteuerAIstaufkommen" : 65,
-        "grundsteuerBIstaufkommen" : 1028,
-        "gewerbesteuerIstaufkommen" : 2531,
-        "grundsteuerAGrundbetrag" : 18,
-        "grundsteuerBGrundbetrag" : 294,
-        "gewerbesteuerGrundbetrag" : 723,
-        "grundsteuerAHebesatz" : 350,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 2537,
-        "gemeindeanteilAnDerUmsatzsteuer" : 243,
-        "gewerbesteuerumlage" : 506,
-        "gewerbesteuereinnahmen" : 2025
-      },
       "Einwohner" : 8105.0,
-      "qkm" : 4.97792022266853E7
+      "grundsteuerBIstaufkommen" : 1028,
+      "gewerbesteuerumlage" : 506,
+      "grundsteuerAHebesatz" : 350,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 4.97792022266853E7,
+      "grundsteuerBGrundbetrag" : 294
     },
     "type" : "Feature",
     "geometry" : {
@@ -31,28 +28,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 370,
+      "gewerbesteuerGrundbetrag" : 76,
+      "gemeindeanteilAnDerEinkommensteuer" : 524,
+      "grundsteuerAIstaufkommen" : 34,
+      "gewerbesteuerIstaufkommen" : 282,
       "Name" : "Widdern",
-      "RS" : "081255007103",
+      "gewerbesteuereinnahmen" : 229,
       "Status" : "Stadt",
+      "RS" : "081255007103",
+      "grundsteuerAGrundbetrag" : 9,
+      "gemeindeanteilAnDerUmsatzsteuer" : 20,
       "AGS" : "08125103",
-      "realsteuer" : {
-        "ks" : "08125103",
-        "grundsteuerAIstaufkommen" : 34,
-        "grundsteuerBIstaufkommen" : 202,
-        "gewerbesteuerIstaufkommen" : 282,
-        "grundsteuerAGrundbetrag" : 9,
-        "grundsteuerBGrundbetrag" : 48,
-        "gewerbesteuerGrundbetrag" : 76,
-        "grundsteuerAHebesatz" : 380,
-        "grundsteuerBHebesatz" : 420,
-        "gewerbesteuerHebesatz" : 370,
-        "gemeindeanteilAnDerEinkommensteuer" : 524,
-        "gemeindeanteilAnDerUmsatzsteuer" : 20,
-        "gewerbesteuerumlage" : 53,
-        "gewerbesteuereinnahmen" : 229
-      },
       "Einwohner" : 1948.0,
-      "qkm" : 2.53495706526545E7
+      "grundsteuerBIstaufkommen" : 202,
+      "gewerbesteuerumlage" : 53,
+      "grundsteuerAHebesatz" : 380,
+      "grundsteuerBHebesatz" : 420,
+      "qkm" : 2.53495706526545E7,
+      "grundsteuerBGrundbetrag" : 48
     },
     "type" : "Feature",
     "geometry" : {
@@ -61,28 +55,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 305,
+      "gewerbesteuerGrundbetrag" : 4824,
+      "gemeindeanteilAnDerEinkommensteuer" : 2228,
+      "grundsteuerAIstaufkommen" : 36,
+      "gewerbesteuerIstaufkommen" : 14712,
       "Name" : "Güglingen",
-      "RS" : "081255010038",
+      "gewerbesteuereinnahmen" : 11336,
       "Status" : "Stadt",
+      "RS" : "081255010038",
+      "grundsteuerAGrundbetrag" : 11,
+      "gemeindeanteilAnDerUmsatzsteuer" : 1017,
       "AGS" : "08125038",
-      "realsteuer" : {
-        "ks" : "08125038",
-        "grundsteuerAIstaufkommen" : 36,
-        "grundsteuerBIstaufkommen" : 853,
-        "gewerbesteuerIstaufkommen" : 14712,
-        "grundsteuerAGrundbetrag" : 11,
-        "grundsteuerBGrundbetrag" : 275,
-        "gewerbesteuerGrundbetrag" : 4824,
-        "grundsteuerAHebesatz" : 340,
-        "grundsteuerBHebesatz" : 310,
-        "gewerbesteuerHebesatz" : 305,
-        "gemeindeanteilAnDerEinkommensteuer" : 2228,
-        "gemeindeanteilAnDerUmsatzsteuer" : 1017,
-        "gewerbesteuerumlage" : 3377,
-        "gewerbesteuereinnahmen" : 11336
-      },
       "Einwohner" : 5999.0,
-      "qkm" : 1.640972E7
+      "grundsteuerBIstaufkommen" : 853,
+      "gewerbesteuerumlage" : 3377,
+      "grundsteuerAHebesatz" : 340,
+      "grundsteuerBHebesatz" : 310,
+      "qkm" : 1.640972E7,
+      "grundsteuerBGrundbetrag" : 275
     },
     "type" : "Feature",
     "geometry" : {
@@ -91,28 +82,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 410,
+      "gewerbesteuerGrundbetrag" : 1098,
+      "gemeindeanteilAnDerEinkommensteuer" : 4197,
+      "grundsteuerAIstaufkommen" : 163,
+      "gewerbesteuerIstaufkommen" : 4502,
       "Name" : "Schwaigern",
-      "RS" : "081255013086",
+      "gewerbesteuereinnahmen" : 3733,
       "Status" : "Stadt",
+      "RS" : "081255013086",
+      "grundsteuerAGrundbetrag" : 36,
+      "gemeindeanteilAnDerUmsatzsteuer" : 357,
       "AGS" : "08125086",
-      "realsteuer" : {
-        "ks" : "08125086",
-        "grundsteuerAIstaufkommen" : 163,
-        "grundsteuerBIstaufkommen" : 1637,
-        "gewerbesteuerIstaufkommen" : 4502,
-        "grundsteuerAGrundbetrag" : 36,
-        "grundsteuerBGrundbetrag" : 381,
-        "gewerbesteuerGrundbetrag" : 1098,
-        "grundsteuerAHebesatz" : 450,
-        "grundsteuerBHebesatz" : 430,
-        "gewerbesteuerHebesatz" : 410,
-        "gemeindeanteilAnDerEinkommensteuer" : 4197,
-        "gemeindeanteilAnDerUmsatzsteuer" : 357,
-        "gewerbesteuerumlage" : 769,
-        "gewerbesteuereinnahmen" : 3733
-      },
       "Einwohner" : 11016.0,
-      "qkm" : 4.91036729976E7
+      "grundsteuerBIstaufkommen" : 1637,
+      "gewerbesteuerumlage" : 769,
+      "grundsteuerAHebesatz" : 450,
+      "grundsteuerBHebesatz" : 430,
+      "qkm" : 4.91036729976E7,
+      "grundsteuerBGrundbetrag" : 381
     },
     "type" : "Feature",
     "geometry" : {
@@ -121,28 +109,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 378,
+      "gemeindeanteilAnDerEinkommensteuer" : 1127,
+      "grundsteuerAIstaufkommen" : 36,
+      "gewerbesteuerIstaufkommen" : 1324,
       "Name" : "Cleebronn",
-      "RS" : "081255003017",
+      "gewerbesteuereinnahmen" : 1059,
       "Status" : "Gemeinde",
+      "RS" : "081255003017",
+      "grundsteuerAGrundbetrag" : 10,
+      "gemeindeanteilAnDerUmsatzsteuer" : 82,
       "AGS" : "08125017",
-      "realsteuer" : {
-        "ks" : "08125017",
-        "grundsteuerAIstaufkommen" : 36,
-        "grundsteuerBIstaufkommen" : 359,
-        "gewerbesteuerIstaufkommen" : 1324,
-        "grundsteuerAGrundbetrag" : 10,
-        "grundsteuerBGrundbetrag" : 112,
-        "gewerbesteuerGrundbetrag" : 378,
-        "grundsteuerAHebesatz" : 370,
-        "grundsteuerBHebesatz" : 320,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 1127,
-        "gemeindeanteilAnDerUmsatzsteuer" : 82,
-        "gewerbesteuerumlage" : 265,
-        "gewerbesteuereinnahmen" : 1059
-      },
       "Einwohner" : 2720.0,
-      "qkm" : 1.71595105E7
+      "grundsteuerBIstaufkommen" : 359,
+      "gewerbesteuerumlage" : 265,
+      "grundsteuerAHebesatz" : 370,
+      "grundsteuerBHebesatz" : 320,
+      "qkm" : 1.71595105E7,
+      "grundsteuerBGrundbetrag" : 112
     },
     "type" : "Feature",
     "geometry" : {
@@ -151,28 +136,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 131,
+      "gemeindeanteilAnDerEinkommensteuer" : 791,
+      "grundsteuerAIstaufkommen" : 19,
+      "gewerbesteuerIstaufkommen" : 458,
       "Name" : "Pfaffenhofen",
-      "RS" : "081255010081",
+      "gewerbesteuereinnahmen" : 366,
       "Status" : "Gemeinde",
+      "RS" : "081255010081",
+      "grundsteuerAGrundbetrag" : 5,
+      "gemeindeanteilAnDerUmsatzsteuer" : 52,
       "AGS" : "08125081",
-      "realsteuer" : {
-        "ks" : "08125081",
-        "grundsteuerAIstaufkommen" : 19,
-        "grundsteuerBIstaufkommen" : 293,
-        "gewerbesteuerIstaufkommen" : 458,
-        "grundsteuerAGrundbetrag" : 5,
-        "grundsteuerBGrundbetrag" : 75,
-        "gewerbesteuerGrundbetrag" : 131,
-        "grundsteuerAHebesatz" : 380,
-        "grundsteuerBHebesatz" : 390,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 791,
-        "gemeindeanteilAnDerUmsatzsteuer" : 52,
-        "gewerbesteuerumlage" : 92,
-        "gewerbesteuereinnahmen" : 366
-      },
       "Einwohner" : 2321.0,
-      "qkm" : 1.20735765E7
+      "grundsteuerBIstaufkommen" : 293,
+      "gewerbesteuerumlage" : 92,
+      "grundsteuerAHebesatz" : 380,
+      "grundsteuerBHebesatz" : 390,
+      "qkm" : 1.20735765E7,
+      "grundsteuerBGrundbetrag" : 75
     },
     "type" : "Feature",
     "geometry" : {
@@ -181,28 +163,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 345,
+      "gewerbesteuerGrundbetrag" : 192,
+      "gemeindeanteilAnDerEinkommensteuer" : 2855,
+      "grundsteuerAIstaufkommen" : 43,
+      "gewerbesteuerIstaufkommen" : 662,
       "Name" : "Oedheim",
-      "RS" : "081255001078",
+      "gewerbesteuereinnahmen" : 528,
       "Status" : "Gemeinde",
+      "RS" : "081255001078",
+      "grundsteuerAGrundbetrag" : 13,
+      "gemeindeanteilAnDerUmsatzsteuer" : 64,
       "AGS" : "08125078",
-      "realsteuer" : {
-        "ks" : "08125078",
-        "grundsteuerAIstaufkommen" : 43,
-        "grundsteuerBIstaufkommen" : 627,
-        "gewerbesteuerIstaufkommen" : 662,
-        "grundsteuerAGrundbetrag" : 13,
-        "grundsteuerBGrundbetrag" : 179,
-        "gewerbesteuerGrundbetrag" : 192,
-        "grundsteuerAHebesatz" : 330,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 345,
-        "gemeindeanteilAnDerEinkommensteuer" : 2855,
-        "gemeindeanteilAnDerUmsatzsteuer" : 64,
-        "gewerbesteuerumlage" : 134,
-        "gewerbesteuereinnahmen" : 528
-      },
       "Einwohner" : 5979.0,
-      "qkm" : 2.13570207399388E7
+      "grundsteuerBIstaufkommen" : 627,
+      "gewerbesteuerumlage" : 134,
+      "grundsteuerAHebesatz" : 330,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 2.13570207399388E7,
+      "grundsteuerBGrundbetrag" : 179
     },
     "type" : "Feature",
     "geometry" : {
@@ -211,28 +190,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 355,
+      "gewerbesteuerGrundbetrag" : 1399,
+      "gemeindeanteilAnDerEinkommensteuer" : 7230,
+      "grundsteuerAIstaufkommen" : 163,
+      "gewerbesteuerIstaufkommen" : 4966,
       "Name" : "Eppingen",
-      "RS" : "081255004026",
+      "gewerbesteuereinnahmen" : 3987,
       "Status" : "Stadt",
+      "RS" : "081255004026",
+      "grundsteuerAGrundbetrag" : 49,
+      "gemeindeanteilAnDerUmsatzsteuer" : 455,
       "AGS" : "08125026",
-      "realsteuer" : {
-        "ks" : "08125026",
-        "grundsteuerAIstaufkommen" : 163,
-        "grundsteuerBIstaufkommen" : 2362,
-        "gewerbesteuerIstaufkommen" : 4966,
-        "grundsteuerAGrundbetrag" : 49,
-        "grundsteuerBGrundbetrag" : 705,
-        "gewerbesteuerGrundbetrag" : 1399,
-        "grundsteuerAHebesatz" : 335,
-        "grundsteuerBHebesatz" : 335,
-        "gewerbesteuerHebesatz" : 355,
-        "gemeindeanteilAnDerEinkommensteuer" : 7230,
-        "gemeindeanteilAnDerUmsatzsteuer" : 455,
-        "gewerbesteuerumlage" : 979,
-        "gewerbesteuereinnahmen" : 3987
-      },
       "Einwohner" : 21386.0,
-      "qkm" : 8.865664628677E7
+      "grundsteuerBIstaufkommen" : 2362,
+      "gewerbesteuerumlage" : 979,
+      "grundsteuerAHebesatz" : 335,
+      "grundsteuerBHebesatz" : 335,
+      "qkm" : 8.865664628677E7,
+      "grundsteuerBGrundbetrag" : 705
     },
     "type" : "Feature",
     "geometry" : {
@@ -241,28 +217,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 360,
+      "gewerbesteuerGrundbetrag" : 324,
+      "gemeindeanteilAnDerEinkommensteuer" : 1772,
+      "grundsteuerAIstaufkommen" : 44,
+      "gewerbesteuerIstaufkommen" : 1168,
       "Name" : "Kirchardt",
-      "RS" : "081255002049",
+      "gewerbesteuereinnahmen" : 941,
       "Status" : "Gemeinde",
+      "RS" : "081255002049",
+      "grundsteuerAGrundbetrag" : 12,
+      "gemeindeanteilAnDerUmsatzsteuer" : 177,
       "AGS" : "08125049",
-      "realsteuer" : {
-        "ks" : "08125049",
-        "grundsteuerAIstaufkommen" : 44,
-        "grundsteuerBIstaufkommen" : 639,
-        "gewerbesteuerIstaufkommen" : 1168,
-        "grundsteuerAGrundbetrag" : 12,
-        "grundsteuerBGrundbetrag" : 178,
-        "gewerbesteuerGrundbetrag" : 324,
-        "grundsteuerAHebesatz" : 360,
-        "grundsteuerBHebesatz" : 360,
-        "gewerbesteuerHebesatz" : 360,
-        "gemeindeanteilAnDerEinkommensteuer" : 1772,
-        "gemeindeanteilAnDerUmsatzsteuer" : 177,
-        "gewerbesteuerumlage" : 227,
-        "gewerbesteuereinnahmen" : 941
-      },
       "Einwohner" : 5432.0,
-      "qkm" : 2.13101444000336E7
+      "grundsteuerBIstaufkommen" : 639,
+      "gewerbesteuerumlage" : 227,
+      "grundsteuerAHebesatz" : 360,
+      "grundsteuerBHebesatz" : 360,
+      "qkm" : 2.13101444000336E7,
+      "grundsteuerBGrundbetrag" : 178
     },
     "type" : "Feature",
     "geometry" : {
@@ -271,28 +244,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 300,
+      "gewerbesteuerGrundbetrag" : 34127,
+      "gemeindeanteilAnDerEinkommensteuer" : 10466,
+      "grundsteuerAIstaufkommen" : 37,
+      "gewerbesteuerIstaufkommen" : 102380,
       "Name" : "Neckarsulm",
-      "RS" : "081255008065",
+      "gewerbesteuereinnahmen" : 78492,
       "Status" : "Stadt",
+      "RS" : "081255008065",
+      "grundsteuerAGrundbetrag" : 12,
+      "gemeindeanteilAnDerUmsatzsteuer" : 3378,
       "AGS" : "08125065",
-      "realsteuer" : {
-        "ks" : "08125065",
-        "grundsteuerAIstaufkommen" : 37,
-        "grundsteuerBIstaufkommen" : 4349,
-        "gewerbesteuerIstaufkommen" : 102380,
-        "grundsteuerAGrundbetrag" : 12,
-        "grundsteuerBGrundbetrag" : 1553,
-        "gewerbesteuerGrundbetrag" : 34127,
-        "grundsteuerAHebesatz" : 300,
-        "grundsteuerBHebesatz" : 280,
-        "gewerbesteuerHebesatz" : 300,
-        "gemeindeanteilAnDerEinkommensteuer" : 10466,
-        "gemeindeanteilAnDerUmsatzsteuer" : 3378,
-        "gewerbesteuerumlage" : 23889,
-        "gewerbesteuereinnahmen" : 78492
-      },
       "Einwohner" : 26598.0,
-      "qkm" : 2.43883604706108E7
+      "grundsteuerBIstaufkommen" : 4349,
+      "gewerbesteuerumlage" : 23889,
+      "grundsteuerAHebesatz" : 300,
+      "grundsteuerBHebesatz" : 280,
+      "qkm" : 2.43883604706108E7,
+      "grundsteuerBGrundbetrag" : 1553
     },
     "type" : "Feature",
     "geometry" : {
@@ -301,28 +271,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 370,
+      "gewerbesteuerGrundbetrag" : 374,
+      "gemeindeanteilAnDerEinkommensteuer" : 1148,
+      "grundsteuerAIstaufkommen" : 12,
+      "gewerbesteuerIstaufkommen" : 1383,
       "Name" : "Offenau",
-      "RS" : "081255001079",
+      "gewerbesteuereinnahmen" : 1121,
       "Status" : "Gemeinde",
+      "RS" : "081255001079",
+      "grundsteuerAGrundbetrag" : 3,
+      "gemeindeanteilAnDerUmsatzsteuer" : 100,
       "AGS" : "08125079",
-      "realsteuer" : {
-        "ks" : "08125079",
-        "grundsteuerAIstaufkommen" : 12,
-        "grundsteuerBIstaufkommen" : 428,
-        "gewerbesteuerIstaufkommen" : 1383,
-        "grundsteuerAGrundbetrag" : 3,
-        "grundsteuerBGrundbetrag" : 110,
-        "gewerbesteuerGrundbetrag" : 374,
-        "grundsteuerAHebesatz" : 390,
-        "grundsteuerBHebesatz" : 390,
-        "gewerbesteuerHebesatz" : 370,
-        "gemeindeanteilAnDerEinkommensteuer" : 1148,
-        "gemeindeanteilAnDerUmsatzsteuer" : 100,
-        "gewerbesteuerumlage" : 262,
-        "gewerbesteuereinnahmen" : 1121
-      },
       "Einwohner" : 2650.0,
-      "qkm" : 5770458.41410762
+      "grundsteuerBIstaufkommen" : 428,
+      "gewerbesteuerumlage" : 262,
+      "grundsteuerAHebesatz" : 390,
+      "grundsteuerBHebesatz" : 390,
+      "qkm" : 5770458.41410762,
+      "grundsteuerBGrundbetrag" : 110
     },
     "type" : "Feature",
     "geometry" : {
@@ -331,28 +298,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 2673,
+      "gemeindeanteilAnDerEinkommensteuer" : 6650,
+      "grundsteuerAIstaufkommen" : 52,
+      "gewerbesteuerIstaufkommen" : 9354,
       "Name" : "Bad Friedrichshall",
-      "RS" : "081255001005",
+      "gewerbesteuereinnahmen" : 7484,
       "Status" : "Stadt",
+      "RS" : "081255001005",
+      "grundsteuerAGrundbetrag" : 15,
+      "gemeindeanteilAnDerUmsatzsteuer" : 513,
       "AGS" : "08125005",
-      "realsteuer" : {
-        "ks" : "08125005",
-        "grundsteuerAIstaufkommen" : 52,
-        "grundsteuerBIstaufkommen" : 2659,
-        "gewerbesteuerIstaufkommen" : 9354,
-        "grundsteuerAGrundbetrag" : 15,
-        "grundsteuerBGrundbetrag" : 682,
-        "gewerbesteuerGrundbetrag" : 2673,
-        "grundsteuerAHebesatz" : 350,
-        "grundsteuerBHebesatz" : 390,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 6650,
-        "gemeindeanteilAnDerUmsatzsteuer" : 513,
-        "gewerbesteuerumlage" : 1871,
-        "gewerbesteuereinnahmen" : 7484
-      },
       "Einwohner" : 18773.0,
-      "qkm" : 2.46225030547241E7
+      "grundsteuerBIstaufkommen" : 2659,
+      "gewerbesteuerumlage" : 1871,
+      "grundsteuerAHebesatz" : 350,
+      "grundsteuerBHebesatz" : 390,
+      "qkm" : 2.46225030547241E7,
+      "grundsteuerBGrundbetrag" : 682
     },
     "type" : "Feature",
     "geometry" : {
@@ -361,28 +325,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 390,
+      "gewerbesteuerGrundbetrag" : 268,
+      "gemeindeanteilAnDerEinkommensteuer" : 2814,
+      "grundsteuerAIstaufkommen" : 59,
+      "gewerbesteuerIstaufkommen" : 1045,
       "Name" : "Gundelsheim",
-      "RS" : "081250039039",
+      "gewerbesteuereinnahmen" : 857,
       "Status" : "Stadt",
+      "RS" : "081250039039",
+      "grundsteuerAGrundbetrag" : 15,
+      "gemeindeanteilAnDerUmsatzsteuer" : 144,
       "AGS" : "08125039",
-      "realsteuer" : {
-        "ks" : "08125039",
-        "grundsteuerAIstaufkommen" : 59,
-        "grundsteuerBIstaufkommen" : 905,
-        "gewerbesteuerIstaufkommen" : 1045,
-        "grundsteuerAGrundbetrag" : 15,
-        "grundsteuerBGrundbetrag" : 232,
-        "gewerbesteuerGrundbetrag" : 268,
-        "grundsteuerAHebesatz" : 390,
-        "grundsteuerBHebesatz" : 390,
-        "gewerbesteuerHebesatz" : 390,
-        "gemeindeanteilAnDerEinkommensteuer" : 2814,
-        "gemeindeanteilAnDerUmsatzsteuer" : 144,
-        "gewerbesteuerumlage" : 188,
-        "gewerbesteuereinnahmen" : 857
-      },
       "Einwohner" : 7182.0,
-      "qkm" : 3.85847315111837E7
+      "grundsteuerBIstaufkommen" : 905,
+      "gewerbesteuerumlage" : 188,
+      "grundsteuerAHebesatz" : 390,
+      "grundsteuerBHebesatz" : 390,
+      "qkm" : 3.85847315111837E7,
+      "grundsteuerBGrundbetrag" : 232
     },
     "type" : "Feature",
     "geometry" : {
@@ -391,28 +352,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 340,
+      "gewerbesteuerGrundbetrag" : 126,
+      "gemeindeanteilAnDerEinkommensteuer" : 1500,
+      "grundsteuerAIstaufkommen" : 32,
+      "gewerbesteuerIstaufkommen" : 427,
       "Name" : "Zaberfeld",
-      "RS" : "081255010108",
+      "gewerbesteuereinnahmen" : 339,
       "Status" : "Gemeinde",
+      "RS" : "081255010108",
+      "grundsteuerAGrundbetrag" : 8,
+      "gemeindeanteilAnDerUmsatzsteuer" : 76,
       "AGS" : "08125108",
-      "realsteuer" : {
-        "ks" : "08125108",
-        "grundsteuerAIstaufkommen" : 32,
-        "grundsteuerBIstaufkommen" : 444,
-        "gewerbesteuerIstaufkommen" : 427,
-        "grundsteuerAGrundbetrag" : 8,
-        "grundsteuerBGrundbetrag" : 127,
-        "gewerbesteuerGrundbetrag" : 126,
-        "grundsteuerAHebesatz" : 400,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 340,
-        "gemeindeanteilAnDerEinkommensteuer" : 1500,
-        "gemeindeanteilAnDerUmsatzsteuer" : 76,
-        "gewerbesteuerumlage" : 88,
-        "gewerbesteuereinnahmen" : 339
-      },
       "Einwohner" : 3894.0,
-      "qkm" : 2.22583929520508E7
+      "grundsteuerBIstaufkommen" : 444,
+      "gewerbesteuerumlage" : 88,
+      "grundsteuerAHebesatz" : 400,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 2.22583929520508E7,
+      "grundsteuerBGrundbetrag" : 127
     },
     "type" : "Feature",
     "geometry" : {
@@ -421,28 +379,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 370,
+      "gewerbesteuerGrundbetrag" : 196,
+      "gemeindeanteilAnDerEinkommensteuer" : 1874,
+      "grundsteuerAIstaufkommen" : 43,
+      "gewerbesteuerIstaufkommen" : 724,
       "Name" : "Gemmingen",
-      "RS" : "081255004034",
+      "gewerbesteuereinnahmen" : 587,
       "Status" : "Gemeinde",
+      "RS" : "081255004034",
+      "grundsteuerAGrundbetrag" : 11,
+      "gemeindeanteilAnDerUmsatzsteuer" : 128,
       "AGS" : "08125034",
-      "realsteuer" : {
-        "ks" : "08125034",
-        "grundsteuerAIstaufkommen" : 43,
-        "grundsteuerBIstaufkommen" : 503,
-        "gewerbesteuerIstaufkommen" : 724,
-        "grundsteuerAGrundbetrag" : 11,
-        "grundsteuerBGrundbetrag" : 144,
-        "gewerbesteuerGrundbetrag" : 196,
-        "grundsteuerAHebesatz" : 390,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 370,
-        "gemeindeanteilAnDerEinkommensteuer" : 1874,
-        "gemeindeanteilAnDerUmsatzsteuer" : 128,
-        "gewerbesteuerumlage" : 137,
-        "gewerbesteuereinnahmen" : 587
-      },
       "Einwohner" : 4861.0,
-      "qkm" : 1.91008725E7
+      "grundsteuerBIstaufkommen" : 503,
+      "gewerbesteuerumlage" : 137,
+      "grundsteuerAHebesatz" : 390,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 1.91008725E7,
+      "grundsteuerBGrundbetrag" : 144
     },
     "type" : "Feature",
     "geometry" : {
@@ -451,28 +406,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 395,
+      "gewerbesteuerGrundbetrag" : 50,
+      "gemeindeanteilAnDerEinkommensteuer" : 860,
+      "grundsteuerAIstaufkommen" : 28,
+      "gewerbesteuerIstaufkommen" : 199,
       "Name" : "Ittlingen",
-      "RS" : "081255004047",
+      "gewerbesteuereinnahmen" : 164,
       "Status" : "Gemeinde",
+      "RS" : "081255004047",
+      "grundsteuerAGrundbetrag" : 7,
+      "gemeindeanteilAnDerUmsatzsteuer" : 52,
       "AGS" : "08125047",
-      "realsteuer" : {
-        "ks" : "08125047",
-        "grundsteuerAIstaufkommen" : 28,
-        "grundsteuerBIstaufkommen" : 244,
-        "gewerbesteuerIstaufkommen" : 199,
-        "grundsteuerAGrundbetrag" : 7,
-        "grundsteuerBGrundbetrag" : 72,
-        "gewerbesteuerGrundbetrag" : 50,
-        "grundsteuerAHebesatz" : 390,
-        "grundsteuerBHebesatz" : 340,
-        "gewerbesteuerHebesatz" : 395,
-        "gemeindeanteilAnDerEinkommensteuer" : 860,
-        "gemeindeanteilAnDerUmsatzsteuer" : 52,
-        "gewerbesteuerumlage" : 35,
-        "gewerbesteuereinnahmen" : 164
-      },
       "Einwohner" : 2434.0,
-      "qkm" : 1.41209423531761E7
+      "grundsteuerBIstaufkommen" : 244,
+      "gewerbesteuerumlage" : 35,
+      "grundsteuerAHebesatz" : 390,
+      "grundsteuerBHebesatz" : 340,
+      "qkm" : 1.41209423531761E7,
+      "grundsteuerBGrundbetrag" : 72
     },
     "type" : "Feature",
     "geometry" : {
@@ -481,28 +433,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 1282,
+      "gemeindeanteilAnDerEinkommensteuer" : 7719,
+      "grundsteuerAIstaufkommen" : 160,
+      "gewerbesteuerIstaufkommen" : 4487,
       "Name" : "Bad Rappenau",
-      "RS" : "081255002006",
+      "gewerbesteuereinnahmen" : 3590,
       "Status" : "Stadt",
+      "RS" : "081255002006",
+      "grundsteuerAGrundbetrag" : 43,
+      "gemeindeanteilAnDerUmsatzsteuer" : 401,
       "AGS" : "08125006",
-      "realsteuer" : {
-        "ks" : "08125006",
-        "grundsteuerAIstaufkommen" : 160,
-        "grundsteuerBIstaufkommen" : 2927,
-        "gewerbesteuerIstaufkommen" : 4487,
-        "grundsteuerAGrundbetrag" : 43,
-        "grundsteuerBGrundbetrag" : 714,
-        "gewerbesteuerGrundbetrag" : 1282,
-        "grundsteuerAHebesatz" : 375,
-        "grundsteuerBHebesatz" : 410,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 7719,
-        "gemeindeanteilAnDerUmsatzsteuer" : 401,
-        "gewerbesteuerumlage" : 897,
-        "gewerbesteuereinnahmen" : 3590
-      },
       "Einwohner" : 20554.0,
-      "qkm" : 7.29670816464486E7
+      "grundsteuerBIstaufkommen" : 2927,
+      "gewerbesteuerumlage" : 897,
+      "grundsteuerAHebesatz" : 375,
+      "grundsteuerBHebesatz" : 410,
+      "qkm" : 7.29670816464486E7,
+      "grundsteuerBGrundbetrag" : 714
     },
     "type" : "Feature",
     "geometry" : {
@@ -511,28 +460,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 526,
+      "gemeindeanteilAnDerEinkommensteuer" : 3352,
+      "grundsteuerAIstaufkommen" : 41,
+      "gewerbesteuerIstaufkommen" : 1840,
       "Name" : "Flein",
-      "RS" : "081255005030",
+      "gewerbesteuereinnahmen" : 1472,
       "Status" : "Gemeinde",
+      "RS" : "081255005030",
+      "grundsteuerAGrundbetrag" : 12,
+      "gemeindeanteilAnDerUmsatzsteuer" : 126,
       "AGS" : "08125030",
-      "realsteuer" : {
-        "ks" : "08125030",
-        "grundsteuerAIstaufkommen" : 41,
-        "grundsteuerBIstaufkommen" : 863,
-        "gewerbesteuerIstaufkommen" : 1840,
-        "grundsteuerAGrundbetrag" : 12,
-        "grundsteuerBGrundbetrag" : 278,
-        "gewerbesteuerGrundbetrag" : 526,
-        "grundsteuerAHebesatz" : 340,
-        "grundsteuerBHebesatz" : 310,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 3352,
-        "gemeindeanteilAnDerUmsatzsteuer" : 126,
-        "gewerbesteuerumlage" : 368,
-        "gewerbesteuereinnahmen" : 1472
-      },
       "Einwohner" : 6714.0,
-      "qkm" : 8402826.0
+      "grundsteuerBIstaufkommen" : 863,
+      "gewerbesteuerumlage" : 368,
+      "grundsteuerAHebesatz" : 340,
+      "grundsteuerBHebesatz" : 310,
+      "qkm" : 8402826.0,
+      "grundsteuerBGrundbetrag" : 278
     },
     "type" : "Feature",
     "geometry" : {
@@ -541,28 +487,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 340,
+      "gewerbesteuerGrundbetrag" : 324,
+      "gemeindeanteilAnDerEinkommensteuer" : 2275,
+      "grundsteuerAIstaufkommen" : 31,
+      "gewerbesteuerIstaufkommen" : 1102,
       "Name" : "Erlenbach",
-      "RS" : "081255008027",
+      "gewerbesteuereinnahmen" : 875,
       "Status" : "Gemeinde",
+      "RS" : "081255008027",
+      "grundsteuerAGrundbetrag" : 8,
+      "gemeindeanteilAnDerUmsatzsteuer" : 66,
       "AGS" : "08125027",
-      "realsteuer" : {
-        "ks" : "08125027",
-        "grundsteuerAIstaufkommen" : 31,
-        "grundsteuerBIstaufkommen" : 594,
-        "gewerbesteuerIstaufkommen" : 1102,
-        "grundsteuerAGrundbetrag" : 8,
-        "grundsteuerBGrundbetrag" : 175,
-        "gewerbesteuerGrundbetrag" : 324,
-        "grundsteuerAHebesatz" : 370,
-        "grundsteuerBHebesatz" : 340,
-        "gewerbesteuerHebesatz" : 340,
-        "gemeindeanteilAnDerEinkommensteuer" : 2275,
-        "gemeindeanteilAnDerUmsatzsteuer" : 66,
-        "gewerbesteuerumlage" : 227,
-        "gewerbesteuereinnahmen" : 875
-      },
       "Einwohner" : 4928.0,
-      "qkm" : 1.28468770120892E7
+      "grundsteuerBIstaufkommen" : 594,
+      "gewerbesteuerumlage" : 227,
+      "grundsteuerAHebesatz" : 370,
+      "grundsteuerBHebesatz" : 340,
+      "qkm" : 1.28468770120892E7,
+      "grundsteuerBGrundbetrag" : 175
     },
     "type" : "Feature",
     "geometry" : {
@@ -571,28 +514,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 370,
+      "gewerbesteuerGrundbetrag" : 1162,
+      "gemeindeanteilAnDerEinkommensteuer" : 4950,
+      "grundsteuerAIstaufkommen" : 65,
+      "gewerbesteuerIstaufkommen" : 4298,
       "Name" : "Leingarten",
-      "RS" : "081250058058",
+      "gewerbesteuereinnahmen" : 3485,
       "Status" : "Gemeinde",
+      "RS" : "081250058058",
+      "grundsteuerAGrundbetrag" : 17,
+      "gemeindeanteilAnDerUmsatzsteuer" : 381,
       "AGS" : "08125058",
-      "realsteuer" : {
-        "ks" : "08125058",
-        "grundsteuerAIstaufkommen" : 65,
-        "grundsteuerBIstaufkommen" : 1656,
-        "gewerbesteuerIstaufkommen" : 4298,
-        "grundsteuerAGrundbetrag" : 17,
-        "grundsteuerBGrundbetrag" : 425,
-        "gewerbesteuerGrundbetrag" : 1162,
-        "grundsteuerAHebesatz" : 390,
-        "grundsteuerBHebesatz" : 390,
-        "gewerbesteuerHebesatz" : 370,
-        "gemeindeanteilAnDerEinkommensteuer" : 4950,
-        "gemeindeanteilAnDerUmsatzsteuer" : 381,
-        "gewerbesteuerumlage" : 813,
-        "gewerbesteuereinnahmen" : 3485
-      },
       "Einwohner" : 10781.0,
-      "qkm" : 2.3623479E7
+      "grundsteuerBIstaufkommen" : 1656,
+      "gewerbesteuerumlage" : 813,
+      "grundsteuerAHebesatz" : 390,
+      "grundsteuerBHebesatz" : 390,
+      "qkm" : 2.3623479E7,
+      "grundsteuerBGrundbetrag" : 425
     },
     "type" : "Feature",
     "geometry" : {
@@ -601,28 +541,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 355,
+      "gewerbesteuerGrundbetrag" : 1105,
+      "gemeindeanteilAnDerEinkommensteuer" : 5272,
+      "grundsteuerAIstaufkommen" : 65,
+      "gewerbesteuerIstaufkommen" : 3921,
       "Name" : "Obersulm",
-      "RS" : "081255011110",
+      "gewerbesteuereinnahmen" : 3148,
       "Status" : "Gemeinde",
+      "RS" : "081255011110",
+      "grundsteuerAGrundbetrag" : 17,
+      "gemeindeanteilAnDerUmsatzsteuer" : 282,
       "AGS" : "08125110",
-      "realsteuer" : {
-        "ks" : "08125110",
-        "grundsteuerAIstaufkommen" : 65,
-        "grundsteuerBIstaufkommen" : 1518,
-        "gewerbesteuerIstaufkommen" : 3921,
-        "grundsteuerAGrundbetrag" : 17,
-        "grundsteuerBGrundbetrag" : 447,
-        "gewerbesteuerGrundbetrag" : 1105,
-        "grundsteuerAHebesatz" : 375,
-        "grundsteuerBHebesatz" : 340,
-        "gewerbesteuerHebesatz" : 355,
-        "gemeindeanteilAnDerEinkommensteuer" : 5272,
-        "gemeindeanteilAnDerUmsatzsteuer" : 282,
-        "gewerbesteuerumlage" : 773,
-        "gewerbesteuereinnahmen" : 3148
-      },
       "Einwohner" : 13898.0,
-      "qkm" : 3.12009197894996E7
+      "grundsteuerBIstaufkommen" : 1518,
+      "gewerbesteuerumlage" : 773,
+      "grundsteuerAHebesatz" : 375,
+      "grundsteuerBHebesatz" : 340,
+      "qkm" : 3.12009197894996E7,
+      "grundsteuerBGrundbetrag" : 447
     },
     "type" : "Feature",
     "geometry" : {
@@ -631,28 +568,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 424,
+      "gemeindeanteilAnDerEinkommensteuer" : 2449,
+      "grundsteuerAIstaufkommen" : 29,
+      "gewerbesteuerIstaufkommen" : 1483,
       "Name" : "Talheim",
-      "RS" : "081255005094",
+      "gewerbesteuereinnahmen" : 1192,
       "Status" : "Gemeinde",
+      "RS" : "081255005094",
+      "grundsteuerAGrundbetrag" : 9,
+      "gemeindeanteilAnDerUmsatzsteuer" : 153,
       "AGS" : "08125094",
-      "realsteuer" : {
-        "ks" : "08125094",
-        "grundsteuerAIstaufkommen" : 29,
-        "grundsteuerBIstaufkommen" : 630,
-        "gewerbesteuerIstaufkommen" : 1483,
-        "grundsteuerAGrundbetrag" : 9,
-        "grundsteuerBGrundbetrag" : 210,
-        "gewerbesteuerGrundbetrag" : 424,
-        "grundsteuerAHebesatz" : 340,
-        "grundsteuerBHebesatz" : 300,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 2449,
-        "gemeindeanteilAnDerUmsatzsteuer" : 153,
-        "gewerbesteuerumlage" : 291,
-        "gewerbesteuereinnahmen" : 1192
-      },
       "Einwohner" : 4794.0,
-      "qkm" : 1.1629664E7
+      "grundsteuerBIstaufkommen" : 630,
+      "gewerbesteuerumlage" : 291,
+      "grundsteuerAHebesatz" : 340,
+      "grundsteuerBHebesatz" : 300,
+      "qkm" : 1.1629664E7,
+      "grundsteuerBGrundbetrag" : 210
     },
     "type" : "Feature",
     "geometry" : {
@@ -661,28 +595,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 340,
+      "gewerbesteuerGrundbetrag" : 1578,
+      "gemeindeanteilAnDerEinkommensteuer" : 1681,
+      "grundsteuerAIstaufkommen" : 22,
+      "gewerbesteuerIstaufkommen" : 5365,
       "Name" : "Neckarwestheim",
-      "RS" : "081255006066",
+      "gewerbesteuereinnahmen" : 4261,
       "Status" : "Gemeinde",
+      "RS" : "081255006066",
+      "grundsteuerAGrundbetrag" : 8,
+      "gemeindeanteilAnDerUmsatzsteuer" : 880,
       "AGS" : "08125066",
-      "realsteuer" : {
-        "ks" : "08125066",
-        "grundsteuerAIstaufkommen" : 22,
-        "grundsteuerBIstaufkommen" : 396,
-        "gewerbesteuerIstaufkommen" : 5365,
-        "grundsteuerAGrundbetrag" : 8,
-        "grundsteuerBGrundbetrag" : 165,
-        "gewerbesteuerGrundbetrag" : 1578,
-        "grundsteuerAHebesatz" : 280,
-        "grundsteuerBHebesatz" : 240,
-        "gewerbesteuerHebesatz" : 340,
-        "gemeindeanteilAnDerEinkommensteuer" : 1681,
-        "gemeindeanteilAnDerUmsatzsteuer" : 880,
-        "gewerbesteuerumlage" : 1105,
-        "gewerbesteuereinnahmen" : 4261
-      },
       "Einwohner" : 3528.0,
-      "qkm" : 1.39354465E7
+      "grundsteuerBIstaufkommen" : 396,
+      "gewerbesteuerumlage" : 1105,
+      "grundsteuerAHebesatz" : 280,
+      "grundsteuerBHebesatz" : 240,
+      "qkm" : 1.39354465E7,
+      "grundsteuerBGrundbetrag" : 165
     },
     "type" : "Feature",
     "geometry" : {
@@ -691,28 +622,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 355,
+      "gewerbesteuerGrundbetrag" : 306,
+      "gemeindeanteilAnDerEinkommensteuer" : 1835,
+      "grundsteuerAIstaufkommen" : 9,
+      "gewerbesteuerIstaufkommen" : 1086,
       "Name" : "Untereisesheim",
-      "RS" : "081255008096",
+      "gewerbesteuereinnahmen" : 872,
       "Status" : "Gemeinde",
+      "RS" : "081255008096",
+      "grundsteuerAGrundbetrag" : 2,
+      "gemeindeanteilAnDerUmsatzsteuer" : 62,
       "AGS" : "08125096",
-      "realsteuer" : {
-        "ks" : "08125096",
-        "grundsteuerAIstaufkommen" : 9,
-        "grundsteuerBIstaufkommen" : 451,
-        "gewerbesteuerIstaufkommen" : 1086,
-        "grundsteuerAGrundbetrag" : 2,
-        "grundsteuerBGrundbetrag" : 129,
-        "gewerbesteuerGrundbetrag" : 306,
-        "grundsteuerAHebesatz" : 370,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 355,
-        "gemeindeanteilAnDerEinkommensteuer" : 1835,
-        "gemeindeanteilAnDerUmsatzsteuer" : 62,
-        "gewerbesteuerumlage" : 214,
-        "gewerbesteuereinnahmen" : 872
-      },
       "Einwohner" : 4136.0,
-      "qkm" : 3703868.0866617
+      "grundsteuerBIstaufkommen" : 451,
+      "gewerbesteuerumlage" : 214,
+      "grundsteuerAHebesatz" : 370,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 3703868.0866617,
+      "grundsteuerBGrundbetrag" : 129
     },
     "type" : "Feature",
     "geometry" : {
@@ -721,28 +649,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 360,
+      "gewerbesteuerGrundbetrag" : 675,
+      "gemeindeanteilAnDerEinkommensteuer" : 3196,
+      "grundsteuerAIstaufkommen" : 55,
+      "gewerbesteuerIstaufkommen" : 2429,
       "Name" : "Nordheim",
-      "RS" : "081255006074",
+      "gewerbesteuereinnahmen" : 1957,
       "Status" : "Gemeinde",
+      "RS" : "081255006074",
+      "grundsteuerAGrundbetrag" : 14,
+      "gemeindeanteilAnDerUmsatzsteuer" : 140,
       "AGS" : "08125074",
-      "realsteuer" : {
-        "ks" : "08125074",
-        "grundsteuerAIstaufkommen" : 55,
-        "grundsteuerBIstaufkommen" : 900,
-        "gewerbesteuerIstaufkommen" : 2429,
-        "grundsteuerAGrundbetrag" : 14,
-        "grundsteuerBGrundbetrag" : 243,
-        "gewerbesteuerGrundbetrag" : 675,
-        "grundsteuerAHebesatz" : 390,
-        "grundsteuerBHebesatz" : 370,
-        "gewerbesteuerHebesatz" : 360,
-        "gemeindeanteilAnDerEinkommensteuer" : 3196,
-        "gemeindeanteilAnDerUmsatzsteuer" : 140,
-        "gewerbesteuerumlage" : 472,
-        "gewerbesteuereinnahmen" : 1957
-      },
       "Einwohner" : 7502.0,
-      "qkm" : 1.29284635E7
+      "grundsteuerBIstaufkommen" : 900,
+      "gewerbesteuerumlage" : 472,
+      "grundsteuerAHebesatz" : 390,
+      "grundsteuerBHebesatz" : 370,
+      "qkm" : 1.29284635E7,
+      "grundsteuerBGrundbetrag" : 243
     },
     "type" : "Feature",
     "geometry" : {
@@ -751,28 +676,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 197,
+      "gemeindeanteilAnDerEinkommensteuer" : 1373,
+      "grundsteuerAIstaufkommen" : 16,
+      "gewerbesteuerIstaufkommen" : 691,
       "Name" : "Massenbachhausen",
-      "RS" : "081255013061",
+      "gewerbesteuereinnahmen" : 552,
       "Status" : "Gemeinde",
+      "RS" : "081255013061",
+      "grundsteuerAGrundbetrag" : 5,
+      "gemeindeanteilAnDerUmsatzsteuer" : 77,
       "AGS" : "08125061",
-      "realsteuer" : {
-        "ks" : "08125061",
-        "grundsteuerAIstaufkommen" : 16,
-        "grundsteuerBIstaufkommen" : 441,
-        "gewerbesteuerIstaufkommen" : 691,
-        "grundsteuerAGrundbetrag" : 5,
-        "grundsteuerBGrundbetrag" : 113,
-        "gewerbesteuerGrundbetrag" : 197,
-        "grundsteuerAHebesatz" : 330,
-        "grundsteuerBHebesatz" : 390,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 1373,
-        "gemeindeanteilAnDerUmsatzsteuer" : 77,
-        "gewerbesteuerumlage" : 138,
-        "gewerbesteuereinnahmen" : 552
-      },
       "Einwohner" : 3501.0,
-      "qkm" : 8766462.50240097
+      "grundsteuerBIstaufkommen" : 441,
+      "gewerbesteuerumlage" : 138,
+      "grundsteuerAHebesatz" : 330,
+      "grundsteuerBHebesatz" : 390,
+      "qkm" : 8766462.50240097,
+      "grundsteuerBGrundbetrag" : 113
     },
     "type" : "Feature",
     "geometry" : {
@@ -781,28 +703,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 380,
+      "gewerbesteuerGrundbetrag" : 305,
+      "gemeindeanteilAnDerEinkommensteuer" : 2094,
+      "grundsteuerAIstaufkommen" : 27,
+      "gewerbesteuerIstaufkommen" : 1160,
       "Name" : "Wüstenrot",
-      "RS" : "081250107107",
+      "gewerbesteuereinnahmen" : 946,
       "Status" : "Gemeinde",
+      "RS" : "081250107107",
+      "grundsteuerAGrundbetrag" : 7,
+      "gemeindeanteilAnDerUmsatzsteuer" : 97,
       "AGS" : "08125107",
-      "realsteuer" : {
-        "ks" : "08125107",
-        "grundsteuerAIstaufkommen" : 27,
-        "grundsteuerBIstaufkommen" : 741,
-        "gewerbesteuerIstaufkommen" : 1160,
-        "grundsteuerAGrundbetrag" : 7,
-        "grundsteuerBGrundbetrag" : 200,
-        "gewerbesteuerGrundbetrag" : 305,
-        "grundsteuerAHebesatz" : 370,
-        "grundsteuerBHebesatz" : 370,
-        "gewerbesteuerHebesatz" : 380,
-        "gemeindeanteilAnDerEinkommensteuer" : 2094,
-        "gemeindeanteilAnDerUmsatzsteuer" : 97,
-        "gewerbesteuerumlage" : 214,
-        "gewerbesteuereinnahmen" : 946
-      },
       "Einwohner" : 6613.0,
-      "qkm" : 3.01647245E7
+      "grundsteuerBIstaufkommen" : 741,
+      "gewerbesteuerumlage" : 214,
+      "grundsteuerAHebesatz" : 370,
+      "grundsteuerBHebesatz" : 370,
+      "qkm" : 3.01647245E7,
+      "grundsteuerBGrundbetrag" : 200
     },
     "type" : "Feature",
     "geometry" : {
@@ -811,28 +730,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 345,
+      "gewerbesteuerGrundbetrag" : 286,
+      "gemeindeanteilAnDerEinkommensteuer" : 1456,
+      "grundsteuerAIstaufkommen" : 10,
+      "gewerbesteuerIstaufkommen" : 987,
       "Name" : "Ellhofen",
-      "RS" : "081255014024",
+      "gewerbesteuereinnahmen" : 787,
       "Status" : "Gemeinde",
+      "RS" : "081255014024",
+      "grundsteuerAGrundbetrag" : 3,
+      "gemeindeanteilAnDerUmsatzsteuer" : 143,
       "AGS" : "08125024",
-      "realsteuer" : {
-        "ks" : "08125024",
-        "grundsteuerAIstaufkommen" : 10,
-        "grundsteuerBIstaufkommen" : 482,
-        "gewerbesteuerIstaufkommen" : 987,
-        "grundsteuerAGrundbetrag" : 3,
-        "grundsteuerBGrundbetrag" : 142,
-        "gewerbesteuerGrundbetrag" : 286,
-        "grundsteuerAHebesatz" : 380,
-        "grundsteuerBHebesatz" : 340,
-        "gewerbesteuerHebesatz" : 345,
-        "gemeindeanteilAnDerEinkommensteuer" : 1456,
-        "gemeindeanteilAnDerUmsatzsteuer" : 143,
-        "gewerbesteuerumlage" : 200,
-        "gewerbesteuereinnahmen" : 787
-      },
       "Einwohner" : 3360.0,
-      "qkm" : 5696314.0
+      "grundsteuerBIstaufkommen" : 482,
+      "gewerbesteuerumlage" : 200,
+      "grundsteuerAHebesatz" : 380,
+      "grundsteuerBHebesatz" : 340,
+      "qkm" : 5696314.0,
+      "grundsteuerBGrundbetrag" : 142
     },
     "type" : "Feature",
     "geometry" : {
@@ -841,28 +757,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 247,
+      "gemeindeanteilAnDerEinkommensteuer" : 3665,
+      "grundsteuerAIstaufkommen" : 33,
+      "gewerbesteuerIstaufkommen" : 863,
       "Name" : "Untergruppenbach",
-      "RS" : "081255012098",
+      "gewerbesteuereinnahmen" : 690,
       "Status" : "Gemeinde",
+      "RS" : "081255012098",
+      "grundsteuerAGrundbetrag" : 9,
+      "gemeindeanteilAnDerUmsatzsteuer" : 122,
       "AGS" : "08125098",
-      "realsteuer" : {
-        "ks" : "08125098",
-        "grundsteuerAIstaufkommen" : 33,
-        "grundsteuerBIstaufkommen" : 1007,
-        "gewerbesteuerIstaufkommen" : 863,
-        "grundsteuerAGrundbetrag" : 9,
-        "grundsteuerBGrundbetrag" : 288,
-        "gewerbesteuerGrundbetrag" : 247,
-        "grundsteuerAHebesatz" : 350,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 3665,
-        "gemeindeanteilAnDerUmsatzsteuer" : 122,
-        "gewerbesteuerumlage" : 173,
-        "gewerbesteuereinnahmen" : 690
-      },
       "Einwohner" : 7867.0,
-      "qkm" : 2.75863182634266E7
+      "grundsteuerBIstaufkommen" : 1007,
+      "gewerbesteuerumlage" : 173,
+      "grundsteuerAHebesatz" : 350,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 2.75863182634266E7,
+      "grundsteuerBGrundbetrag" : 288
     },
     "type" : "Feature",
     "geometry" : {
@@ -871,28 +784,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 340,
+      "gewerbesteuerGrundbetrag" : 1294,
+      "gemeindeanteilAnDerEinkommensteuer" : 2152,
+      "grundsteuerAIstaufkommen" : 13,
+      "gewerbesteuerIstaufkommen" : 4399,
       "Name" : "Abstatt",
-      "RS" : "081255012001",
+      "gewerbesteuereinnahmen" : 3494,
       "Status" : "Gemeinde",
+      "RS" : "081255012001",
+      "grundsteuerAGrundbetrag" : 4,
+      "gemeindeanteilAnDerUmsatzsteuer" : 258,
       "AGS" : "08125001",
-      "realsteuer" : {
-        "ks" : "08125001",
-        "grundsteuerAIstaufkommen" : 13,
-        "grundsteuerBIstaufkommen" : 857,
-        "gewerbesteuerIstaufkommen" : 4399,
-        "grundsteuerAGrundbetrag" : 4,
-        "grundsteuerBGrundbetrag" : 245,
-        "gewerbesteuerGrundbetrag" : 1294,
-        "grundsteuerAHebesatz" : 290,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 340,
-        "gemeindeanteilAnDerEinkommensteuer" : 2152,
-        "gemeindeanteilAnDerUmsatzsteuer" : 258,
-        "gewerbesteuerumlage" : 906,
-        "gewerbesteuereinnahmen" : 3494
-      },
       "Einwohner" : 4485.0,
-      "qkm" : 9573643.73657345
+      "grundsteuerBIstaufkommen" : 857,
+      "gewerbesteuerumlage" : 906,
+      "grundsteuerAHebesatz" : 290,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 9573643.73657345,
+      "grundsteuerBGrundbetrag" : 245
     },
     "type" : "Feature",
     "geometry" : {
@@ -901,28 +811,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 380,
+      "gewerbesteuerGrundbetrag" : 100,
+      "gemeindeanteilAnDerEinkommensteuer" : 1248,
+      "grundsteuerAIstaufkommen" : 30,
+      "gewerbesteuerIstaufkommen" : 378,
       "Name" : "Eberstadt",
-      "RS" : "081255014021",
+      "gewerbesteuereinnahmen" : 309,
       "Status" : "Gemeinde",
+      "RS" : "081255014021",
+      "grundsteuerAGrundbetrag" : 8,
+      "gemeindeanteilAnDerUmsatzsteuer" : 52,
       "AGS" : "08125021",
-      "realsteuer" : {
-        "ks" : "08125021",
-        "grundsteuerAIstaufkommen" : 30,
-        "grundsteuerBIstaufkommen" : 362,
-        "gewerbesteuerIstaufkommen" : 378,
-        "grundsteuerAGrundbetrag" : 8,
-        "grundsteuerBGrundbetrag" : 101,
-        "gewerbesteuerGrundbetrag" : 100,
-        "grundsteuerAHebesatz" : 380,
-        "grundsteuerBHebesatz" : 360,
-        "gewerbesteuerHebesatz" : 380,
-        "gemeindeanteilAnDerEinkommensteuer" : 1248,
-        "gemeindeanteilAnDerUmsatzsteuer" : 52,
-        "gewerbesteuerumlage" : 70,
-        "gewerbesteuereinnahmen" : 309
-      },
       "Einwohner" : 3171.0,
-      "qkm" : 1.26954432270505E7
+      "grundsteuerBIstaufkommen" : 362,
+      "gewerbesteuerumlage" : 70,
+      "grundsteuerAHebesatz" : 380,
+      "grundsteuerBHebesatz" : 360,
+      "qkm" : 1.26954432270505E7,
+      "grundsteuerBGrundbetrag" : 101
     },
     "type" : "Feature",
     "geometry" : {
@@ -931,28 +838,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 365,
+      "gewerbesteuerGrundbetrag" : 49,
+      "gemeindeanteilAnDerEinkommensteuer" : 933,
+      "grundsteuerAIstaufkommen" : 19,
+      "gewerbesteuerIstaufkommen" : 178,
       "Name" : "Lehrensteinsfeld",
-      "RS" : "081255014057",
+      "gewerbesteuereinnahmen" : 144,
       "Status" : "Gemeinde",
+      "RS" : "081255014057",
+      "grundsteuerAGrundbetrag" : 5,
+      "gemeindeanteilAnDerUmsatzsteuer" : 25,
       "AGS" : "08125057",
-      "realsteuer" : {
-        "ks" : "08125057",
-        "grundsteuerAIstaufkommen" : 19,
-        "grundsteuerBIstaufkommen" : 283,
-        "gewerbesteuerIstaufkommen" : 178,
-        "grundsteuerAGrundbetrag" : 5,
-        "grundsteuerBGrundbetrag" : 72,
-        "gewerbesteuerGrundbetrag" : 49,
-        "grundsteuerAHebesatz" : 395,
-        "grundsteuerBHebesatz" : 395,
-        "gewerbesteuerHebesatz" : 365,
-        "gemeindeanteilAnDerEinkommensteuer" : 933,
-        "gemeindeanteilAnDerUmsatzsteuer" : 25,
-        "gewerbesteuerumlage" : 34,
-        "gewerbesteuereinnahmen" : 144
-      },
       "Einwohner" : 2189.0,
-      "qkm" : 6312883.5
+      "grundsteuerBIstaufkommen" : 283,
+      "gewerbesteuerumlage" : 34,
+      "grundsteuerAHebesatz" : 395,
+      "grundsteuerBHebesatz" : 395,
+      "qkm" : 6312883.5,
+      "grundsteuerBGrundbetrag" : 72
     },
     "type" : "Feature",
     "geometry" : {
@@ -961,28 +865,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 330,
+      "gewerbesteuerGrundbetrag" : 1638,
+      "gemeindeanteilAnDerEinkommensteuer" : 3644,
+      "grundsteuerAIstaufkommen" : 60,
+      "gewerbesteuerIstaufkommen" : 5406,
       "Name" : "Ilsfeld",
-      "RS" : "081255012046",
+      "gewerbesteuereinnahmen" : 4259,
       "Status" : "Gemeinde",
+      "RS" : "081255012046",
+      "grundsteuerAGrundbetrag" : 20,
+      "gemeindeanteilAnDerUmsatzsteuer" : 291,
       "AGS" : "08125046",
-      "realsteuer" : {
-        "ks" : "08125046",
-        "grundsteuerAIstaufkommen" : 60,
-        "grundsteuerBIstaufkommen" : 1109,
-        "gewerbesteuerIstaufkommen" : 5406,
-        "grundsteuerAGrundbetrag" : 20,
-        "grundsteuerBGrundbetrag" : 389,
-        "gewerbesteuerGrundbetrag" : 1638,
-        "grundsteuerAHebesatz" : 300,
-        "grundsteuerBHebesatz" : 285,
-        "gewerbesteuerHebesatz" : 330,
-        "gemeindeanteilAnDerEinkommensteuer" : 3644,
-        "gemeindeanteilAnDerUmsatzsteuer" : 291,
-        "gewerbesteuerumlage" : 1147,
-        "gewerbesteuereinnahmen" : 4259
-      },
       "Einwohner" : 8595.0,
-      "qkm" : 2.6380832E7
+      "grundsteuerBIstaufkommen" : 1109,
+      "gewerbesteuerumlage" : 1147,
+      "grundsteuerAHebesatz" : 300,
+      "grundsteuerBHebesatz" : 285,
+      "qkm" : 2.6380832E7,
+      "grundsteuerBGrundbetrag" : 389
     },
     "type" : "Feature",
     "geometry" : {
@@ -991,28 +892,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 360,
+      "gewerbesteuerGrundbetrag" : 128,
+      "gemeindeanteilAnDerEinkommensteuer" : 1635,
+      "grundsteuerAIstaufkommen" : 49,
+      "gewerbesteuerIstaufkommen" : 460,
       "Name" : "Hardthausen am Kocher",
-      "RS" : "081255009111",
+      "gewerbesteuereinnahmen" : 370,
       "Status" : "Gemeinde",
+      "RS" : "081255009111",
+      "grundsteuerAGrundbetrag" : 14,
+      "gemeindeanteilAnDerUmsatzsteuer" : 81,
       "AGS" : "08125111",
-      "realsteuer" : {
-        "ks" : "08125111",
-        "grundsteuerAIstaufkommen" : 49,
-        "grundsteuerBIstaufkommen" : 431,
-        "gewerbesteuerIstaufkommen" : 460,
-        "grundsteuerAGrundbetrag" : 14,
-        "grundsteuerBGrundbetrag" : 123,
-        "gewerbesteuerGrundbetrag" : 128,
-        "grundsteuerAHebesatz" : 350,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 360,
-        "gemeindeanteilAnDerEinkommensteuer" : 1635,
-        "gemeindeanteilAnDerUmsatzsteuer" : 81,
-        "gewerbesteuerumlage" : 89,
-        "gewerbesteuereinnahmen" : 370
-      },
       "Einwohner" : 3931.0,
-      "qkm" : 3.550339870925E7
+      "grundsteuerBIstaufkommen" : 431,
+      "gewerbesteuerumlage" : 89,
+      "grundsteuerAHebesatz" : 350,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 3.550339870925E7,
+      "grundsteuerBGrundbetrag" : 123
     },
     "type" : "Feature",
     "geometry" : {
@@ -1021,28 +919,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 55,
+      "gemeindeanteilAnDerEinkommensteuer" : 637,
+      "grundsteuerAIstaufkommen" : 20,
+      "gewerbesteuerIstaufkommen" : 194,
       "Name" : "Siegelsbach",
-      "RS" : "081255002087",
+      "gewerbesteuereinnahmen" : 155,
       "Status" : "Gemeinde",
+      "RS" : "081255002087",
+      "grundsteuerAGrundbetrag" : 5,
+      "gemeindeanteilAnDerUmsatzsteuer" : 53,
       "AGS" : "08125087",
-      "realsteuer" : {
-        "ks" : "08125087",
-        "grundsteuerAIstaufkommen" : 20,
-        "grundsteuerBIstaufkommen" : 149,
-        "gewerbesteuerIstaufkommen" : 194,
-        "grundsteuerAGrundbetrag" : 5,
-        "grundsteuerBGrundbetrag" : 37,
-        "gewerbesteuerGrundbetrag" : 55,
-        "grundsteuerAHebesatz" : 400,
-        "grundsteuerBHebesatz" : 400,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 637,
-        "gemeindeanteilAnDerUmsatzsteuer" : 53,
-        "gewerbesteuerumlage" : 39,
-        "gewerbesteuereinnahmen" : 155
-      },
       "Einwohner" : 1623.0,
-      "qkm" : 7753451.04119274
+      "grundsteuerBIstaufkommen" : 149,
+      "gewerbesteuerumlage" : 39,
+      "grundsteuerAHebesatz" : 400,
+      "grundsteuerBHebesatz" : 400,
+      "qkm" : 7753451.04119274,
+      "grundsteuerBGrundbetrag" : 37
     },
     "type" : "Feature",
     "geometry" : {
@@ -1051,28 +946,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 360,
+      "gewerbesteuerGrundbetrag" : 81,
+      "gemeindeanteilAnDerEinkommensteuer" : 454,
+      "grundsteuerAIstaufkommen" : 18,
+      "gewerbesteuerIstaufkommen" : 291,
       "Name" : "Roigheim",
-      "RS" : "081255007084",
+      "gewerbesteuereinnahmen" : 234,
       "Status" : "Gemeinde",
+      "RS" : "081255007084",
+      "grundsteuerAGrundbetrag" : 5,
+      "gemeindeanteilAnDerUmsatzsteuer" : 31,
       "AGS" : "08125084",
-      "realsteuer" : {
-        "ks" : "08125084",
-        "grundsteuerAIstaufkommen" : 18,
-        "grundsteuerBIstaufkommen" : 164,
-        "gewerbesteuerIstaufkommen" : 291,
-        "grundsteuerAGrundbetrag" : 5,
-        "grundsteuerBGrundbetrag" : 41,
-        "gewerbesteuerGrundbetrag" : 81,
-        "grundsteuerAHebesatz" : 350,
-        "grundsteuerBHebesatz" : 400,
-        "gewerbesteuerHebesatz" : 360,
-        "gemeindeanteilAnDerEinkommensteuer" : 454,
-        "gemeindeanteilAnDerUmsatzsteuer" : 31,
-        "gewerbesteuerumlage" : 57,
-        "gewerbesteuereinnahmen" : 234
-      },
       "Einwohner" : 1482.0,
-      "qkm" : 1.40341023448756E7
+      "grundsteuerBIstaufkommen" : 164,
+      "gewerbesteuerumlage" : 57,
+      "grundsteuerAHebesatz" : 350,
+      "grundsteuerBHebesatz" : 400,
+      "qkm" : 1.40341023448756E7,
+      "grundsteuerBGrundbetrag" : 41
     },
     "type" : "Feature",
     "geometry" : {
@@ -1081,28 +973,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 340,
+      "gewerbesteuerGrundbetrag" : 110,
+      "gemeindeanteilAnDerEinkommensteuer" : 442,
+      "grundsteuerAIstaufkommen" : 24,
+      "gewerbesteuerIstaufkommen" : 374,
       "Name" : "Jagsthausen",
-      "RS" : "081255007048",
+      "gewerbesteuereinnahmen" : 297,
       "Status" : "Gemeinde",
+      "RS" : "081255007048",
+      "grundsteuerAGrundbetrag" : 7,
+      "gemeindeanteilAnDerUmsatzsteuer" : 37,
       "AGS" : "08125048",
-      "realsteuer" : {
-        "ks" : "08125048",
-        "grundsteuerAIstaufkommen" : 24,
-        "grundsteuerBIstaufkommen" : 202,
-        "gewerbesteuerIstaufkommen" : 374,
-        "grundsteuerAGrundbetrag" : 7,
-        "grundsteuerBGrundbetrag" : 54,
-        "gewerbesteuerGrundbetrag" : 110,
-        "grundsteuerAHebesatz" : 330,
-        "grundsteuerBHebesatz" : 370,
-        "gewerbesteuerHebesatz" : 340,
-        "gemeindeanteilAnDerEinkommensteuer" : 442,
-        "gemeindeanteilAnDerUmsatzsteuer" : 37,
-        "gewerbesteuerumlage" : 77,
-        "gewerbesteuereinnahmen" : 297
-      },
       "Einwohner" : 1569.0,
-      "qkm" : 1.73765625E7
+      "grundsteuerBIstaufkommen" : 202,
+      "gewerbesteuerumlage" : 77,
+      "grundsteuerAHebesatz" : 330,
+      "grundsteuerBHebesatz" : 370,
+      "qkm" : 1.73765625E7,
+      "grundsteuerBGrundbetrag" : 54
     },
     "type" : "Feature",
     "geometry" : {
@@ -1111,28 +1000,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 355,
+      "gewerbesteuerGrundbetrag" : 1418,
+      "gemeindeanteilAnDerEinkommensteuer" : 4649,
+      "grundsteuerAIstaufkommen" : 119,
+      "gewerbesteuerIstaufkommen" : 5034,
       "Name" : "Lauffen am Neckar",
-      "RS" : "081255006056",
+      "gewerbesteuereinnahmen" : 4041,
       "Status" : "Stadt",
+      "RS" : "081255006056",
+      "grundsteuerAGrundbetrag" : 32,
+      "gemeindeanteilAnDerUmsatzsteuer" : 402,
       "AGS" : "08125056",
-      "realsteuer" : {
-        "ks" : "08125056",
-        "grundsteuerAIstaufkommen" : 119,
-        "grundsteuerBIstaufkommen" : 1489,
-        "gewerbesteuerIstaufkommen" : 5034,
-        "grundsteuerAGrundbetrag" : 32,
-        "grundsteuerBGrundbetrag" : 451,
-        "gewerbesteuerGrundbetrag" : 1418,
-        "grundsteuerAHebesatz" : 375,
-        "grundsteuerBHebesatz" : 330,
-        "gewerbesteuerHebesatz" : 355,
-        "gemeindeanteilAnDerEinkommensteuer" : 4649,
-        "gemeindeanteilAnDerUmsatzsteuer" : 402,
-        "gewerbesteuerumlage" : 993,
-        "gewerbesteuereinnahmen" : 4041
-      },
       "Einwohner" : 10922.0,
-      "qkm" : 2.2288133E7
+      "grundsteuerBIstaufkommen" : 1489,
+      "gewerbesteuerumlage" : 993,
+      "grundsteuerAHebesatz" : 375,
+      "grundsteuerBHebesatz" : 330,
+      "qkm" : 2.2288133E7,
+      "grundsteuerBGrundbetrag" : 451
     },
     "type" : "Feature",
     "geometry" : {
@@ -1141,28 +1027,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 395,
+      "gewerbesteuerGrundbetrag" : 189,
+      "gemeindeanteilAnDerEinkommensteuer" : 1287,
+      "grundsteuerAIstaufkommen" : 46,
+      "gewerbesteuerIstaufkommen" : 747,
       "Name" : "Löwenstein",
-      "RS" : "081255011059",
+      "gewerbesteuereinnahmen" : 614,
       "Status" : "Stadt",
+      "RS" : "081255011059",
+      "grundsteuerAGrundbetrag" : 12,
+      "gemeindeanteilAnDerUmsatzsteuer" : 78,
       "AGS" : "08125059",
-      "realsteuer" : {
-        "ks" : "08125059",
-        "grundsteuerAIstaufkommen" : 46,
-        "grundsteuerBIstaufkommen" : 362,
-        "gewerbesteuerIstaufkommen" : 747,
-        "grundsteuerAGrundbetrag" : 12,
-        "grundsteuerBGrundbetrag" : 95,
-        "gewerbesteuerGrundbetrag" : 189,
-        "grundsteuerAHebesatz" : 395,
-        "grundsteuerBHebesatz" : 380,
-        "gewerbesteuerHebesatz" : 395,
-        "gemeindeanteilAnDerEinkommensteuer" : 1287,
-        "gemeindeanteilAnDerUmsatzsteuer" : 78,
-        "gewerbesteuerumlage" : 132,
-        "gewerbesteuereinnahmen" : 614
-      },
       "Einwohner" : 3123.0,
-      "qkm" : 2.28025272105004E7
+      "grundsteuerBIstaufkommen" : 362,
+      "gewerbesteuerumlage" : 132,
+      "grundsteuerAHebesatz" : 395,
+      "grundsteuerBHebesatz" : 380,
+      "qkm" : 2.28025272105004E7,
+      "grundsteuerBGrundbetrag" : 95
     },
     "type" : "Feature",
     "geometry" : {
@@ -1171,28 +1054,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 360,
+      "gewerbesteuerGrundbetrag" : 263,
+      "gemeindeanteilAnDerEinkommensteuer" : 2005,
+      "grundsteuerAIstaufkommen" : 49,
+      "gewerbesteuerIstaufkommen" : 946,
       "Name" : "Neudenau",
-      "RS" : "081250068068",
+      "gewerbesteuereinnahmen" : 762,
       "Status" : "Stadt",
+      "RS" : "081250068068",
+      "grundsteuerAGrundbetrag" : 12,
+      "gemeindeanteilAnDerUmsatzsteuer" : 73,
       "AGS" : "08125068",
-      "realsteuer" : {
-        "ks" : "08125068",
-        "grundsteuerAIstaufkommen" : 49,
-        "grundsteuerBIstaufkommen" : 557,
-        "gewerbesteuerIstaufkommen" : 946,
-        "grundsteuerAGrundbetrag" : 12,
-        "grundsteuerBGrundbetrag" : 136,
-        "gewerbesteuerGrundbetrag" : 263,
-        "grundsteuerAHebesatz" : 400,
-        "grundsteuerBHebesatz" : 410,
-        "gewerbesteuerHebesatz" : 360,
-        "gemeindeanteilAnDerEinkommensteuer" : 2005,
-        "gemeindeanteilAnDerUmsatzsteuer" : 73,
-        "gewerbesteuerumlage" : 184,
-        "gewerbesteuereinnahmen" : 762
-      },
       "Einwohner" : 5177.0,
-      "qkm" : 3.30094699637444E7
+      "grundsteuerBIstaufkommen" : 557,
+      "gewerbesteuerumlage" : 184,
+      "grundsteuerAHebesatz" : 400,
+      "grundsteuerBHebesatz" : 410,
+      "qkm" : 3.30094699637444E7,
+      "grundsteuerBGrundbetrag" : 136
     },
     "type" : "Feature",
     "geometry" : {
@@ -1201,28 +1081,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 355,
+      "gewerbesteuerGrundbetrag" : 1051,
+      "gemeindeanteilAnDerEinkommensteuer" : 4016,
+      "grundsteuerAIstaufkommen" : 79,
+      "gewerbesteuerIstaufkommen" : 3731,
       "Name" : "Neuenstadt am Kocher",
-      "RS" : "081255009069",
+      "gewerbesteuereinnahmen" : 2995,
       "Status" : "Stadt",
+      "RS" : "081255009069",
+      "grundsteuerAGrundbetrag" : 22,
+      "gemeindeanteilAnDerUmsatzsteuer" : 235,
       "AGS" : "08125069",
-      "realsteuer" : {
-        "ks" : "08125069",
-        "grundsteuerAIstaufkommen" : 79,
-        "grundsteuerBIstaufkommen" : 1419,
-        "gewerbesteuerIstaufkommen" : 3731,
-        "grundsteuerAGrundbetrag" : 22,
-        "grundsteuerBGrundbetrag" : 394,
-        "gewerbesteuerGrundbetrag" : 1051,
-        "grundsteuerAHebesatz" : 360,
-        "grundsteuerBHebesatz" : 360,
-        "gewerbesteuerHebesatz" : 355,
-        "gemeindeanteilAnDerEinkommensteuer" : 4016,
-        "gemeindeanteilAnDerUmsatzsteuer" : 235,
-        "gewerbesteuerumlage" : 736,
-        "gewerbesteuereinnahmen" : 2995
-      },
       "Einwohner" : 9601.0,
-      "qkm" : 4.08909746664572E7
+      "grundsteuerBIstaufkommen" : 1419,
+      "gewerbesteuerumlage" : 736,
+      "grundsteuerAHebesatz" : 360,
+      "grundsteuerBHebesatz" : 360,
+      "qkm" : 4.08909746664572E7,
+      "grundsteuerBGrundbetrag" : 394
     },
     "type" : "Feature",
     "geometry" : {
@@ -1231,28 +1108,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 360,
+      "gewerbesteuerGrundbetrag" : 351,
+      "gemeindeanteilAnDerEinkommensteuer" : 1449,
+      "grundsteuerAIstaufkommen" : 46,
+      "gewerbesteuerIstaufkommen" : 1265,
       "Name" : "Langenbrettach",
-      "RS" : "081255009113",
+      "gewerbesteuereinnahmen" : 1019,
       "Status" : "Gemeinde",
+      "RS" : "081255009113",
+      "grundsteuerAGrundbetrag" : 13,
+      "gemeindeanteilAnDerUmsatzsteuer" : 61,
       "AGS" : "08125113",
-      "realsteuer" : {
-        "ks" : "08125113",
-        "grundsteuerAIstaufkommen" : 46,
-        "grundsteuerBIstaufkommen" : 394,
-        "gewerbesteuerIstaufkommen" : 1265,
-        "grundsteuerAGrundbetrag" : 13,
-        "grundsteuerBGrundbetrag" : 112,
-        "gewerbesteuerGrundbetrag" : 351,
-        "grundsteuerAHebesatz" : 350,
-        "grundsteuerBHebesatz" : 350,
-        "gewerbesteuerHebesatz" : 360,
-        "gemeindeanteilAnDerEinkommensteuer" : 1449,
-        "gemeindeanteilAnDerUmsatzsteuer" : 61,
-        "gewerbesteuerumlage" : 246,
-        "gewerbesteuereinnahmen" : 1019
-      },
       "Einwohner" : 3636.0,
-      "qkm" : 2.38030006888507E7
+      "grundsteuerBIstaufkommen" : 394,
+      "gewerbesteuerumlage" : 246,
+      "grundsteuerAHebesatz" : 350,
+      "grundsteuerBHebesatz" : 350,
+      "qkm" : 2.38030006888507E7,
+      "grundsteuerBGrundbetrag" : 112
     },
     "type" : "Feature",
     "geometry" : {
@@ -1261,28 +1135,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 385,
+      "gewerbesteuerGrundbetrag" : 636,
+      "gemeindeanteilAnDerEinkommensteuer" : 4896,
+      "grundsteuerAIstaufkommen" : 75,
+      "gewerbesteuerIstaufkommen" : 2449,
       "Name" : "Weinsberg",
-      "RS" : "081255014102",
+      "gewerbesteuereinnahmen" : 2003,
       "Status" : "Stadt",
+      "RS" : "081255014102",
+      "grundsteuerAGrundbetrag" : 17,
+      "gemeindeanteilAnDerUmsatzsteuer" : 393,
       "AGS" : "08125102",
-      "realsteuer" : {
-        "ks" : "08125102",
-        "grundsteuerAIstaufkommen" : 75,
-        "grundsteuerBIstaufkommen" : 1933,
-        "gewerbesteuerIstaufkommen" : 2449,
-        "grundsteuerAGrundbetrag" : 17,
-        "grundsteuerBGrundbetrag" : 439,
-        "gewerbesteuerGrundbetrag" : 636,
-        "grundsteuerAHebesatz" : 440,
-        "grundsteuerBHebesatz" : 440,
-        "gewerbesteuerHebesatz" : 385,
-        "gemeindeanteilAnDerEinkommensteuer" : 4896,
-        "gemeindeanteilAnDerUmsatzsteuer" : 393,
-        "gewerbesteuerumlage" : 445,
-        "gewerbesteuereinnahmen" : 2003
-      },
       "Einwohner" : 11623.0,
-      "qkm" : 2.18219607660982E7
+      "grundsteuerBIstaufkommen" : 1933,
+      "gewerbesteuerumlage" : 445,
+      "grundsteuerAHebesatz" : 440,
+      "grundsteuerBHebesatz" : 440,
+      "qkm" : 2.18219607660982E7,
+      "grundsteuerBGrundbetrag" : 439
     },
     "type" : "Feature",
     "geometry" : {
@@ -1291,28 +1162,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 370,
+      "gewerbesteuerGrundbetrag" : 449,
+      "gemeindeanteilAnDerEinkommensteuer" : 2871,
+      "grundsteuerAIstaufkommen" : 41,
+      "gewerbesteuerIstaufkommen" : 1662,
       "Name" : "Bad Wimpfen",
-      "RS" : "081250007007",
+      "gewerbesteuereinnahmen" : 1348,
       "Status" : "Stadt",
+      "RS" : "081250007007",
+      "grundsteuerAGrundbetrag" : 11,
+      "gemeindeanteilAnDerUmsatzsteuer" : 156,
       "AGS" : "08125007",
-      "realsteuer" : {
-        "ks" : "08125007",
-        "grundsteuerAIstaufkommen" : 41,
-        "grundsteuerBIstaufkommen" : 1108,
-        "gewerbesteuerIstaufkommen" : 1662,
-        "grundsteuerAGrundbetrag" : 11,
-        "grundsteuerBGrundbetrag" : 308,
-        "gewerbesteuerGrundbetrag" : 449,
-        "grundsteuerAHebesatz" : 360,
-        "grundsteuerBHebesatz" : 360,
-        "gewerbesteuerHebesatz" : 370,
-        "gemeindeanteilAnDerEinkommensteuer" : 2871,
-        "gemeindeanteilAnDerUmsatzsteuer" : 156,
-        "gewerbesteuerumlage" : 315,
-        "gewerbesteuereinnahmen" : 1348
-      },
       "Einwohner" : 6872.0,
-      "qkm" : 1.9318814491051E7
+      "grundsteuerBIstaufkommen" : 1108,
+      "gewerbesteuerumlage" : 315,
+      "grundsteuerAHebesatz" : 360,
+      "grundsteuerBHebesatz" : 360,
+      "qkm" : 1.9318814491051E7,
+      "grundsteuerBGrundbetrag" : 308
     },
     "type" : "Feature",
     "geometry" : {
@@ -1321,28 +1189,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 350,
+      "gewerbesteuerGrundbetrag" : 1326,
+      "gemeindeanteilAnDerEinkommensteuer" : 6018,
+      "grundsteuerAIstaufkommen" : 188,
+      "gewerbesteuerIstaufkommen" : 4642,
       "Name" : "Brackenheim",
-      "RS" : "081255003013",
+      "gewerbesteuereinnahmen" : 3713,
       "Status" : "Stadt",
+      "RS" : "081255003013",
+      "grundsteuerAGrundbetrag" : 48,
+      "gemeindeanteilAnDerUmsatzsteuer" : 469,
       "AGS" : "08125013",
-      "realsteuer" : {
-        "ks" : "08125013",
-        "grundsteuerAIstaufkommen" : 188,
-        "grundsteuerBIstaufkommen" : 2045,
-        "gewerbesteuerIstaufkommen" : 4642,
-        "grundsteuerAGrundbetrag" : 48,
-        "grundsteuerBGrundbetrag" : 524,
-        "gewerbesteuerGrundbetrag" : 1326,
-        "grundsteuerAHebesatz" : 390,
-        "grundsteuerBHebesatz" : 390,
-        "gewerbesteuerHebesatz" : 350,
-        "gemeindeanteilAnDerEinkommensteuer" : 6018,
-        "gemeindeanteilAnDerUmsatzsteuer" : 469,
-        "gewerbesteuerumlage" : 928,
-        "gewerbesteuereinnahmen" : 3713
-      },
       "Einwohner" : 15184.0,
-      "qkm" : 4.5493054E7
+      "grundsteuerBIstaufkommen" : 2045,
+      "gewerbesteuerumlage" : 928,
+      "grundsteuerAHebesatz" : 390,
+      "grundsteuerBHebesatz" : 390,
+      "qkm" : 4.5493054E7,
+      "grundsteuerBGrundbetrag" : 524
     },
     "type" : "Feature",
     "geometry" : {
@@ -1351,28 +1216,25 @@
     }
   }, {
     "properties" : {
+      "gewerbesteuerHebesatz" : 360,
+      "gewerbesteuerGrundbetrag" : 341,
+      "gemeindeanteilAnDerEinkommensteuer" : 2879,
+      "grundsteuerAIstaufkommen" : 35,
+      "gewerbesteuerIstaufkommen" : 1227,
       "Name" : "Beilstein",
-      "RS" : "081255012008",
+      "gewerbesteuereinnahmen" : 989,
       "Status" : "Stadt",
+      "RS" : "081255012008",
+      "grundsteuerAGrundbetrag" : 10,
+      "gemeindeanteilAnDerUmsatzsteuer" : 138,
       "AGS" : "08125008",
-      "realsteuer" : {
-        "ks" : "08125008",
-        "grundsteuerAIstaufkommen" : 35,
-        "grundsteuerBIstaufkommen" : 862,
-        "gewerbesteuerIstaufkommen" : 1227,
-        "grundsteuerAGrundbetrag" : 10,
-        "grundsteuerBGrundbetrag" : 230,
-        "gewerbesteuerGrundbetrag" : 341,
-        "grundsteuerAHebesatz" : 350,
-        "grundsteuerBHebesatz" : 375,
-        "gewerbesteuerHebesatz" : 360,
-        "gemeindeanteilAnDerEinkommensteuer" : 2879,
-        "gemeindeanteilAnDerUmsatzsteuer" : 138,
-        "gewerbesteuerumlage" : 239,
-        "gewerbesteuereinnahmen" : 989
-      },
       "Einwohner" : 6074.0,
-      "qkm" : 2.5622579670478E7
+      "grundsteuerBIstaufkommen" : 862,
+      "gewerbesteuerumlage" : 239,
+      "grundsteuerAHebesatz" : 350,
+      "grundsteuerBHebesatz" : 375,
+      "qkm" : 2.5622579670478E7,
+      "grundsteuerBGrundbetrag" : 230
     },
     "type" : "Feature",
     "geometry" : {
