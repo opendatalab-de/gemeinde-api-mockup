@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- build:css css/hdv.css -->
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/leaflet.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<!-- endbuild -->
+<title>Heilbronn API</title>
+<meta name="description" content="Beispielhafte Visualisierung öffentlicher Daten von Heilbronn" />
+</head>
+<body>
+	<div class="container">
+		<h1 class="hidden-phone">Beispielhafte API und Visualisierung für öffentliche Daten</h1>
+		
+		<!--[if lte IE 8]>
+			<div class="alert alert-error">
+				<i class="icon-info-sign"></i>
+				Zur Anzeige der Visualisierung benötigen Sie mindestens den Internet Explorer 9. Bitte aktualisieren Sie Ihren Browser oder verwenden Sie einen alternativen Browser wie Firefox oder Chrome.
+			</div>
+		<![endif]-->
+		<noscript>
+			<div class="alert alert-error">
+				<i class="icon-info-sign"></i>
+				Zur Anzeige der Visualisierung ist JavaScript erforderlich.
+			</div>
+		</noscript>
+
+		<div id="map-container">
+			<div id="map"></div>
+	
+			<div id="nav" class="hide">
+				<form class="nav-container settings form-inline" method="GET" action="index.html">
+					<div class="visible-phone pull-right">
+						<button type="button" class="btn close-nav">
+							<i class="icon-remove"></i>
+						</button>
+					</div>
+					
+					<h2 class="visible-phone">Optionen</h2>
+					
+					<label class="title">Bundesland</label>
+					<button type="button" class="close close-nav hidden-phone pull-right" data-dismiss="modal">&times;</button>
+					<select>
+						<option>Baden-Württemberg</option>
+					</select>
+					
+					<label class="title">Landkreis</label>
+					<select>
+						<option>Heilbronn</option>
+					</select>
+					
+					<label class="title">Gebietsgröße</label>
+					<p>
+						<label class="radio">
+							<input type="radio" name="areaType" value="landkreise" /> Landkreise
+						</label>
+						<label class="radio">
+							<input type="radio" name="areaType" value="gemeinden" /> Gemeinden
+						</label>
+					</p>
+					
+					<label class="title">Metadaten</label>
+					<select name="valueType">
+						<option value="Einwohner">Einwohnerzahl</option>
+						<option value="qkm">Fläche in km²</option>
+						<option value="">Gewerbesteuer</option>
+						<option value="">Grundsteuer A</option>
+						<option value="">Grundsteuer B</option>
+						<option value="">Hebesätze</option>
+						<option value="">Jährliche Schulden</option>
+						<option value="">Trinkwasserentgelt je cbm</option>
+						<option value="">Arbeitslosenzahl</option>
+						<option value="">Sozialversicherungspflichtige Beschäftigte</option>
+						<option value="">Pendler</option>
+						<option value="">Verarbeitendes Gewerbe: Beschäftigte, Betriebe</option>
+						<option value="">Tourismuszahlen</option>
+						<option value="">Straßenverkehrsunfälle
+					</select>
+
+					<br />
+					<p>
+						<button type="button" class="btn btn-primary">.geojson Export</button>
+						<button type="button" class="btn btn-primary">.json Export</button>
+					</p>
+				</form>
+			</div>
+		</div>
+
+		<div id="info" class="modal hide">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>Finanzdatenvergleich NRW</h3>
+			</div>
+			<div class="modal-body">
+				<p>Beim Finanzdatenvergleich NRW handelt es sich um ein Projekt der Piratenpartei NRW ...</p>
+			</div>
+		</div>
+
+		<div id="imprint" class="modal hide">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>Impressum</h3>
+			</div>
+			<div class="modal-body">
+				<address>
+					<strong>Piratenfraktion im Landtag NRW</strong><br />
+					Fraktionsvorstand<br />
+					Platz des Landtags 1<br />
+					40221 Düsseldorf<br /><br />
+					E-Mail: 20Piraten@piratenfraktion-nrw.de<br />
+					Tel.: 0211 884-4608<br />
+					Fax: 0211 884-3705
+				</address>
+			</div>
+		</div>
+
+		<div id="datasources" class="modal hide">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>Datenquellen</h3>
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li>
+						Map powered by Leaflet - Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,
+						<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>
+					</li>
+					<li>
+						Gemeindeflächen Geodaten:
+						<a href="http://www.mik.nrw.de/themen-aufgaben/buergerbeteiligung-wahlen/wahlen/auf-allen-ebenen/landtagswahl/wahl-2012/wahlkreiskarten.html">Ministerium für Inneres und Kommunales des Landes Nordrhein-Westfalen</a>
+					</li>
+					<li>
+						Landkreisflächen Geodaten:
+						<a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=1&gdz_unt_zeile=17&gdz_user_id=0">Bundesamt für Kartographie und Geodäsie</a>
+					</li>
+					<li>
+						Einwohnerzahlen:
+						<a href="https://www.destatis.de/DE/ZahlenFakten/LaenderRegionen/Regionales/Gemeindeverzeichnis/Administrativ/AdministrativeUebersicht.html">Gemeindeverzeichnis-Informationssystem (GV-ISys)</a> des Statistischen Bundesamts
+					</li>
+					<li>
+						Fläche in km² je Gemeinde:
+						<a href="https://www.destatis.de/DE/ZahlenFakten/LaenderRegionen/Regionales/Gemeindeverzeichnis/Gemeindeverzeichnis.html">Gemeindeverzeichnis-Informationssystem (GV-ISys)</a> des Statistischen Bundesamts
+					</li>
+					<li>
+						Finanzrechnungsstatisik:
+						<a href="https://www.landesdatenbank.nrw.de/">Landesdatenbank NRW</a> (Tabellencodes: 71147-05i und 71147-15i)
+					</li>
+					<li>
+						Bilanz:
+						IT.NRW - bezogen von <a href="http://www.piratenfraktion-nrw.de/2012/12/transparenzerfolg-finanzdaten-der-kommunen-veroffentlicht/">piratenfraktion-nrw.de</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="socialshareprivacy"></div>
+	</div>
+	<div class="ajax-loader"></div>
+
+	<script id="popup-template" type="text/x-handlebars-template">
+		<p class="popup-label"><strong>{{areaLabel}}</strong></p>
+		
+		<p>
+			{{valueLabel}}:
+			<strong class="popup-value">
+				{{{number value}}}
+			</strong>
+		</p>
+	</script>
+
+	<!-- build:js js/app.js -->
+	<script src="lib/underscore.js"></script>
+	<script src="lib/leaflet.js"></script>
+	<script src="lib/jquery.js"></script>
+	<script src="lib/bootstrap.js"></script>
+	<script src="lib/handlebars.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/defaults.js"></script>
+	<script src="js/settings.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/handlebars-helper.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/layerStyle.js"></script>
+	<script src="js/boundaries.js"></script>
+	<script src="js/areas.js"></script>
+	<!-- endbuild -->
+
+	<script src="socialshareprivacy/jquery.socialshareprivacy.min.js"></script>
+	<script src="socialshareprivacy/jquery.socialshareprivacy.min.de.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			hdv.init();
+			$('#socialshareprivacy').socialSharePrivacy();
+		});
+	</script>
+</body>
+</html>
