@@ -15,7 +15,7 @@ public class Realsteuervergleich {
 			RealsteuerParser parser = new RealsteuerParser(Utils.readCsvFile(args[1]));
 			List<Realsteuer> list = parser.parse();
 			Map<String, Realsteuer> rsMap = toMap(list);
-			Map<String, Object> result = filterGeoJsonByKey(json, rsMap);
+			Map<String, Object> result = filterGeoJsonByKey(json, "realsteuer", rsMap);
 			System.out.println("Objects: " + ((List<Object>)result.get("features")).size());
 			Utils.writeData(result, args[2]);
 		}
@@ -33,7 +33,7 @@ public class Realsteuervergleich {
 		return result;
 	}
 
-	public static Map<String, Object> filterGeoJsonByKey(Map<String, Object> geoJson, Map<String, Realsteuer> rsMap) {
+	public static Map<String, Object> filterGeoJsonByKey(Map<String, Object> geoJson, String label, Map<String, ?> rsMap) {
 		Map<String, Object> result = Utils.asMap("type", geoJson.get("type"));
 		List<Map<String, Object>> filteredFeatures = new ArrayList<>();
 		result.put("features", filteredFeatures);
@@ -43,10 +43,10 @@ public class Realsteuervergleich {
 			Map<String, Object> feature = it.next();
 			Map<String, Object> properties = (Map<String, Object>)feature.get("properties");
 			String ags = (String)properties.get("AGS");
-			Realsteuer realsteuer = rsMap.get(ags);
-			if (realsteuer != null) {
+			Object data = rsMap.get(ags);
+			if (data != null) {
 				Map<String, Object> newProperties = new HashMap<>(properties);
-				newProperties.put("realsteuer", realsteuer);
+				newProperties.put("realsteuer", data);
 				Map<String, Object> newFeature = Utils.asMap("type", feature.get("type"), "geometry",
 						feature.get("geometry"), "properties", newProperties);
 				filteredFeatures.add(newFeature);
