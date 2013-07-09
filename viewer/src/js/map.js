@@ -46,14 +46,12 @@
 	var loader = {
 		loadStatus: {},
 		init: function() {
-			$(hdv).on('loaded.areaLayers loaded.data loaded.metadata', _.bind(this.done, this));
+			$(hdv).on('loaded.data', _.bind(this.done, this));
 			$(hdv).on('settingsUpdate', _.bind(this.update, this));
 		},
 		update: function() {
 			if (!this.allLoaded()) {
-				this.loadAreaLayers(hdv.settings.areaType);
-				this.loadValues(this.getValueFile(hdv.settings.areaType, hdv.settings.year, hdv.settings.product));
-				this.loadMetadata(this.getMetadataFile(hdv.settings.areaType, hdv.settings.year));
+				this.loadData();
 			} else {
 				this.done();
 			}
@@ -65,59 +63,22 @@
 			}
 		},
 		allLoaded: function() {
-			return this.areaLayersLoaded(hdv.settings.areaType)
-					&& this.valuesLoaded(this.getValueFile(hdv.settings.areaType, hdv.settings.year, hdv.settings.product))
-					&& this.metadataLoaded(this.getMetadataFile(hdv.settings.areaType, hdv.settings.year));
+			return this.dataLoaded();
 		},
-		areaLayersLoaded: function(areaType) {
-			return this.loadStatus.areaType === areaType;
+		dataLoaded: function() {
+			return this.loadStatus.data === true;
 		},
-		loadAreaLayers: function(areaType) {
-			if (!this.areaLayersLoaded(areaType)) {
+		loadData: function() {
+			if (!this.dataLoaded()) {
 				$('.ajax-loader').show();
 
-				$.getJSON('data/' + areaType + '.geojson', _.bind(function(data) {
+				$.getJSON('data/heilbronn-rs.geojson', _.bind(function(data) {
 					hdv.map.removeLayers(hdv.data.areaLayers);
 					hdv.data.areaLayers = [];
-
 					hdv.map.addAreaLayers(data, _.bind(hdv.data.addAreaLayer, hdv.data));
 
-					this.loadStatus.areaType = areaType;
-					$(hdv).triggerHandler('loaded.areaLayers');
-				}, this));
-			}
-		},
-		getValueFile: function(areaType, year, product) {
-			return year + '/' + areaType + '/' + product + '.json';
-		},
-		valuesLoaded: function(valueFile) {
-			return this.loadStatus.values === valueFile;
-		},
-		loadValues: function(valueFile) {
-			if (!this.valuesLoaded(valueFile)) {
-				$('.ajax-loader').show();
-
-				$.getJSON('data/' + valueFile, _.bind(function(data) {
-					hdv.data.values = data;
-					this.loadStatus.values = valueFile;
+					this.loadStatus.data = true;
 					$(hdv).triggerHandler('loaded.data');
-				}, this));
-			}
-		},
-		getMetadataFile: function(areaType, year) {
-			return year + '/' + areaType + '/metadata.json';
-		},
-		metadataLoaded: function(metadataFile) {
-			return this.loadStatus.metadata === metadataFile;
-		},
-		loadMetadata: function(metadataFile) {
-			if (!this.metadataLoaded(metadataFile)) {
-				$('.ajax-loader').show();
-
-				$.getJSON('data/' + metadataFile, _.bind(function(data) {
-					hdv.data.meta = data;
-					this.loadStatus.metadata = metadataFile;
-					$(hdv).triggerHandler('loaded.metadata');
 				}, this));
 			}
 		}
@@ -130,8 +91,8 @@
 			this.leafletMap = L.map('map', {
 				center: [hdv.defaults.lat, hdv.defaults.lon],
 				zoom: hdv.defaults.zoom,
-				minZoom: 8,
-				maxZoom: 11,
+				minZoom: 10,
+				maxZoom: 12,
 				attributionControl: false
 			});
 
@@ -143,7 +104,6 @@
 			this.setupTemplates();
 		},
 		setupForm: function(defaults) {
-			$('.settings input[name="relation"]').filter('[value="' + hdv.defaults.relation + '"]').prop('checked', true);
 			$('.settings input[name="areaType"]').filter('[value="' + hdv.defaults.areaType + '"]').prop('checked', true);
 		},
 		setupTemplates: function() {

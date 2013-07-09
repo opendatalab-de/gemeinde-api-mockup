@@ -10,12 +10,9 @@
 			});
 		},
 		buildAreaLayer: function(feature, layer) {
-			return {
-				'key': feature.properties.KN ? feature.properties.KN : feature.properties.AGS,
-				'label': feature.properties.GN ? feature.properties.GN : feature.properties.GEN,
-				'attribute': feature.properties.DES,
+			return _.extend({
 				'value': layer
-			};
+			}, feature.properties);
 		},
 		addAreaLayer: function(feature, layer) {
 			var areaLayer = this.buildAreaLayer(feature, layer);

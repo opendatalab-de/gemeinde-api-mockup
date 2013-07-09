@@ -1,14 +1,11 @@
 (function(hdv, _) {
 	'use strict';
 	var defaults = {
-		lat: 51.463,
-		lon: 7.88,
-		zoom: 9,
-		product: 999,
-		account: 7,
-		relation: 'none',
+		lat: 49.15,
+		lon: 9.2,
+		zoom: 10,
 		areaType: 'gemeinden',
-		year: 2009
+		valueType: 'Einwohner'
 	};
 
 	var defaultService = {

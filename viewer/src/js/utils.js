@@ -29,6 +29,9 @@
 	hdv.calc = {
 		safeLog10: function(number) {
 			return number === 0 ? 0 : Math.log(Math.abs(number)) / Math.LN10;
+		},
+		nullSafeNumber: function(number) {
+			return (number === null || number === undefined || isNaN(parseInt(number, 10))) ? 0 : number;
 		}
 	};
 })(hdv, _);

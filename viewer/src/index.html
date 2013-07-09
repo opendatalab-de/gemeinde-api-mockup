@@ -42,42 +42,51 @@
 					</div>
 					
 					<h2 class="visible-phone">Optionen</h2>
-
-					<label class="title">Produktgruppe</label>
+					
+					<label class="title">Bundesland</label>
 					<button type="button" class="close close-nav hidden-phone pull-right" data-dismiss="modal">&times;</button>
-					<select name="product">
-						<option value="none" selected="selected">Bitte wählen ...</option>
+					<select>
+						<option>Baden-Württemberg</option>
 					</select>
 					
-					<label class="title">Konto</label>
-					<select name="account">
-						<option value="none" selected="selected">Bitte wählen ...</option>
+					<label class="title">Landkreis</label>
+					<select>
+						<option>Heilbronn</option>
 					</select>
 					
-					<label class="title">im Verhältnis zur?</label>
-					<p>
-						<label class="radio">
-							<input type="radio" name="relation" value="population" data-label="pro Einwohnerzahl"> Einwohnerzahl
-						</label>
-						<label class="radio">
-							<input type="radio" name="relation" value="size" data-label="pro Fläche"> Fläche
-						</label>
-						<label class="radio">
-							<input type="radio" name="relation" value="none" data-label=""> absolut
-						</label>
-					</p>
-	
 					<label class="title">Gebietsgröße</label>
 					<p>
-						<label class="radio"><input type="radio" name="areaType" value="gemeinden"> Gemeinden</label>
-						<label class="radio"><input type="radio" name="areaType" value="landkreise"> Landkreise</label>
+						<label class="radio">
+							<input type="radio" name="areaType" value="landkreise" /> Landkreise
+						</label>
+						<label class="radio">
+							<input type="radio" name="areaType" value="gemeinden" /> Gemeinden
+						</label>
 					</p>
-	
-					<label class="title">Abrechnungsjahr</label> <select name="year">
-						<option value="2009" selected="selected">2009</option>
-						<option value="2010">2010</option>
-						<option value="2011">2011</option>
+					
+					<label class="title">Metadaten</label>
+					<select name="valueType">
+						<option value="Einwohner">Einwohnerzahl</option>
+						<option value="qkm">Fläche in km²</option>
+						<option value="">Gewerbesteuer</option>
+						<option value="">Grundsteuer A</option>
+						<option value="">Grundsteuer B</option>
+						<option value="">Hebesätze</option>
+						<option value="">Jährliche Schulden</option>
+						<option value="">Trinkwasserentgelt je cbm</option>
+						<option value="">Arbeitslosenzahl</option>
+						<option value="">Sozialversicherungspflichtige Beschäftigte</option>
+						<option value="">Pendler</option>
+						<option value="">Verarbeitendes Gewerbe: Beschäftigte, Betriebe</option>
+						<option value="">Tourismuszahlen</option>
+						<option value="">Straßenverkehrsunfälle
 					</select>
+
+					<br />
+					<p>
+						<button type="button" class="btn btn-primary">.geojson Export</button>
+						<button type="button" class="btn btn-primary">.json Export</button>
+					</p>
 				</form>
 			</div>
 		</div>
@@ -158,41 +167,8 @@
 		<p>
 			{{valueLabel}}:
 			<strong class="popup-value">
-				{{#if isNumericValue}}
-					{{{currency value}}}
-				{{else}}
-					?
-				{{/if}}
+				{{{number value}}}
 			</strong>
-		</p>
-
-		<p class="raw-values-title">Rohdaten:</p>
-		<table class="table-raw-values">
-			<tbody>
-				<tr title="Einwohnerzahl">
-					<th><i class="icon-user"></i></th>
-					<td>{{number area.population}}</td>
-				</tr>
-				<tr title="Fläche">
-					<th><i class="icon-globe"></i></th>
-					<td>{{number area.size}} km²</td>
-				</tr>
-				<tr title="Rohbetrag des ausgewählten Kontos in der Quelldatei">
-					<th><i class="icon-briefcase"></i></th>
-					<td>{{{financeValue accountValue}}}</td>
-				</tr>
-				<tr title="Amtlicher Gemeindeschlüssel / Produktgruppe / Kontonummer">
-					<th><i class="icon-tag"></i></th>
-					<td>{{area.key}} - PG: {{settings.product}} K: {{settings.account}}</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<p>
-			<a href="bilanz.html?{{keyForBalance}}" target="_blank" class="btn btn-balance btn-popup" title="Bilanz">
-				<i class="icon-share"></i>
-				Bilanz öffnen
-			</a>
 		</p>
 	</script>
 
@@ -210,8 +186,7 @@
 	<script src="js/handlebars-helper.js"></script>
 	<script src="js/map.js"></script>
 	<script src="js/layerStyle.js"></script>
-	<script src="js/balance.js"></script>
-	<script src="js/products.js"></script>
+	<script src="js/boundaries.js"></script>
 	<script src="js/areas.js"></script>
 	<!-- endbuild -->
 
