@@ -18,9 +18,10 @@ public class Realsteuervergleich {
 				"gewerbesteuerumlage", "gewerbesteuereinnahmen" }));
 		CONFIGS.put("001-03-5.csv", new ParserConfiguration(7, 1, 3, new String[] { "betriebe", "beschäftigte",
 				"bruttoentgelte" }));
-		CONFIGS.put("517-01-5.csv", new ParserConfiguration(8, 1, 3,
-				new String[] { "Entgelt f. Trinkwasserversorgung priv. Haushalte",
-						"Entgelt f. Trinkwasserversorgung priv. Haushalte" }));
+		CONFIGS.put("659-21-5.csv", new ParserConfiguration(9, 0, 2, new String[] { "Ausländer", "schwerbehindert",
+				"15 bis unter 20 Jahre", "15 bis unter 25 Jahre", "55 bis unter 65 Jahre", "langzeitarbeitslos" }));
+		CONFIGS.put("517-01-5.csv", new ParserConfiguration(8, 1, 3, new String[] {
+				"verbrauchsabhängiges Entgelt pro cbm", "haushaltsäbliches verbrauchsunabh. Entgelt p. Jahr" }));
 		CONFIGS.put("469-11-5.csv", new ParserConfiguration(8, 0, 2, new String[] { "Geöffnete Beherbergungsbetriebe",
 				"Angebotene Gästebetten", "Gästeübernachtungen", "Gästeankünfte" }));
 		CONFIGS.put("035-21-5.csv", new ParserConfiguration(8, 1, 3, new String[] { "WohngebäudeInsgesamt",

@@ -11,10 +11,11 @@ import java.io.Reader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.geojson.Feature;
+import org.geojson.FeatureCollection;
 import org.supercsv.io.CsvListReader;
 import org.supercsv.prefs.CsvPreference;
 
@@ -50,6 +51,15 @@ public class Utils {
 					MapType.construct(HashMap.class, SimpleType.construct(String.class),
 							SimpleType.construct(Object.class)));
 			return map;
+		}
+		catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public static FeatureCollection readGeoJsonFeatureCollection(InputStream in, String charset) {
+		try {
+			return new ObjectMapper().readValue(new InputStreamReader(in, charset), FeatureCollection.class);
 		}
 		catch (Exception e) {
 			throw new RuntimeException(e);
@@ -108,28 +118,29 @@ public class Utils {
 		return s != null && !s.trim().isEmpty();
 	}
 
-	public static Map<String, Object> filterGeoJsonByKey(Map<String, Object> geoJson, String... rsKeys) {
-		Map<String, Object> result = Utils.asMap("type", geoJson.get("type"));
-		List<Map<String, Object>> filteredFeatures = new ArrayList<>();
-		result.put("features", filteredFeatures);
-		List<Map<String, Object>> features = (List<Map<String, Object>>)geoJson.get("features");
-		Iterator<Map<String, Object>> it = features.iterator();
-		while (it.hasNext()) {
-			Map<String, Object> feature = it.next();
-			Map<String, Object> properties = (Map<String, Object>)feature.get("properties");
-			String rs = (String)properties.get("RS");
+	public static FeatureCollection mergeGeoJson(FeatureCollection... geoJson) {
+		FeatureCollection result = new FeatureCollection();
+		for (FeatureCollection fc : geoJson) {
+			result.addAllFeatures(fc.getFeatures());
+		}
+		return result;
+	}
+
+	public static FeatureCollection filterGeoJsonByKey(FeatureCollection geoJson, String... rsKeys) {
+		FeatureCollection result = new FeatureCollection();
+		for (Feature feature : geoJson) {
+			String rs = feature.getProperty("RS");
 			for (String rsKey : rsKeys) {
 				if (rs != null && rs.startsWith(rsKey)) {
-					Map<String, Object> newProperties = new HashMap<>();
-					newProperties.put("RS", properties.get("RS"));
-					newProperties.put("AGS", rsToAgs((String)properties.get("RS")));
-					newProperties.put("Name", properties.get("GEN"));
-					newProperties.put("Status", properties.get("DES"));
-					newProperties.put("Einwohner", properties.get("EWZ"));
-					newProperties.put("qkm", properties.get("SHAPE_AREA"));
-					Map<String, Object> newFeature = Utils.asMap("type", feature.get("type"), "geometry",
-							feature.get("geometry"), "properties", newProperties);
-					filteredFeatures.add(newFeature);
+					Feature newFeature = new Feature();
+					newFeature.setProperty("RS", feature.getProperty("RS"));
+					newFeature.setProperty("AGS", rsToAgs((String)feature.getProperty("RS")));
+					newFeature.setProperty("Name", feature.getProperty("GEN"));
+					newFeature.setProperty("Status", feature.getProperty("DES"));
+					newFeature.setProperty("Einwohner", feature.getProperty("EWZ"));
+					newFeature.setProperty("qkm", feature.getProperty("SHAPE_AREA"));
+					newFeature.setGeometry(feature.getGeometry());
+					result.addFeature(newFeature);
 					break;
 				}
 			}
