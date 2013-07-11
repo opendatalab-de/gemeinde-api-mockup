@@ -1,4 +1,4 @@
-(function(hdv, $, _, Handlebars) {
+(function(ga, $, _, Handlebars) {
 	'use strict';
 	var converters = {
 		qmToqkm: function(value) {
@@ -11,10 +11,10 @@
 
 	var areaValue = {
 		of: function(areaLayer) {
-			return this.convert(areaLayer[hdv.settings.valueType], hdv.settings.valueConverter);
+			return this.convert(areaLayer[ga.settings.valueType], ga.settings.valueConverter);
 		},
 		convert: function(rawValue, converterName) {
-			var value = hdv.calc.nullSafeNumber(rawValue);
+			var value = ga.calc.nullSafeNumber(rawValue);
 			if (converterName) {
 				var converter = converters[converterName];
 				value = converter(value);
@@ -23,43 +23,48 @@
 		},
 		getLabel: function() {
 			return $('select[name="valueType"] option:selected').text() + ':';
+		},
+		getGroupLabel: function() {
+			return $('select[name="valueType"] option:selected').closest('optgroup').attr('label');
 		}
 	};
 
 	var areas = {
 		init: function() {
-			$(hdv).on('loader.finished', _.bind(this.update, this));
+			$(ga).on('loader.finished', _.bind(this.update, this));
 		},
-		getTemplateObject: function(areaLayer, value, valueLabel, unit) {
+		getTemplateObject: function(areaLayer, value, valueLabel, groupLabel, unit) {
 			return {
 				'areaLabel': areaLayer.Name,
 				'valueLabel': valueLabel,
+				'groupLabel': groupLabel,
 				'value': value,
 				'unit': unit
 			};
 		},
-		refreshLayer: function(areaLayer, log10Boundaries, settings, valueLabel) {
-			var value = hdv.areaValue.of(areaLayer);
-			var templateObject = this.getTemplateObject(areaLayer, value, valueLabel, settings.valueUnit);
+		refreshLayer: function(areaLayer, log10Boundaries, settings, valueLabel, groupLabel) {
+			var value = ga.areaValue.of(areaLayer);
+			var templateObject = this.getTemplateObject(areaLayer, value, valueLabel, groupLabel, settings.valueUnit);
 
-			areaLayer.value.setStyle(hdv.layerStyle.forValue(value, log10Boundaries, true, false));
-			areaLayer.value.bindPopup(hdv.map.templates.popup(templateObject));
+			areaLayer.value.setStyle(ga.layerStyle.forValue(value, log10Boundaries, true, false));
+			areaLayer.value.bindPopup(ga.map.templates.popup(templateObject));
 		},
 		refreshLayers: function(settings) {
-			var boundaries = hdv.boundaries.findAccordingTo(settings);
-			var log10Boundaries = hdv.boundaries.toLog10(boundaries);
+			var boundaries = ga.boundaries.findAccordingTo(settings);
+			var log10Boundaries = ga.boundaries.toLog10(boundaries);
 			var valueLabel = areaValue.getLabel();
+			var groupLabel = areaValue.getGroupLabel();
 
-			_.each(hdv.data.areaLayers, _.bind(function(areaLayer) {
-				this.refreshLayer(areaLayer, log10Boundaries, settings, valueLabel);
+			_.each(ga.data.areaLayers, _.bind(function(areaLayer) {
+				this.refreshLayer(areaLayer, log10Boundaries, settings, valueLabel, groupLabel);
 			}, this));
 		},
 		update: function() {
-			this.refreshLayers(hdv.settings);
+			this.refreshLayers(ga.settings);
 		}
 	};
 
-	hdv.areas = areas;
-	hdv.areaValue = areaValue;
+	ga.areas = areas;
+	ga.areaValue = areaValue;
 	areas.init();
-})(hdv, jQuery, _, Handlebars);
+})(ga, jQuery, _, Handlebars);

@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- build:css css/hdv.css -->
+<!-- build:css css/ga.css -->
 <link href="css/bootstrap.css" rel="stylesheet" />
 <link href="css/bootstrap-responsive.css" rel="stylesheet" />
 <link href="css/leaflet.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
 <!-- endbuild -->
-<title>Heilbronn API</title>
-<meta name="description" content="Beispielhafte Visualisierung öffentlicher Daten von Heilbronn" />
+<title>API und Visualisierung der Regionalstatistik</title>
+<meta name="description" content="API und Visualisierung der Regionalstatistik am Beispiel von Heilbronn" />
 </head>
 <body>
 	<div class="container">
-		<h1 class="hidden-phone">Beispielhafte API und Visualisierung für öffentliche Daten</h1>
+		<h1 class="hidden-phone">Exemplarische API und Visualisierung der Regionalstatistik</h1>
 		
 		<!--[if lte IE 8]>
 			<div class="alert alert-error">
@@ -45,24 +45,16 @@
 					
 					<label class="title">Bundesland</label>
 					<button type="button" class="close close-nav hidden-phone pull-right" data-dismiss="modal">&times;</button>
-					<select>
-						<option>Baden-Württemberg</option>
+					<select disabled="disabled">
+						<option>Alle</option>
+						<option selected="selected">Baden-Württemberg</option>
 					</select>
 					
 					<label class="title">Landkreis</label>
-					<select>
-						<option>Heilbronn</option>
+					<select disabled="disabled">
+						<option>Alle</option>
+						<option selected="selected">Heilbronn</option>
 					</select>
-					
-					<label class="title">Gebietsgröße</label>
-					<p>
-						<label class="radio">
-							<input type="radio" name="areaType" value="landkreise" /> Landkreise
-						</label>
-						<label class="radio">
-							<input type="radio" name="areaType" value="gemeinden" /> Gemeinden
-						</label>
-					</p>
 					
 					<label class="title">Metadaten</label>
 					<select name="valueType">
@@ -106,9 +98,9 @@
 							<option value="RäumeinWohnungenmit7odermehrRäumen">Räume in Wohnungen mit 7 oder mehr Räumen</option>
 						</optgroup>
 						<optgroup label="Verarbeitendes Gewerbe (Handwerk)">
-							<option value="betriebe">Betriebe</option>
-							<option value="beschäftigte">Beschäftigte</option>
-							<option value="bruttoentgelte" data-unit="€" data-converter="x1000">Bruttoentgelte</option>
+							<option value="HandwerkBetriebe">Betriebe</option>
+							<option value="HandwerkBeschäftigte">Beschäftigte</option>
+							<option value="HandwerkBruttoentgelte" data-unit="€" data-converter="x1000">Bruttoentgelte</option>
 						</optgroup>
 						<optgroup label="Straßenverkehrsunfälle">
 							<option value="Unfälle (insgesamt)">Unfälle (insgesamt)</option>
@@ -146,24 +138,23 @@
 							<option value="Gästeankünfte">Gästeankünfte</option>
 						</optgroup>
 						<optgroup label="Trinkwasser">
-							<option value="verbrauchsabhängiges Entgelt pro cbm" data-unit="€">Entgelt je cbm</option>
-							<option value="haushaltsäbliches verbrauchsunabh. Entgelt p. Jahr" data-unit="€">haushaltsübliches Entgelt pro Jahr</option>
+							<option value="TrinkwasserVerbrauchsabhängiges Entgelt pro cbm" data-unit="€">Entgelt je cbm</option>
+							<option value="TrinkwasserHaushaltsäbliches verbrauchsunabh. Entgelt p. Jahr" data-unit="€">haushaltsübliches Entgelt pro Jahr</option>
 						</optgroup>
 						<optgroup label="Arbeitsmarkt">
-							<option value="Anzahl">Arbeitslose</option>
-							<option value="Ausländer">Arbeitslose: Ausländer</option>
-							<option value="schwerbehindert">Arbeitslose: schwerbehindert</option>
-							<option value="15 bis unter 20 Jahre">Arbeitslose: 15 bis unter 20 Jahre</option>
-							<option value="15 bis unter 25 Jahre">Arbeitslose: 15 bis unter 25 Jahre</option>
-							<option value="55 bis unter 65 Jahre">Arbeitslose: 55 bis unter 65 Jahre</option>
-							<option value="langzeitarbeitslos">Langzeitarbeitslose</option>
+							<option value="ArbeitsmarktAnzahl">Arbeitslose</option>
+							<option value="ArbeitsmarktAusländer">Arbeitslose: Ausländer</option>
+							<option value="Arbeitsmarktschwerbehindert">Arbeitslose: schwerbehindert</option>
+							<option value="Arbeitsmarkt15 bis unter 20 Jahre">Arbeitslose: 15 bis unter 20 Jahre</option>
+							<option value="Arbeitsmarkt15 bis unter 25 Jahre">Arbeitslose: 15 bis unter 25 Jahre</option>
+							<option value="Arbeitsmarkt55 bis unter 65 Jahre">Arbeitslose: 55 bis unter 65 Jahre</option>
+							<option value="Arbeitsmarktlangzeitarbeitslos">Langzeitarbeitslose</option>
 						</optgroup>
 					</select>
 
 					<br />
 					<p>
-						<button type="button" class="btn btn-primary">.geojson Export</button>
-						<button type="button" class="btn btn-primary">.json Export</button>
+						<a href="data/heilbronn-rs.geojson" class="btn btn-primary">.geojson Export</a>
 					</p>
 				</form>
 			</div>
@@ -172,10 +163,11 @@
 		<div id="info" class="modal hide">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h3>Finanzdatenvergleich NRW</h3>
+				<h3>Info</h3>
 			</div>
 			<div class="modal-body">
-				<p>Beim Finanzdatenvergleich NRW handelt es sich um ein Projekt der Piratenpartei NRW ...</p>
+				<p>Alle Daten und der <a href="https://github.com/opendatalab-de/gemeinde-api-mockup">Quellcode dieses Projekts</a> sind frei und unentgeltlich verfügbar.</p>
+				<p>Die Veröffentlichung erfolgt ohne Gewähr. Trotz sorgfältiger Prüfung kann für Übertragungs- und Darstellungsfehler keine Haftung übernommen werden.</p>
 			</div>
 		</div>
 
@@ -186,13 +178,24 @@
 			</div>
 			<div class="modal-body">
 				<address>
-					<strong>Piratenfraktion im Landtag NRW</strong><br />
-					Fraktionsvorstand<br />
-					Platz des Landtags 1<br />
-					40221 Düsseldorf<br /><br />
-					E-Mail: 20Piraten@piratenfraktion-nrw.de<br />
-					Tel.: 0211 884-4608<br />
-					Fax: 0211 884-3705
+					<strong>IF-Core IT Services GmbH</strong><br />
+					Clemenshaller Str. 5<br />
+					74254 Offenau<br />
+					T. + 49 7136 8302630<br />
+					E-Mail: info@if-core.de<br />
+					HRB 108620 (Amtsgericht Stuttgart)<br /><br />
+					USt-IdNr.: DE236085681<br />
+					Geschäftsführer: Felix Ebert<br />
+				</address>
+				
+				<address>
+					<strong>GrundID GmbH</strong><br />
+					Ingeborg-Bachmann-Str. 13<br />
+					74199 Untergruppenbach<br />
+					E-Mail: info@grundid.de<br />
+					HRB 737234 (Amtsgericht Stuttgart)<br /><br />
+					USt-IdNr.: DE277198648<br />
+					Geschäftsführer: Adrian Stabiszewski
 				</address>
 			</div>
 		</div>
@@ -210,28 +213,25 @@
 					</li>
 					<li>
 						Geodaten:
-						<a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=1&gdz_unt_zeile=17&gdz_user_id=0">Bundesamt für Kartographie und Geodäsie</a>
+						<a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_unt_zeile=0&gdz_user_id=0">Bundesamt für Kartographie und Geodäsie</a>
 					</li>
 					<li>
-						Einwohnerzahlen:
-						<a href="https://www.destatis.de/DE/ZahlenFakten/LaenderRegionen/Regionales/Gemeindeverzeichnis/Administrativ/AdministrativeUebersicht.html">Gemeindeverzeichnis-Informationssystem (GV-ISys)</a> des Statistischen Bundesamts
-					</li>
-					<li>
-						Fläche in km² je Gemeinde:
-						<a href="https://www.destatis.de/DE/ZahlenFakten/LaenderRegionen/Regionales/Gemeindeverzeichnis/Gemeindeverzeichnis.html">Gemeindeverzeichnis-Informationssystem (GV-ISys)</a> des Statistischen Bundesamts
-					</li>
-					<li>
-						Finanzrechnungsstatisik:
-						<a href="https://www.landesdatenbank.nrw.de/">Landesdatenbank NRW</a> (Tabellencodes: 71147-05i und 71147-15i)
-					</li>
-					<li>
-						Bilanz:
-						IT.NRW - bezogen von <a href="http://www.piratenfraktion-nrw.de/2012/12/transparenzerfolg-finanzdaten-der-kommunen-veroffentlicht/">piratenfraktion-nrw.de</a>
+						Statistische Daten:
+						<a href="https://www.regionalstatistik.de">Regionalstatistk</a> der Statistischen Ämter des Bundes und der Länder 
 					</li>
 				</ul>
 			</div>
 		</div>
+		
 		<div id="socialshareprivacy"></div>
+		<br />
+		
+		<p>
+			Alle Daten und der <a href="https://github.com/opendatalab-de/gemeinde-api-mockup">Quellcode dieses Projekts</a> sind frei und unentgeltlich
+			verfügbar.
+		</p>
+		<p>Die Veröffentlichung erfolgt ohne Gewähr. Trotz sorgfältiger Prüfung kann für Übertragungs- und Darstellungsfehler keine Haftung
+			übernommen werden.</p>
 	</div>
 	<div class="ajax-loader"></div>
 
@@ -239,6 +239,9 @@
 		<p class="popup-label"><strong>{{areaLabel}}</strong></p>
 		
 		<p>
+			{{#if groupLabel}}
+				<em>{{groupLabel}}</em><br />
+			{{/if}}
 			{{valueLabel}} {{{number value}}} {{unit}}
 		</p>
 	</script>
@@ -265,7 +268,7 @@
 	<script src="socialshareprivacy/jquery.socialshareprivacy.min.de.js"></script>
 	<script type="text/javascript">
 		$(function() {
-			hdv.init();
+			ga.init();
 			$('#socialshareprivacy').socialSharePrivacy();
 		});
 	</script>
