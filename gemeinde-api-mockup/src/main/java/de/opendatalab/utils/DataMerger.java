@@ -1,11 +1,11 @@
 package de.opendatalab.utils;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import org.geojson.Feature;
+import org.geojson.FeatureCollection;
 
 public class DataMerger {
 
@@ -52,46 +52,32 @@ public class DataMerger {
 
 	public static void main(String[] args) {
 		try {
-			Map<String, Object> json = Utils.readGenericJson(ResourceUtils.getResourceAsStream("heilbronn.geojson"),
-					"utf8");
-			Map<String, Object> result = json;
+			FeatureCollection json = Utils.readGeoJsonFeatureCollection(
+					ResourceUtils.getResourceAsStream("heilbronn.geojson"), "utf8");
 			for (Entry<String, ParserConfiguration> entry : CONFIGS.entrySet()) {
 				System.out.println(entry.getKey());
 				ConfigurableParser parser = new ConfigurableParser(Utils.readCsvFile(ResourceUtils
 						.getResourceAsStream(entry.getKey())), entry.getValue());
 				Map<String, Map<String, Object>> rsMap = parser.parse();
 				System.out.println("Parsed data: " + rsMap.size());
-				result = filterGeoJsonByKey(result, rsMap);
-				System.out.println("Objects: " + ((List<Object>)result.get("features")).size());
+				enrichGeoJsonByAgsKey(json, rsMap);
+				System.out.println("Objects: " + json.getFeatures().size());
 			}
 			String outputFile = "../viewer/src/data/heilbronn-rs.geojson";
-			Utils.writeData(result, outputFile);
+			Utils.writeData(json, outputFile);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static Map<String, Object> filterGeoJsonByKey(Map<String, Object> geoJson,
-			Map<String, Map<String, Object>> rsMap) {
-		Map<String, Object> result = Utils.asMap("type", geoJson.get("type"));
-		List<Map<String, Object>> filteredFeatures = new ArrayList<>();
-		result.put("features", filteredFeatures);
-		List<Map<String, Object>> features = (List<Map<String, Object>>)geoJson.get("features");
-		Iterator<Map<String, Object>> it = features.iterator();
-		while (it.hasNext()) {
-			Map<String, Object> feature = it.next();
-			Map<String, Object> properties = (Map<String, Object>)feature.get("properties");
-			String ags = (String)properties.get("AGS");
+	public static void enrichGeoJsonByAgsKey(FeatureCollection geoJson, Map<String, Map<String, Object>> rsMap) {
+		for (Feature feature : geoJson) {
+			String ags = feature.getProperty("AGS");
 			Map<String, Object> data = rsMap.get(ags);
 			if (data != null) {
-				Map<String, Object> newProperties = new HashMap<>(properties);
-				newProperties.putAll(data);
-				Map<String, Object> newFeature = Utils.asMap("type", feature.get("type"), "geometry",
-						feature.get("geometry"), "properties", newProperties);
-				filteredFeatures.add(newFeature);
+				feature.getProperties().putAll(data);
 			}
 		}
-		return result;
 	}
 }
