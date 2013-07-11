@@ -16,13 +16,15 @@ public class Realsteuervergleich {
 				"grundsteuerBGrundbetrag", "gewerbesteuerGrundbetrag", "grundsteuerAHebesatz", "grundsteuerBHebesatz",
 				"gewerbesteuerHebesatz", "gemeindeanteilAnDerEinkommensteuer", "gemeindeanteilAnDerUmsatzsteuer",
 				"gewerbesteuerumlage", "gewerbesteuereinnahmen" }));
-		CONFIGS.put("001-03-5.csv", new ParserConfiguration(7, 1, 3, new String[] { "betriebe", "beschäftigte",
-				"bruttoentgelte" }));
-		CONFIGS.put("659-21-5.csv", new ParserConfiguration(9, 0, 2, new String[] { "Anzahl", "Ausländer",
-				"schwerbehindert", "15 bis unter 20 Jahre", "15 bis unter 25 Jahre", "55 bis unter 65 Jahre",
-				"langzeitarbeitslos" }));
+		CONFIGS.put("001-03-5.csv", new ParserConfiguration(7, 1, 3, new String[] { "HandwerkBetriebe",
+				"HandwerkBeschäftigte", "HandwerkBruttoentgelte" }));
+		CONFIGS.put("659-21-5.csv", new ParserConfiguration(9, 0, 2, new String[] { "ArbeitsmarktAnzahl",
+				"ArbeitsmarktAusländer", "Arbeitsmarktschwerbehindert", "Arbeitsmarkt15 bis unter 20 Jahre",
+				"Arbeitsmarkt15 bis unter 25 Jahre", "Arbeitsmarkt55 bis unter 65 Jahre",
+				"Arbeitsmarktlangzeitarbeitslos" }));
 		CONFIGS.put("517-01-5.csv", new ParserConfiguration(8, 1, 3, new String[] {
-				"verbrauchsabhängiges Entgelt pro cbm", "haushaltsäbliches verbrauchsunabh. Entgelt p. Jahr" }));
+				"TrinkwasserVerbrauchsabhängiges Entgelt pro cbm",
+				"TrinkwasserHaushaltsäbliches verbrauchsunabh. Entgelt p. Jahr" }));
 		CONFIGS.put("469-11-5.csv", new ParserConfiguration(8, 0, 2, new String[] { "Geöffnete Beherbergungsbetriebe",
 				"Angebotene Gästebetten", "Gästeübernachtungen", "Gästeankünfte" }));
 		CONFIGS.put("035-21-5.csv", new ParserConfiguration(8, 1, 3, new String[] { "WohngebäudeInsgesamt",
