@@ -68,10 +68,26 @@
 					<select name="valueType">
 						<option value="Einwohner">Einwohnerzahl</option>
 						<option value="qkm" data-unit="km²" data-converter="qmToqkm">Fläche</option>
-						<option value="gewerbesteuerIstaufkommen" data-unit="€" data-converter="x1000">Gewerbesteuer</option>
-						<option value="">Grundsteuer A</option>
-						<option value="">Grundsteuer B</option>
-						<option value="gewerbesteuerHebesatz">Hebesatz Gewerbesteuer</option>
+						<optgroup label="Gewerbesteuer">
+							<option value="gewerbesteuerIstaufkommen" data-unit="€" data-converter="x1000">Gewerbesteuer Ist-Aufkommen</option>
+							<option value="gewerbesteuerGrundbetrag" data-unit="€" data-converter="x1000">Gewerbesteuer Grundbetrag</option>
+							<option value="gewerbesteuerumlage" data-unit="€" data-converter="x1000">Gewerbesteuerumlage</option>
+							<option value="gewerbesteuereinnahmen" data-unit="€" data-converter="x1000">Gewerbesteuereinnahmen (Aufkommen abzgl. Umlage)</option>
+							<option value="gewerbesteuerHebesatz" data-unit="%">Gewerbesteuer Hebesatz</option>
+						</optgroup>
+						<optgroup label="Grundsteuer A (agrarisch - Grundstücke der Landwirtschaft)">
+							<option value="grundsteuerAIstaufkommen" data-unit="€" data-converter="x1000">Grundsteuer A Ist-Aufkommen</option>
+							<option value="grundsteuerAGrundbetrag" data-unit="€" data-converter="x1000">Grundsteuer A Grundbetrag</option>
+							<option value="grundsteuerAHebesatz" data-unit="%">Grundsteuer A Hebesatz</option>
+						</optgroup>
+						<optgroup label="Grundsteuer B (baulich - bebaute oder bebaubare Grundstücke und Gebäude)">
+							<option value="grundsteuerBIstaufkommen" data-unit="€" data-converter="x1000">Grundsteuer B Ist-Aufkommen</option>
+							<option value="grundsteuerBGrundbetrag" data-unit="€" data-converter="x1000">Grundsteuer B Grundbetrag</option>
+							<option value="grundsteuerBHebesatz" data-unit="%">Grundsteuer B Hebesatz</option>
+						</optgroup>
+						<optgroup label="Umsatzsteuer">
+							<option value="gemeindeanteilAnDerUmsatzsteuer">Gemeindeanteil an der Umsatzsteuer</option>
+						</optgroup>
 						<option value="">Jährliche Schulden</option>
 						<option value="">Trinkwasserentgelt je cbm</option>
 						<option value="">Arbeitslosenzahl</option>
