@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class Realsteuervergleich {
+public class DataMerger {
 
 	private static final Map<String, ParserConfiguration> CONFIGS = new HashMap<String, ParserConfiguration>();
 	static {
