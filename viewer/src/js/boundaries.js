@@ -4,7 +4,7 @@
 		findAccordingTo: function(settings) {
 			var boundaries = [0, Number.MAX_VALUE];
 			_.each(hdv.data.areaLayers, function(areaLayer) {
-				var value = hdv.calc.nullSafeNumber(areaLayer[settings.valueType]);
+				var value = hdv.areaValue.of(areaLayer);
 				boundaries[0] = Math.max(boundaries[0], value);
 				boundaries[1] = Math.min(boundaries[1], value);
 			});

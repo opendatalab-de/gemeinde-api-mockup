@@ -67,11 +67,11 @@
 					<label class="title">Metadaten</label>
 					<select name="valueType">
 						<option value="Einwohner">Einwohnerzahl</option>
-						<option value="qkm">Fläche in m²</option>
-						<option value="gewerbesteuerIstaufkommen">Gewerbesteuer</option>
+						<option value="qkm" data-unit="km²" data-converter="qmToqkm">Fläche</option>
+						<option value="gewerbesteuerIstaufkommen" data-unit="€" data-converter="x1000">Gewerbesteuer</option>
 						<option value="">Grundsteuer A</option>
 						<option value="">Grundsteuer B</option>
-						<option value="gewerbesteuerHebesatz">Gewerbesteuer Hebesatz</option>
+						<option value="gewerbesteuerHebesatz">Hebesatz Gewerbesteuer</option>
 						<option value="">Jährliche Schulden</option>
 						<option value="">Trinkwasserentgelt je cbm</option>
 						<option value="">Arbeitslosenzahl</option>
@@ -131,11 +131,7 @@
 						<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>
 					</li>
 					<li>
-						Gemeindeflächen Geodaten:
-						<a href="http://www.mik.nrw.de/themen-aufgaben/buergerbeteiligung-wahlen/wahlen/auf-allen-ebenen/landtagswahl/wahl-2012/wahlkreiskarten.html">Ministerium für Inneres und Kommunales des Landes Nordrhein-Westfalen</a>
-					</li>
-					<li>
-						Landkreisflächen Geodaten:
+						Geodaten:
 						<a href="http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=1&gdz_unt_zeile=17&gdz_user_id=0">Bundesamt für Kartographie und Geodäsie</a>
 					</li>
 					<li>
@@ -165,10 +161,7 @@
 		<p class="popup-label"><strong>{{areaLabel}}</strong></p>
 		
 		<p>
-			{{valueLabel}}:
-			<strong class="popup-value">
-				{{{number value}}}
-			</strong>
+			{{valueLabel}} {{{number value}}} {{unit}}
 		</p>
 	</script>
 
