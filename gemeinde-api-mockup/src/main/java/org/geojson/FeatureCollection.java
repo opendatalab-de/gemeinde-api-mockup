@@ -17,11 +17,12 @@ public class FeatureCollection extends GeoJsonObject implements Iterable<Feature
 		this.features = features;
 	}
 
-	public void addFeature(Feature feature) {
+	public FeatureCollection add(Feature feature) {
 		features.add(feature);
+		return this;
 	}
 
-	public void addAllFeatures(Collection<Feature> features) {
+	public void addAll(Collection<Feature> features) {
 		this.features.addAll(features);
 	}
 

@@ -3,24 +3,24 @@ package org.geojson;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultiPoint extends Geometry {
-	
-	private List<Point> coordinates;
-	
-	public MultiPoint(List<Point> coordinates) {
-		super(MultiPoint.class.getName());
-		this.coordinates = coordinates;
+public class MultiPoint extends GeoJsonObject {
+
+	private List<LngLatAlt> coordinates = new ArrayList<LngLatAlt>();
+
+	public MultiPoint() {
 	}
-	
-	public List<double[]> getCoordinates() {
-		List<double[]> points = new ArrayList<double[]>();
-		for (Point point : coordinates) {
-			points.add(point.getCoordinates());
+
+	public MultiPoint(LngLatAlt... points) {
+		for (LngLatAlt lngLatAlt : points) {
+			coordinates.add(lngLatAlt);
 		}
-		return points;
 	}
-	
-	public String getType() {
-		return this.getClass().getSimpleName();
+
+	public List<LngLatAlt> getCoordinates() {
+		return coordinates;
+	}
+
+	public void setCoordinates(List<LngLatAlt> coordinates) {
+		this.coordinates = coordinates;
 	}
 }

@@ -1,25 +1,29 @@
 package org.geojson;
 
-public class Point extends Geometry {
+public class Point extends GeoJsonObject {
 
-	private double[] coordinates;
+	private LngLatAlt coordinates;
+
+	public Point() {
+	}
+
+	public Point(LngLatAlt coordinates) {
+		this.coordinates = coordinates;
+	}
 
 	public Point(double longitude, double latitude) {
-		super(Point.class.getSimpleName());
-		coordinates = new double[2];
-		coordinates[0] = longitude;
-		coordinates[1] = latitude;
+		coordinates = new LngLatAlt(longitude, latitude);
 	}
 
-	public Point(double longtitude, double latitude, double altitude) {
-		super(Point.class.getSimpleName());
-		coordinates = new double[3];
-		coordinates[0] = longtitude;
-		coordinates[1] = latitude;
-		coordinates[2] = latitude;
+	public Point(double longitude, double latitude, double altitude) {
+		coordinates = new LngLatAlt(longitude, latitude, altitude);
 	}
 
-	public double[] getCoordinates() {
+	public LngLatAlt getCoordinates() {
 		return coordinates;
+	}
+
+	public void setCoordinates(LngLatAlt coordinates) {
+		this.coordinates = coordinates;
 	}
 }

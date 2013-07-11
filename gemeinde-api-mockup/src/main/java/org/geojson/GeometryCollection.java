@@ -1,17 +1,28 @@
 package org.geojson;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class GeometryCollection extends Geometry {
-	
-	private List<Geometry> geometry;
-	
-	public GeometryCollection(List<Geometry> geometry) {
-		super(GeometryCollection.class.getSimpleName());
-		this.geometry = geometry;
+public class GeometryCollection extends GeoJsonObject implements Iterable<GeoJsonObject> {
+
+	private List<GeoJsonObject> geometries = new ArrayList<>();
+
+	public List<GeoJsonObject> getGeometries() {
+		return geometries;
 	}
-	
-	public List<Geometry> getGeometries() {
-		return geometry;
+
+	public void setGeometries(List<GeoJsonObject> geometries) {
+		this.geometries = geometries;
+	}
+
+	@Override
+	public Iterator<GeoJsonObject> iterator() {
+		return geometries.iterator();
+	}
+
+	public GeometryCollection add(GeoJsonObject geometry) {
+		geometries.add(geometry);
+		return this;
 	}
 }

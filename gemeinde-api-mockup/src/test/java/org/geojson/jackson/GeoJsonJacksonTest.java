@@ -11,11 +11,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import de.opendatalab.utils.ResourceUtils;
 
-public class GeoJsonModuleTest {
+public class GeoJsonJacksonTest {
+
+	private ObjectMapper mapper = new ObjectMapper();
 
 	@Test
 	public void itShouldParseGeoJson() throws Exception {
-		ObjectMapper mapper = new ObjectMapper();
 		GeoJsonObject featureCollection = mapper.readValue(
 				new InputStreamReader(ResourceUtils.getResourceAsStream("heilbronn.geojson"), "utf8"),
 				GeoJsonObject.class);

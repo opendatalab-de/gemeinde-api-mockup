@@ -121,7 +121,7 @@ public class Utils {
 	public static FeatureCollection mergeGeoJson(FeatureCollection... geoJson) {
 		FeatureCollection result = new FeatureCollection();
 		for (FeatureCollection fc : geoJson) {
-			result.addAllFeatures(fc.getFeatures());
+			result.addAll(fc.getFeatures());
 		}
 		return result;
 	}
@@ -140,7 +140,7 @@ public class Utils {
 					newFeature.setProperty("Einwohner", feature.getProperty("EWZ"));
 					newFeature.setProperty("qkm", feature.getProperty("SHAPE_AREA"));
 					newFeature.setGeometry(feature.getGeometry());
-					result.addFeature(newFeature);
+					result.add(newFeature);
 					break;
 				}
 			}
