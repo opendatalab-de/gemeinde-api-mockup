@@ -2,8 +2,7 @@
 	'use strict';
 	var layerStyle = {
 		colorSchemes: {
-			red: ["#FFF5F0", "#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"],
-			green: ["#F7FCF5", "#e5f5e0", "#c7e9c0", "#a1d99b", "#74c476", "#41ab5d", "#238b45", "#006d2c", "#00441b"]
+			blue: ["#DEEBF7", "#C6DBEF", "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"],
 		},
 		/**
 		 * @param value
@@ -23,8 +22,11 @@
 			if (isInexsistent) {
 				return '#000';
 			}
+			if (value === 0) {
+				return '#F7FBFF';
+			}
 
-			var colorScheme = (value < 0 || hasNegativeMeaning) ? this.colorSchemes.red : this.colorSchemes.green;
+			var colorScheme = this.colorSchemes.blue;
 			var factor = this.getComparisonFactor(value, log10Boundary);
 			var colorIndex = Math.max(0, Math.round((colorScheme.length - 1) * factor));
 			return colorScheme[colorIndex];
