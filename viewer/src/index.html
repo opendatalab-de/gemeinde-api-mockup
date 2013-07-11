@@ -88,14 +88,76 @@
 						<optgroup label="Umsatzsteuer">
 							<option value="gemeindeanteilAnDerUmsatzsteuer">Gemeindeanteil an der Umsatzsteuer</option>
 						</optgroup>
-						<option value="">Jährliche Schulden</option>
-						<option value="">Trinkwasserentgelt je cbm</option>
-						<option value="">Arbeitslosenzahl</option>
-						<option value="">Sozialversicherungspflichtige Beschäftigte</option>
-						<option value="">Pendler</option>
-						<option value="">Verarbeitendes Gewerbe: Beschäftigte, Betriebe</option>
-						<option value="">Tourismuszahlen</option>
-						<option value="">Straßenverkehrsunfälle
+						<optgroup label="Wohngebäude">
+							<option value="WohngebäudeInsgesamt">Anzahl Wohngebäude</option>
+							<option value="Wohngebäude1Wohnung">Anzahl Einfamilienhäuser (1 Wohnung im Gebäude)</option>
+							<option value="Wohngebäude2Wohnungen">Anzahl Zweifamilienhäuser (2 Wohnungen im Gebäude)</option>
+							<option value="WohnflächeinWohngebäuden" data-unit="m²" data-converter="x1000">Wohnfläche (in Wohngebäuden) insgesamt</option>
+						</optgroup>
+						<optgroup label="Wohnungen">
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Insgesamt">Anzahl Wohnungen</option>
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit1Raum">Anzahl Wohnungen mit 1 Raum</option>
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit2Räumen">Anzahl Wohnungen mit 2 Räumen</option>
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit3Räumen">Anzahl Wohnungen mit 3 Räumen</option>
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit4Räumen">Anzahl Wohnungen mit 4 Räumen</option>
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit5Räumen">Anzahl Wohnungen mit 5 Räumen</option>
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit6Räumen">Anzahl Wohnungen mit 6 Räumen</option>
+							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit7Räumenodermehr">Anzahl Wohnungen mit 7 oder mehr Räumen</option>
+							<option value="RäumeinWohnungenmit7odermehrRäumen">Räume in Wohnungen mit 7 oder mehr Räumen</option>
+						</optgroup>
+						<optgroup label="Verarbeitendes Gewerbe (Handwerk)">
+							<option value="betriebe">Betriebe</option>
+							<option value="beschäftigte">Beschäftigte</option>
+							<option value="bruttoentgelte" data-unit="€" data-converter="x1000">Bruttoentgelte</option>
+						</optgroup>
+						<optgroup label="Straßenverkehrsunfälle">
+							<option value="Unfälle (insgesamt)">Unfälle (insgesamt)</option>
+							<option value="Unfälle mit Personenschaden">Unfälle mit Personenschaden</option>
+							<option value="Schwerwiegende Unfälle mit Sachschaden i. e. S.">Schwerwiegende Unfälle mit Sachschaden im engeren Sinne</option>
+							<option value="Sons.Sachschadensunf.unter d.Einfl.berausch.Mittel">Sonstige Sachschadensunfälle unter Einfluss berauschender Mittel</option>
+							<option value="Getötete Personen">Getötete Personen</option>
+							<option value="Verletzte Personen">Verletzte Personen</option>
+						</optgroup>
+						<optgroup label="Bodenfläche">
+							<option value="Bodenfläche" data-unit="ha">Bodenfläche (insgesamt)</option>
+							<option value="Siedlungs- und Verkehrsfläche" data-unit="ha">Siedlungs und Verkehrsfläche</option>
+							<option value="Gebäude- und Freifläche Insgesamt" data-unit="ha">Gebäude und Freifläche (insgesamt)</option>
+							<option value="Gebäude- und Freifläche Wohnen" data-unit="ha">Gebäude und Freifläche: Wohnen</option>
+							<option value="Gebäude- und Freifläche Gewerbe, Industrie" data-unit="ha">Gebäude und Freifläche: Gewerbe, Industrie</option>
+							<option value="Betriebsfläche (ohne Abbauland)" data-unit="ha">Betriebsfläche (ohne Abbauland)</option>
+							<option value="Erholungsfläche Insgesamt" data-unit="ha">Erholungfläche (insgesamt)</option>
+							<option value="Erholungsfläche Grünanlage" data-unit="ha">Erholungfläche: Grünanlagen</option>
+							<option value="Friedhofsfläche" data-unit="ha">Friedhofsfläche</option>
+							<option value="Verkehrsfläche Insgesamt" data-unit="ha">Verkehrsfläche (insgesamt)</option>
+							<option value="Verkehrsfläche Straße, Weg, Platz" data-unit="ha">Verkehrsfläche (Straße, Weg, Platz)</option>
+							<option value="Landwirtschaftsfläche Insgesamt" data-unit="ha">Landwirtschaftsfläche (insgesamt)</option>
+							<option value="Landwirtschaftsfläche Moor" data-unit="ha">Landwirtschaftsfläche: Moor</option>
+							<option value="Landwirtschaftsfläche Heide" data-unit="ha">Landwirtschaftsfläche: Heide</option>
+							<option value="Waldfläche" data-unit="ha">Waldfläche</option>
+							<option value="Wasserfläche" data-unit="ha">Wasserfläche</option>
+							<option value="Abbauland" data-unit="ha">Abbauland</option>
+							<option value="Flächen anderer Nutzung Insgesamt" data-unit="ha">Flächen anderer Nutzung (insgesamt)</option>
+							<option value="Flächen anderer Nutzung Unland" data-unit="ha">Flächen anderer Nutzung: Unland</option>
+						</optgroup>
+						<optgroup label="Tourismus">
+							<option value="Geöffnete Beherbergungsbetriebe">Geöffnete Beherbergungsbetriebe</option>
+							<option value="Gästebetten">Gästebetten</option>
+							<option value="Gästeübernachtungen">Gästeübernachtungen</option>
+							<option value="Gästeankünfte">Gästeankünfte</option>
+						</optgroup>
+						<optgroup label="Trinkwasser">
+							<option value="Gästeankünfte" data-unit="€">Entgelt je cbm</option>
+							<option value="Gästeankünfte" data-unit="€">haushaltsübliches Entgelt pro Jahr</option>
+						</optgroup>
+						<optgroup label="Arbeitsmarkt">
+							<option value="Gästeankünfte">Arbeitslose</option>
+							<option value="Gästeankünfte">Arbeitslose: Ausländer</option>
+							<option value="Gästeankünfte">Arbeitslose: schwerbehindert</option>
+							<option value="Gästeankünfte">Arbeitslose: 15 bis unter 20 Jahre</option>
+							<option value="Gästeankünfte">Arbeitslose: 15 bis unter 25 Jahre</option>
+							<option value="Gästeankünfte">Arbeitslose: 55 bis unter 65 Jahre</option>
+							<option value="Gästeankünfte">Langzeitarbeitslose</option>
+						</optgroup>
 					</select>
 
 					<br />

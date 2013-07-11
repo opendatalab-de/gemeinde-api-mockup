@@ -6,8 +6,13 @@
 			_.each(hdv.data.areaLayers, function(areaLayer) {
 				var value = hdv.areaValue.of(areaLayer);
 				boundaries[0] = Math.max(boundaries[0], value);
-				boundaries[1] = Math.min(boundaries[1], value);
+				if (value > 0) {
+					boundaries[1] = Math.min(boundaries[1], value);
+				}
 			});
+			if (boundaries[1] === Number.MAX_VALUE) {
+				boundaries[1] = 0;
+			}
 			return boundaries;
 		},
 		toLog10: function(boundaries) {

@@ -22,6 +22,9 @@
 			if (isInexsistent) {
 				return '#000';
 			}
+			if (value === 0) {
+				return '#F7FBFF';
+			}
 
 			var colorScheme = this.colorSchemes.blue;
 			var factor = this.getComparisonFactor(value, log10Boundary);
