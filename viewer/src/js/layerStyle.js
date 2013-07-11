@@ -1,4 +1,4 @@
-(function(hdv) {
+(function(ga) {
 	'use strict';
 	var layerStyle = {
 		colorSchemes: {
@@ -35,9 +35,9 @@
 			if (log10Boundary[0] === log10Boundary[1]) {
 				return 1;
 			}
-			return Math.round((hdv.calc.safeLog10(value) - log10Boundary[1]) / (log10Boundary[0] - log10Boundary[1]) * 100) / 100;
+			return Math.round((ga.calc.safeLog10(value) - log10Boundary[1]) / (log10Boundary[0] - log10Boundary[1]) * 100) / 100;
 		}
 	};
 
-	hdv.layerStyle = layerStyle;
-})(hdv);
+	ga.layerStyle = layerStyle;
+})(ga);

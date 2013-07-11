@@ -1,13 +1,13 @@
-(function(hdv, _) {
+(function(ga, _) {
 	'use strict';
-	hdv.array = {
+	ga.array = {
 		remove: function(array, valueToReject) {
 			var indexToReject = _.indexOf(array, valueToReject);
 			array.splice(indexToReject, 1);
 		}
 	};
 
-	hdv.serialize = {
+	ga.serialize = {
 		toLiteral: function(array) {
 			var literal = {};
 			_.each(array, function(element) {
@@ -17,7 +17,7 @@
 		}
 	};
 
-	hdv.formatter = {
+	ga.formatter = {
 		number: function(n) {
 			var sign = n < 0 ? "-" : "", i = parseInt(n = Math.abs(+n || 0).toFixed(2), 10) + "", j = (j = i.length) > 3 ? j % 3 : 0;
 			var result = sign + (j ? i.substr(0, j) + '.' : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + '.')
@@ -26,7 +26,7 @@
 		}
 	};
 
-	hdv.calc = {
+	ga.calc = {
 		safeLog10: function(number) {
 			return number === 0 ? 0 : Math.log(Math.abs(number)) / Math.LN10;
 		},
@@ -34,4 +34,4 @@
 			return (number === null || number === undefined || isNaN(parseInt(number, 10))) ? 0 : number;
 		}
 	};
-})(hdv, _);
+})(ga, _);

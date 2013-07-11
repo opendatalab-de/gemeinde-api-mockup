@@ -1,11 +1,11 @@
-var hdv = {};
+var ga = {};
 
-(function(hdv, $, _, Handlebars) {
+(function(ga, $, _, Handlebars) {
 	'use strict';
-	hdv.init = function(options) {
-		hdv.defaultService.init(options);
-		hdv.map.init();
-		hdv.loader.init();
-		hdv.settingsService.init();
+	ga.init = function(options) {
+		ga.defaultService.init(options);
+		ga.map.init();
+		ga.loader.init();
+		ga.settingsService.init();
 	};
-})(hdv, jQuery, _, Handlebars);
+})(ga, jQuery, _, Handlebars);

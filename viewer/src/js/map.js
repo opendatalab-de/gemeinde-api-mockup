@@ -1,4 +1,4 @@
-(function(hdv, L, $, _) {
+(function(ga, L, $, _) {
 	'use strict';
 	var SettingsControl = L.Control.extend({
 		options: {
@@ -46,8 +46,8 @@
 	var loader = {
 		loadStatus: {},
 		init: function() {
-			$(hdv).on('loaded.data', _.bind(this.done, this));
-			$(hdv).on('settingsUpdate', _.bind(this.update, this));
+			$(ga).on('loaded.data', _.bind(this.done, this));
+			$(ga).on('settingsUpdate', _.bind(this.update, this));
 		},
 		update: function() {
 			if (!this.allLoaded()) {
@@ -59,7 +59,7 @@
 		done: function() {
 			if (this.allLoaded()) {
 				$('.ajax-loader').hide();
-				$(hdv).triggerHandler('loader.finished');
+				$(ga).triggerHandler('loader.finished');
 			}
 		},
 		allLoaded: function() {
@@ -73,12 +73,12 @@
 				$('.ajax-loader').show();
 
 				$.getJSON('data/heilbronn-rs.geojson', _.bind(function(data) {
-					hdv.map.removeLayers(hdv.data.areaLayers);
-					hdv.data.areaLayers = [];
-					hdv.map.addAreaLayers(data, _.bind(hdv.data.addAreaLayer, hdv.data));
+					ga.map.removeLayers(ga.data.areaLayers);
+					ga.data.areaLayers = [];
+					ga.map.addAreaLayers(data, _.bind(ga.data.addAreaLayer, ga.data));
 
 					this.loadStatus.data = true;
-					$(hdv).triggerHandler('loaded.data');
+					$(ga).triggerHandler('loaded.data');
 				}, this));
 			}
 		}
@@ -89,14 +89,14 @@
 		templates: {},
 		init: function() {
 			this.leafletMap = L.map('map', {
-				center: [hdv.defaults.lat, hdv.defaults.lon],
-				zoom: hdv.defaults.zoom,
+				center: [ga.defaults.lat, ga.defaults.lon],
+				zoom: ga.defaults.zoom,
 				minZoom: 10,
 				maxZoom: 12,
 				attributionControl: false
 			});
 
-			this.setupForm(hdv.defaults);
+			this.setupForm(ga.defaults);
 			this.addTileLayer();
 			this.addAttributionControl();
 			this.setupModals();
@@ -104,7 +104,7 @@
 			this.setupTemplates();
 		},
 		setupForm: function(defaults) {
-			$('.settings input[name="areaType"]').filter('[value="' + hdv.defaults.areaType + '"]').prop('checked', true);
+			$('.settings input[name="areaType"]').filter('[value="' + ga.defaults.areaType + '"]').prop('checked', true);
 		},
 		setupTemplates: function() {
 			this.templates.popup = Handlebars.compile($('#popup-template').html());
@@ -115,7 +115,7 @@
 			}).addTo(this.leafletMap);
 		},
 		addAttributionControl: function() {
-			var attribution = '<a class="permalink">Permalink</a> &nbsp;&nbsp; <a class="datasources">Datenquellen</a> &nbsp;&nbsp; <a class="imprint">Impressum</a>';
+			var attribution = '<a class="datasources">Datenquellen</a> &nbsp;&nbsp; <a class="imprint">Impressum</a>';
 			L.control.attribution().setPrefix(null).addAttribution(attribution).addTo(this.leafletMap);
 
 			$('.imprint').on('click', function() {
@@ -124,20 +124,6 @@
 			$('.datasources').on('click', function() {
 				$('#datasources').modal('toggle');
 			});
-			$('.permalink').on('click', _.bind(function() {
-				this.showPermalink();
-			}, this));
-		},
-		showPermalink: function() {
-			var permalink = this.buildPermalink();
-			prompt('Bitte kopieren Sie folgende URL:', permalink);
-		},
-		buildPermalink: function() {
-			var baseUrl = window.location.href;
-			if (baseUrl.indexOf('?') > 0) {
-				baseUrl = baseUrl.substr(0, baseUrl.indexOf('?'));
-			}
-			return baseUrl + '?' + $.param($('.settings').serializeArray());
 		},
 		setupModals: function() {
 			var modals = ['info', 'imprint', 'datasources'];
@@ -173,6 +159,6 @@
 		}
 	};
 
-	hdv.map = map;
-	hdv.loader = loader;
-})(hdv, L, jQuery, _);
+	ga.map = map;
+	ga.loader = loader;
+})(ga, L, jQuery, _);

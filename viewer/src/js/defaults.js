@@ -1,4 +1,4 @@
-(function(hdv, _) {
+(function(ga, _) {
 	'use strict';
 	var defaults = {
 		lat: 49.15,
@@ -10,7 +10,7 @@
 
 	var defaultService = {
 		init: function(options) {
-			_.extend(hdv.defaults, options, this._parseSearchQuery(window.location.search));
+			_.extend(ga.defaults, options, this._parseSearchQuery(window.location.search));
 		},
 		_parseSearchQuery: function(search) {
 			var defaults = {};
@@ -26,6 +26,6 @@
 		}
 	};
 
-	hdv.defaults = defaults;
-	hdv.defaultService = defaultService;
-})(hdv, _);
+	ga.defaults = defaults;
+	ga.defaultService = defaultService;
+})(ga, _);

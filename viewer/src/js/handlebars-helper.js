@@ -1,10 +1,10 @@
-(function(hdv, Handlebars) {
+(function(ga, Handlebars) {
 	'use strict';
 	Handlebars.registerHelper('number', function(n) {
-		return hdv.formatter.number(n);
+		return ga.formatter.number(n);
 	});
 	Handlebars.registerHelper('currency', function(n) {
-		return hdv.formatter.number(n) + '&nbsp;&euro;';
+		return ga.formatter.number(n) + '&nbsp;&euro;';
 	});
 	Handlebars.registerHelper('financeValue', function(n) {
 		if (n === '-' || n === null || n === undefined) {
@@ -13,7 +13,7 @@
 		if (n === '.') {
 			return 'unbekannt oder geheimzuhalten';
 		}
-		return hdv.formatter.number(n) + '&nbsp;&euro;';
+		return ga.formatter.number(n) + '&nbsp;&euro;';
 	});
 
 	Handlebars.registerHelper('eachProperty', function(context, options) {
@@ -26,4 +26,4 @@
 		}
 		return result;
 	});
-})(hdv, Handlebars);
+})(ga, Handlebars);

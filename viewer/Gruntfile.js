@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 					jQuery: true,
 					console: true,
 					window: true,
-					hdv: true,
+					ga: true,
 					_: true,
 					Handlebars: true,
 					L: true

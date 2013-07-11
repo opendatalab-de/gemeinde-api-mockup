@@ -1,4 +1,4 @@
-(function(hdv, _, $) {
+(function(ga, _, $) {
 	'use strict';
 	var settingsService = {
 		init: function() {
@@ -6,17 +6,26 @@
 			this.update();
 		},
 		update: function() {
-			var settings = hdv.serialize.toLiteral($('.settings').serializeArray());
+			var settings = ga.serialize.toLiteral($('.settings').serializeArray());
 
 			var valueOption = $('select[name="valueType"]').find(':selected');
 			settings.valueUnit = valueOption.data('unit');
 			settings.valueConverter = valueOption.data('converter');
 
-			hdv.settings = settings;
-			$(hdv).triggerHandler('settingsUpdate');
+			ga.settings = settings;
+			$(ga).triggerHandler('settingsUpdate');
+
+			history.pushState(null, null, this.buildPermalink());
+		},
+		buildPermalink: function() {
+			var baseUrl = window.location.href;
+			if (baseUrl.indexOf('?') > 0) {
+				baseUrl = baseUrl.substr(0, baseUrl.indexOf('?'));
+			}
+			return baseUrl + '?' + $.param($('.settings').serializeArray());
 		}
 	};
 
-	hdv.settings = {};
-	hdv.settingsService = settingsService;
-})(hdv, _, jQuery);
+	ga.settings = {};
+	ga.settingsService = settingsService;
+})(ga, _, jQuery);
