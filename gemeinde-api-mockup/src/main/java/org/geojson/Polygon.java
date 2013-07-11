@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public class Polygon extends AbstractCoordinatesList {
+public class Polygon extends Geometry<List<LngLatAlt>> {
 
 	public Polygon() {
 	}
