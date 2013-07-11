@@ -1,9 +1,28 @@
 (function(hdv, $, _, Handlebars) {
 	'use strict';
+	var converters = {
+		qmToqkm: function(value) {
+			return Math.round(value / 1000000 * 100) / 100;
+		},
+		x1000: function(value) {
+			return value * 1000;
+		}
+	};
+
 	var areaValue = {
-		getCurrentLabel: function() {
-			var label = $('.settings select[name="valueType"] option:selected').text();
-			return label;
+		of: function(areaLayer) {
+			return this.convert(areaLayer[hdv.settings.valueType], hdv.settings.valueConverter);
+		},
+		convert: function(rawValue, converterName) {
+			var value = hdv.calc.nullSafeNumber(rawValue);
+			if (converterName) {
+				var converter = converters[converterName];
+				value = converter(value);
+			}
+			return value;
+		},
+		getLabel: function() {
+			return $('select[name="valueType"] option:selected').text() + ':';
 		}
 	};
 
@@ -11,16 +30,17 @@
 		init: function() {
 			$(hdv).on('loader.finished', _.bind(this.update, this));
 		},
-		getTemplateObject: function(valueLabel, areaLayer, value) {
+		getTemplateObject: function(areaLayer, value, valueLabel, unit) {
 			return {
-				'valueLabel': valueLabel,
 				'areaLabel': areaLayer.Name,
-				'value': value
+				'valueLabel': valueLabel,
+				'value': value,
+				'unit': unit
 			};
 		},
-		refreshLayer: function(areaLayer, log10Boundaries, valueLabel, settings) {
-			var value = hdv.calc.nullSafeNumber(areaLayer[settings.valueType]);
-			var templateObject = this.getTemplateObject(valueLabel, areaLayer, value);
+		refreshLayer: function(areaLayer, log10Boundaries, settings, valueLabel) {
+			var value = hdv.areaValue.of(areaLayer);
+			var templateObject = this.getTemplateObject(areaLayer, value, valueLabel, settings.valueUnit);
 
 			areaLayer.value.setStyle(hdv.layerStyle.forValue(value, log10Boundaries, true, false));
 			areaLayer.value.bindPopup(hdv.map.templates.popup(templateObject));
@@ -28,10 +48,10 @@
 		refreshLayers: function(settings) {
 			var boundaries = hdv.boundaries.findAccordingTo(settings);
 			var log10Boundaries = hdv.boundaries.toLog10(boundaries);
-			var valueLabel = areaValue.getCurrentLabel();
+			var valueLabel = areaValue.getLabel();
 
 			_.each(hdv.data.areaLayers, _.bind(function(areaLayer) {
-				this.refreshLayer(areaLayer, log10Boundaries, valueLabel, settings);
+				this.refreshLayer(areaLayer, log10Boundaries, settings, valueLabel);
 			}, this));
 		},
 		update: function() {

@@ -7,6 +7,11 @@
 		},
 		update: function() {
 			var settings = hdv.serialize.toLiteral($('.settings').serializeArray());
+
+			var valueOption = $('select[name="valueType"]').find(':selected');
+			settings.valueUnit = valueOption.data('unit');
+			settings.valueConverter = valueOption.data('converter');
+
 			hdv.settings = settings;
 			$(hdv).triggerHandler('settingsUpdate');
 		}
