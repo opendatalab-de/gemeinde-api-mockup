@@ -15,8 +15,6 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="hidden-phone">Vergleich der Regionalstatistikdaten <small>am Beispiel von Heilbronn</small></h1>
-		
 		<!--[if lte IE 8]>
 			<div class="alert alert-error">
 				<i class="icon-info-sign"></i>
@@ -118,16 +116,6 @@
 				</ul>
 			</div>
 		</div>
-		
-		<div id="socialshareprivacy"></div>
-		<br />
-		
-		<p>
-			Alle Daten und der <a href="https://github.com/opendatalab-de/gemeinde-api-mockup">Quellcode dieses Projekts</a> sind frei und unentgeltlich
-			verfügbar.
-		</p>
-		<p>Die Veröffentlichung erfolgt ohne Gewähr. Trotz sorgfältiger Prüfung kann für Übertragungs- und Darstellungsfehler keine Haftung
-			übernommen werden.</p>
 	</div>
 	<div class="ajax-loader"></div>
 
@@ -175,13 +163,10 @@
 	<script src="js/areas.js"></script>
 	<!-- endbuild -->
 
-	<script src="socialshareprivacy/jquery.socialshareprivacy.min.js"></script>
-	<script src="socialshareprivacy/jquery.socialshareprivacy.min.de.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			ga.selectList.generate();
 			ga.init();
-			$('#socialshareprivacy').socialSharePrivacy();
 		});
 	</script>
 </body>
