@@ -163,79 +163,98 @@
 		group: "Bodenfläche",
 		properties: [{
 			property: "Bodenfläche",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Bodenfläche (insgesamt)"
 		}, {
 			property: "Siedlungs- und Verkehrsfläche",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Siedlungs und Verkehrsfläche"
 		}, {
 			property: "Gebäude- und Freifläche Insgesamt",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Gebäude und Freifläche (insgesamt)"
 		}, {
 			property: "Gebäude- und Freifläche Wohnen",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Gebäude und Freifläche: Wohnen"
 		}, {
 			property: "Gebäude- und Freifläche Gewerbe, Industrie",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Gebäude und Freifläche: Gewerbe, Industrie"
 		}, {
 			property: "Betriebsfläche (ohne Abbauland)",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Betriebsfläche (ohne Abbauland)"
 		}, {
 			property: "Erholungsfläche Insgesamt",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Erholungfläche (insgesamt)"
 		}, {
 			property: "Erholungsfläche Grünanlage",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Erholungfläche: Grünanlagen"
 		}, {
 			property: "Friedhofsfläche",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Friedhofsfläche"
 		}, {
 			property: "Verkehrsfläche Insgesamt",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Verkehrsfläche (insgesamt)"
 		}, {
 			property: "Verkehrsfläche Straße, Weg, Platz",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Verkehrsfläche (Straße, Weg, Platz)"
 		}, {
 			property: "Landwirtschaftsfläche Insgesamt",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Landwirtschaftsfläche (insgesamt)"
 		}, {
 			property: "Landwirtschaftsfläche Moor",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Landwirtschaftsfläche: Moor"
 		}, {
 			property: "Landwirtschaftsfläche Heide",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Landwirtschaftsfläche: Heide"
 		}, {
 			property: "Waldfläche",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Waldfläche"
 		}, {
 			property: "Wasserfläche",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Wasserfläche"
 		}, {
 			property: "Abbauland",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Abbauland"
 		}, {
 			property: "Flächen anderer Nutzung Insgesamt",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Flächen anderer Nutzung (insgesamt)"
 		}, {
 			property: "Flächen anderer Nutzung Unland",
-			unit: "ha",
+			unit: "km²",
+			converter: "haToqkm",
 			label: "Flächen anderer Nutzung: Unland"
 		}]
 	}, {
