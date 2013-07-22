@@ -136,7 +136,7 @@
 		},
 		addSettingsControl: function() {
 			this.settingsControl = new SettingsControl().addTo(this.leafletMap);
-			if ($(window).width() > 979) {
+			if ($(window).width() > 767) {
 				this.settingsControl.toggleNav();
 			}
 
