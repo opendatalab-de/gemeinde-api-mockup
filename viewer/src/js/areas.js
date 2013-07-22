@@ -13,6 +13,20 @@
 		of: function(areaLayer) {
 			return this.convert(areaLayer[ga.settings.valueType], ga.settings.valueConverter);
 		},
+		relationOf: function(areaLayer) {
+			return this.convert(areaLayer[ga.settings.relation], ga.settings.relationConverter);
+		},
+		comparisonValueOf: function(areaLayer) {
+			var value = ga.areaValue.of(areaLayer);
+			var relationValue = ga.areaValue.relationOf(areaLayer);
+			return this.inRelationTo(value, relationValue);
+		},
+		inRelationTo: function(value, relationValue) {
+			if (relationValue <= 0) {
+				return value;
+			}
+			return Math.round(value / relationValue * 10000) / 10000;
+		},
 		convert: function(rawValue, converterName) {
 			var value = ga.calc.nullSafeNumber(rawValue);
 			if (converterName) {
@@ -21,11 +35,19 @@
 			}
 			return value;
 		},
-		getLabel: function() {
-			return $('select[name="valueType"] option:selected').text() + ':';
+		getValueInfo: function(settings) {
+			return {
+				label: $('select[name="valueType"] option:selected').text() + ':',
+				groupLabel: $('select[name="valueType"] option:selected').closest('optgroup').attr('label'),
+				unit: settings.valueUnit
+			};
 		},
-		getGroupLabel: function() {
-			return $('select[name="valueType"] option:selected').closest('optgroup').attr('label');
+		getRelationInfo: function(settings) {
+			return {
+				label: $('select[name="relation"] option:selected').text() + ':',
+				groupLabel: $('select[name="relation"] option:selected').closest('optgroup').attr('label'),
+				unit: settings.relationUnit
+			};
 		}
 	};
 
@@ -33,30 +55,34 @@
 		init: function() {
 			$(ga).on('loader.finished', _.bind(this.update, this));
 		},
-		getTemplateObject: function(areaLayer, value, valueLabel, groupLabel, unit) {
+		getTemplateObject: function(areaLayer, value, relationValue, comparisonValue, valueInfo, relationInfo) {
 			return {
 				'areaLabel': areaLayer.Name,
-				'valueLabel': valueLabel,
-				'groupLabel': groupLabel,
 				'value': value,
-				'unit': unit
+				'valueInfo': valueInfo,
+				'relationValue': relationValue,
+				'relationInfo': relationInfo,
+				'comparisonValue': Math.round(comparisonValue * 100) / 100,
+				'hideRelation': relationInfo.unit === '-' ? true : false
 			};
 		},
-		refreshLayer: function(areaLayer, log10Boundaries, settings, valueLabel, groupLabel) {
+		refreshLayer: function(areaLayer, log10Boundaries, settings, valueInfo, relationInfo) {
 			var value = ga.areaValue.of(areaLayer);
-			var templateObject = this.getTemplateObject(areaLayer, value, valueLabel, groupLabel, settings.valueUnit);
+			var relationValue = ga.areaValue.relationOf(areaLayer);
+			var comparisonValue = ga.areaValue.comparisonValueOf(areaLayer);
+			var templateObject = this.getTemplateObject(areaLayer, value, relationValue, comparisonValue, valueInfo, relationInfo);
 
-			areaLayer.value.setStyle(ga.layerStyle.forValue(value, log10Boundaries, true, false));
+			areaLayer.value.setStyle(ga.layerStyle.forValue(comparisonValue, log10Boundaries, true, false));
 			areaLayer.value.bindPopup(ga.map.templates.popup(templateObject));
 		},
 		refreshLayers: function(settings) {
 			var boundaries = ga.boundaries.findAccordingTo(settings);
 			var log10Boundaries = ga.boundaries.toLog10(boundaries);
-			var valueLabel = areaValue.getLabel();
-			var groupLabel = areaValue.getGroupLabel();
+			var valueInfo = areaValue.getValueInfo(settings);
+			var relationInfo = areaValue.getRelationInfo(settings);
 
 			_.each(ga.data.areaLayers, _.bind(function(areaLayer) {
-				this.refreshLayer(areaLayer, log10Boundaries, settings, valueLabel, groupLabel);
+				this.refreshLayer(areaLayer, log10Boundaries, settings, valueInfo, relationInfo);
 			}, this));
 		},
 		update: function() {

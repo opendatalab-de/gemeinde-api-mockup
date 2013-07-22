@@ -12,6 +12,10 @@
 			settings.valueUnit = valueOption.data('unit');
 			settings.valueConverter = valueOption.data('converter');
 
+			var relationOption = $('select[name="relation"]').find(':selected');
+			settings.relationUnit = relationOption.data('unit');
+			settings.relationConverter = relationOption.data('converter');
+
 			ga.settings = settings;
 			$(ga).triggerHandler('settingsUpdate');
 

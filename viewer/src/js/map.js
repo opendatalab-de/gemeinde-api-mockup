@@ -104,7 +104,8 @@
 			this.setupTemplates();
 		},
 		setupForm: function(defaults) {
-			$('.settings input[name="areaType"]').filter('[value="' + ga.defaults.areaType + '"]').prop('checked', true);
+			$('.settings select[name="valueType"]').val(defaults.valueType);
+			$('.settings select[name="relation"]').val(defaults.relation);
 		},
 		setupTemplates: function() {
 			this.templates.popup = Handlebars.compile($('#popup-template').html());

@@ -4,7 +4,7 @@
 		findAccordingTo: function(settings) {
 			var boundaries = [0, Number.MAX_VALUE];
 			_.each(ga.data.areaLayers, function(areaLayer) {
-				var value = ga.areaValue.of(areaLayer);
+				var value = ga.areaValue.comparisonValueOf(areaLayer);
 				boundaries[0] = Math.max(boundaries[0], value);
 				if (value > 0) {
 					boundaries[1] = Math.min(boundaries[1], value);

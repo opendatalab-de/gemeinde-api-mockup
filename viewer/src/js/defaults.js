@@ -5,7 +5,8 @@
 		lon: 9.2,
 		zoom: 10,
 		areaType: 'gemeinden',
-		valueType: 'Einwohner'
+		valueType: 'gewerbesteuereinnahmen',
+		relation: ''
 	};
 
 	var defaultService = {

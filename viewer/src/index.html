@@ -10,12 +10,12 @@
 <link href="css/leaflet.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
 <!-- endbuild -->
-<title>API und Visualisierung der Regionalstatistik</title>
-<meta name="description" content="API und Visualisierung der Regionalstatistik am Beispiel von Heilbronn" />
+<title>Vergleich der Regionalstatistikdaten im Landkreis Heilbronn</title>
+<meta name="description" content="Visueller Vergleich der Gewerbesteuer-Einnahmen, Hebesätze, Grundsteuern, Verkehrsunfälle, Trinkwasserentgelt und mehr in Heilbronn und allen Gemeinden im Landkreis von Heilbronn" />
 </head>
 <body>
 	<div class="container">
-		<h1 class="hidden-phone">Exemplarische API und Visualisierung der Regionalstatistik</h1>
+		<h1 class="hidden-phone">Vergleich der Regionalstatistikdaten <small>am Beispiel von Heilbronn</small></h1>
 		
 		<!--[if lte IE 8]>
 			<div class="alert alert-error">
@@ -43,119 +43,15 @@
 					
 					<h2 class="visible-phone">Optionen</h2>
 					
-					<label class="title">Bundesland</label>
-					<button type="button" class="close close-nav hidden-phone pull-right" data-dismiss="modal">&times;</button>
-					<select disabled="disabled">
-						<option>Alle</option>
-						<option selected="selected">Baden-Württemberg</option>
-					</select>
-					
-					<label class="title">Landkreis</label>
-					<select disabled="disabled">
-						<option>Alle</option>
-						<option selected="selected">Heilbronn</option>
-					</select>
-					
-					<label class="title">Metadaten</label>
+					<label class="title first">Datensatz</label>
 					<select name="valueType">
-						<option value="Einwohner">Einwohnerzahl</option>
-						<option value="qkm" data-unit="km²" data-converter="qmToqkm">Fläche</option>
-						<optgroup label="Gewerbesteuer">
-							<option value="gewerbesteuerIstaufkommen" data-unit="€" data-converter="x1000">Gewerbesteuer Ist-Aufkommen</option>
-							<option value="gewerbesteuerGrundbetrag" data-unit="€" data-converter="x1000">Gewerbesteuer Grundbetrag</option>
-							<option value="gewerbesteuerumlage" data-unit="€" data-converter="x1000">Gewerbesteuerumlage</option>
-							<option value="gewerbesteuereinnahmen" data-unit="€" data-converter="x1000">Gewerbesteuereinnahmen (Aufkommen abzgl. Umlage)</option>
-							<option value="gewerbesteuerHebesatz" data-unit="%">Gewerbesteuer Hebesatz</option>
-						</optgroup>
-						<optgroup label="Grundsteuer A (agrarisch - Grundstücke der Landwirtschaft)">
-							<option value="grundsteuerAIstaufkommen" data-unit="€" data-converter="x1000">Grundsteuer A Ist-Aufkommen</option>
-							<option value="grundsteuerAGrundbetrag" data-unit="€" data-converter="x1000">Grundsteuer A Grundbetrag</option>
-							<option value="grundsteuerAHebesatz" data-unit="%">Grundsteuer A Hebesatz</option>
-						</optgroup>
-						<optgroup label="Grundsteuer B (baulich - bebaute oder bebaubare Grundstücke und Gebäude)">
-							<option value="grundsteuerBIstaufkommen" data-unit="€" data-converter="x1000">Grundsteuer B Ist-Aufkommen</option>
-							<option value="grundsteuerBGrundbetrag" data-unit="€" data-converter="x1000">Grundsteuer B Grundbetrag</option>
-							<option value="grundsteuerBHebesatz" data-unit="%">Grundsteuer B Hebesatz</option>
-						</optgroup>
-						<optgroup label="Umsatzsteuer">
-							<option value="gemeindeanteilAnDerUmsatzsteuer">Gemeindeanteil an der Umsatzsteuer</option>
-						</optgroup>
-						<optgroup label="Wohngebäude">
-							<option value="WohngebäudeInsgesamt">Anzahl Wohngebäude</option>
-							<option value="Wohngebäude1Wohnung">Anzahl Einfamilienhäuser (1 Wohnung im Gebäude)</option>
-							<option value="Wohngebäude2Wohnungen">Anzahl Zweifamilienhäuser (2 Wohnungen im Gebäude)</option>
-							<option value="WohnflächeinWohngebäuden" data-unit="m²" data-converter="x1000">Wohnfläche (in Wohngebäuden) insgesamt</option>
-						</optgroup>
-						<optgroup label="Wohnungen">
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Insgesamt">Anzahl Wohnungen</option>
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit1Raum">Anzahl Wohnungen mit 1 Raum</option>
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit2Räumen">Anzahl Wohnungen mit 2 Räumen</option>
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit3Räumen">Anzahl Wohnungen mit 3 Räumen</option>
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit4Räumen">Anzahl Wohnungen mit 4 Räumen</option>
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit5Räumen">Anzahl Wohnungen mit 5 Räumen</option>
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit6Räumen">Anzahl Wohnungen mit 6 Räumen</option>
-							<option value="WohnungeninWohnundNichtwohngebäuden_Größe_Wohnungenmit7Räumenodermehr">Anzahl Wohnungen mit 7 oder mehr Räumen</option>
-							<option value="RäumeinWohnungenmit7odermehrRäumen">Räume in Wohnungen mit 7 oder mehr Räumen</option>
-						</optgroup>
-						<optgroup label="Verarbeitendes Gewerbe (Handwerk)">
-							<option value="HandwerkBetriebe">Betriebe</option>
-							<option value="HandwerkBeschäftigte">Beschäftigte</option>
-							<option value="HandwerkBruttoentgelte" data-unit="€" data-converter="x1000">Bruttoentgelte</option>
-						</optgroup>
-						<optgroup label="Straßenverkehrsunfälle">
-							<option value="Unfälle (insgesamt)">Unfälle (insgesamt)</option>
-							<option value="Unfälle mit Personenschaden">Unfälle mit Personenschaden</option>
-							<option value="Schwerwiegende Unfälle mit Sachschaden i. e. S.">Schwerwiegende Unfälle mit Sachschaden im engeren Sinne</option>
-							<option value="Sons.Sachschadensunf.unter d.Einfl.berausch.Mittel">Sonstige Sachschadensunfälle unter Einfluss berauschender Mittel</option>
-							<option value="Getötete Personen">Getötete Personen</option>
-							<option value="Verletzte Personen">Verletzte Personen</option>
-						</optgroup>
-						<optgroup label="Bodenfläche">
-							<option value="Bodenfläche" data-unit="ha">Bodenfläche (insgesamt)</option>
-							<option value="Siedlungs- und Verkehrsfläche" data-unit="ha">Siedlungs und Verkehrsfläche</option>
-							<option value="Gebäude- und Freifläche Insgesamt" data-unit="ha">Gebäude und Freifläche (insgesamt)</option>
-							<option value="Gebäude- und Freifläche Wohnen" data-unit="ha">Gebäude und Freifläche: Wohnen</option>
-							<option value="Gebäude- und Freifläche Gewerbe, Industrie" data-unit="ha">Gebäude und Freifläche: Gewerbe, Industrie</option>
-							<option value="Betriebsfläche (ohne Abbauland)" data-unit="ha">Betriebsfläche (ohne Abbauland)</option>
-							<option value="Erholungsfläche Insgesamt" data-unit="ha">Erholungfläche (insgesamt)</option>
-							<option value="Erholungsfläche Grünanlage" data-unit="ha">Erholungfläche: Grünanlagen</option>
-							<option value="Friedhofsfläche" data-unit="ha">Friedhofsfläche</option>
-							<option value="Verkehrsfläche Insgesamt" data-unit="ha">Verkehrsfläche (insgesamt)</option>
-							<option value="Verkehrsfläche Straße, Weg, Platz" data-unit="ha">Verkehrsfläche (Straße, Weg, Platz)</option>
-							<option value="Landwirtschaftsfläche Insgesamt" data-unit="ha">Landwirtschaftsfläche (insgesamt)</option>
-							<option value="Landwirtschaftsfläche Moor" data-unit="ha">Landwirtschaftsfläche: Moor</option>
-							<option value="Landwirtschaftsfläche Heide" data-unit="ha">Landwirtschaftsfläche: Heide</option>
-							<option value="Waldfläche" data-unit="ha">Waldfläche</option>
-							<option value="Wasserfläche" data-unit="ha">Wasserfläche</option>
-							<option value="Abbauland" data-unit="ha">Abbauland</option>
-							<option value="Flächen anderer Nutzung Insgesamt" data-unit="ha">Flächen anderer Nutzung (insgesamt)</option>
-							<option value="Flächen anderer Nutzung Unland" data-unit="ha">Flächen anderer Nutzung: Unland</option>
-						</optgroup>
-						<optgroup label="Tourismus">
-							<option value="Geöffnete Beherbergungsbetriebe">Geöffnete Beherbergungsbetriebe</option>
-							<option value="Angebotene Gästebetten">Gästebetten</option>
-							<option value="Gästeübernachtungen">Gästeübernachtungen</option>
-							<option value="Gästeankünfte">Gästeankünfte</option>
-						</optgroup>
-						<optgroup label="Trinkwasser">
-							<option value="TrinkwasserVerbrauchsabhängiges Entgelt pro cbm" data-unit="€">Entgelt je cbm</option>
-							<option value="TrinkwasserHaushaltsäbliches verbrauchsunabh. Entgelt p. Jahr" data-unit="€">haushaltsübliches Entgelt pro Jahr</option>
-						</optgroup>
-						<optgroup label="Arbeitsmarkt">
-							<option value="ArbeitsmarktAnzahl">Arbeitslose</option>
-							<option value="ArbeitsmarktAusländer">Arbeitslose: Ausländer</option>
-							<option value="Arbeitsmarktschwerbehindert">Arbeitslose: schwerbehindert</option>
-							<option value="Arbeitsmarkt15 bis unter 20 Jahre">Arbeitslose: 15 bis unter 20 Jahre</option>
-							<option value="Arbeitsmarkt15 bis unter 25 Jahre">Arbeitslose: 15 bis unter 25 Jahre</option>
-							<option value="Arbeitsmarkt55 bis unter 65 Jahre">Arbeitslose: 55 bis unter 65 Jahre</option>
-							<option value="Arbeitsmarktlangzeitarbeitslos">Langzeitarbeitslose</option>
-						</optgroup>
+						
 					</select>
-
-					<br />
-					<p>
-						<a href="data/heilbronn-rs.geojson" class="btn btn-primary">.geojson Export</a>
-					</p>
+					
+					<label class="title">vergleichen mit</label>
+					<select name="relation">
+						<option value="">-</option>
+					</select>
 				</form>
 			</div>
 		</div>
@@ -239,11 +135,25 @@
 		<p class="popup-label"><strong>{{areaLabel}}</strong></p>
 		
 		<p>
-			{{#if groupLabel}}
-				<em>{{groupLabel}}</em><br />
+			{{#if valueInfo.groupLabel}}
+				{{valueInfo.groupLabel}}<br />
 			{{/if}}
-			{{valueLabel}} {{{number value}}} {{unit}}
+			{{valueInfo.label}} {{{number value}}} {{valueInfo.unit}}
 		</p>
+
+		{{#unless hideRelation}}
+			<p><em>im Verhältnis zur:</em></p>
+			<p style="padding-left:14px;">
+				{{#if relationInfo.groupLabel}}
+					{{relationInfo.groupLabel}}<br />
+				{{/if}}
+				{{relationInfo.label}} {{{number relationValue}}} {{relationInfo.unit}}
+			</p>
+			<p><em>ergibt sich der Vergleichswert:</em></p>
+			<p style="padding-left:14px;">
+				<strong>{{{number comparisonValue}}} {{valueInfo.unit}}</strong>
+			</p>
+		{{/unless}}
 	</script>
 
 	<!-- build:js js/app.js -->
@@ -259,6 +169,7 @@
 	<script src="js/utils.js"></script>
 	<script src="js/handlebars-helper.js"></script>
 	<script src="js/map.js"></script>
+	<script src="js/selectList.js"></script>
 	<script src="js/layerStyle.js"></script>
 	<script src="js/boundaries.js"></script>
 	<script src="js/areas.js"></script>
@@ -268,6 +179,7 @@
 	<script src="socialshareprivacy/jquery.socialshareprivacy.min.de.js"></script>
 	<script type="text/javascript">
 		$(function() {
+			ga.selectList.generate();
 			ga.init();
 			$('#socialshareprivacy').socialSharePrivacy();
 		});
