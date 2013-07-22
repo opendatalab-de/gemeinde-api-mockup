@@ -2,15 +2,17 @@ package org.geojson;
 
 import java.util.List;
 
-public class MultiPolygon extends GeoJsonObject {
+public class MultiPolygon extends Geometry<List<List<LngLatAlt>>> {
 
-	private List<List<List<double[]>>> coordinates;
-
-	public List<List<List<double[]>>> getCoordinates() {
-		return coordinates;
+	public MultiPolygon() {
 	}
 
-	public void setCoordinates(List<List<List<double[]>>> coordinates) {
-		this.coordinates = coordinates;
+	public MultiPolygon(Polygon polygon) {
+		add(polygon);
+	}
+
+	public MultiPolygon add(Polygon polygon) {
+		coordinates.add(polygon.getCoordinates());
+		return this;
 	}
 }

@@ -1,26 +1,12 @@
 package org.geojson;
 
-import java.util.ArrayList;
-import java.util.List;
 
-public class MultiPoint extends Geometry {
-	
-	private List<Point> coordinates;
-	
-	public MultiPoint(List<Point> coordinates) {
-		super(MultiPoint.class.getName());
-		this.coordinates = coordinates;
+public class MultiPoint extends Geometry<LngLatAlt> {
+
+	public MultiPoint() {
 	}
-	
-	public List<double[]> getCoordinates() {
-		List<double[]> points = new ArrayList<double[]>();
-		for (Point point : coordinates) {
-			points.add(point.getCoordinates());
-		}
-		return points;
-	}
-	
-	public String getType() {
-		return this.getClass().getSimpleName();
+
+	public MultiPoint(LngLatAlt... points) {
+		super(points);
 	}
 }

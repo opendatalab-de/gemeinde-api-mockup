@@ -1,16 +1,56 @@
 package org.geojson;
 
+import java.util.Arrays;
 import java.util.List;
 
-public class Polygon extends GeoJsonObject {
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-	private List<List<double[]>> coordinates;
+public class Polygon extends Geometry<List<LngLatAlt>> {
 
-	public List<List<double[]>> getCoordinates() {
-		return coordinates;
+	public Polygon() {
 	}
 
-	public void setCoordinates(List<List<double[]>> coordinates) {
-		this.coordinates = coordinates;
+	public Polygon(List<LngLatAlt> polygon) {
+		add(polygon);
+	}
+
+	public Polygon(LngLatAlt... polygon) {
+		add(Arrays.asList(polygon));
+	}
+
+	public void setExteriorRing(List<LngLatAlt> points) {
+		coordinates.add(0, points);
+	}
+
+	@JsonIgnore
+	public List<LngLatAlt> getExteriorRing() {
+		assertExteriorRing();
+		return coordinates.get(0);
+	}
+
+	@JsonIgnore
+	public List<List<LngLatAlt>> getInteriorRings() {
+		assertExteriorRing();
+		return coordinates.subList(1, coordinates.size());
+	}
+
+	public List<LngLatAlt> getInteriorRing(int index) {
+		assertExteriorRing();
+		return coordinates.get(1 + index);
+	}
+
+	public void addInteriorRing(List<LngLatAlt> points) {
+		assertExteriorRing();
+		coordinates.add(points);
+	}
+
+	public void addInteriorRing(LngLatAlt... points) {
+		assertExteriorRing();
+		coordinates.add(Arrays.asList(points));
+	}
+
+	private void assertExteriorRing() {
+		if (coordinates.isEmpty())
+			throw new RuntimeException("No exterior ring definied");
 	}
 }
