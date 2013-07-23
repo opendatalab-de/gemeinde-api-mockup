@@ -4,8 +4,8 @@
 		qmToqkm: function(value) {
 			return Math.round(value / 1000000 * 100) / 100;
 		},
-		haToqkm: function(value) {
-			return Math.round(value) / 100;
+		haToqm: function(value) {
+			return Math.round(value * 10000 * 100) / 100;
 		},
 		x1000: function(value) {
 			return value * 1000;

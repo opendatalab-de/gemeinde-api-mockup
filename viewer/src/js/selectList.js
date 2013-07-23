@@ -163,98 +163,98 @@
 		group: "Bodenfläche",
 		properties: [{
 			property: "Bodenfläche",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Bodenfläche (insgesamt)"
 		}, {
 			property: "Siedlungs- und Verkehrsfläche",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Siedlungs und Verkehrsfläche"
 		}, {
 			property: "Gebäude- und Freifläche Insgesamt",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Gebäude und Freifläche (insgesamt)"
 		}, {
 			property: "Gebäude- und Freifläche Wohnen",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Gebäude und Freifläche: Wohnen"
 		}, {
 			property: "Gebäude- und Freifläche Gewerbe, Industrie",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Gebäude und Freifläche: Gewerbe, Industrie"
 		}, {
 			property: "Betriebsfläche (ohne Abbauland)",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Betriebsfläche (ohne Abbauland)"
 		}, {
 			property: "Erholungsfläche Insgesamt",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Erholungfläche (insgesamt)"
 		}, {
 			property: "Erholungsfläche Grünanlage",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Erholungfläche: Grünanlagen"
 		}, {
 			property: "Friedhofsfläche",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Friedhofsfläche"
 		}, {
 			property: "Verkehrsfläche Insgesamt",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Verkehrsfläche (insgesamt)"
 		}, {
 			property: "Verkehrsfläche Straße, Weg, Platz",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Verkehrsfläche (Straße, Weg, Platz)"
 		}, {
 			property: "Landwirtschaftsfläche Insgesamt",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Landwirtschaftsfläche (insgesamt)"
 		}, {
 			property: "Landwirtschaftsfläche Moor",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Landwirtschaftsfläche: Moor"
 		}, {
 			property: "Landwirtschaftsfläche Heide",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Landwirtschaftsfläche: Heide"
 		}, {
 			property: "Waldfläche",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Waldfläche"
 		}, {
 			property: "Wasserfläche",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Wasserfläche"
 		}, {
 			property: "Abbauland",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Abbauland"
 		}, {
 			property: "Flächen anderer Nutzung Insgesamt",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Flächen anderer Nutzung (insgesamt)"
 		}, {
 			property: "Flächen anderer Nutzung Unland",
-			unit: "km²",
-			converter: "haToqkm",
+			unit: "m²",
+			converter: "haToqm",
 			label: "Flächen anderer Nutzung: Unland"
 		}]
 	}, {
