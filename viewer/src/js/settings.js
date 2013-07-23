@@ -19,7 +19,7 @@
 			ga.settings = settings;
 			$(ga).triggerHandler('settingsUpdate');
 
-			history.pushState(null, null, this.buildPermalink());
+			history.replaceState(null, null, this.buildPermalink());
 		},
 		buildPermalink: function() {
 			var baseUrl = window.location.href;
