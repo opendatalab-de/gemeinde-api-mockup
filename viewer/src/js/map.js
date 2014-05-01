@@ -111,12 +111,12 @@
 			this.templates.popup = Handlebars.compile($('#popup-template').html());
 		},
 		addTileLayer: function() {
-			L.tileLayer('http://{s}.tile.cloudmade.com/036a729cf53d4388a8ec345e1543ef53/44094/256/{z}/{x}/{y}.png', {
+			L.tileLayer('https://{s}.tiles.mapbox.com/v3/codeforheilbronn.i4ff7n72/{z}/{x}/{y}.png', {
 				'maxZoom': 18
 			}).addTo(this.leafletMap);
 		},
 		addAttributionControl: function() {
-			var attribution = '<a class="datasources">Datenquellen</a> &nbsp;&nbsp; <a class="imprint">Impressum</a>';
+			var attribution = '<a class="datasources">Datenquellen</a> &nbsp;&nbsp; <a class="imprint">Impressum</a> | <a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>';
 			L.control.attribution().setPrefix(null).addAttribution(attribution).addTo(this.leafletMap);
 
 			$('.imprint').on('click', function() {
